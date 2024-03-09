@@ -1,0 +1,88 @@
+/***************************/
+/* loading spin animation */
+
+@keyframes loadingSpin
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loadingSpinner { animation: loadingSpin 2s linear infinite }
+
+
+/************************/
+/* hide page scrollbar */
+* { scrollbar-width: none; -ms-overflow-style: none; }
+*::-webkit-scrollbar, *::-webkit-scrollbar-button { display: none; }
+
+
+
+/***********/
+/* alpine */
+[x-cloak] { display: none !important; }
+
+
+
+/*************/
+/* Sortable */
+
+/* the 'as is' bg color of the item  */
+.sortable-item
+{
+    /*background-color: #0f172a;*/  /* tw slate-900 */
+}
+
+/* the drop placeholder */
+.sortable-ghost
+{
+    background-color: #7f1d1d; /* tw red-900 */
+}
+
+/* indicates 'target position' */
+.sortable-chosen
+{
+    background-color: #172554; /* tw blue-950 */
+}
+
+/* the 'floating overlay' that the user is dragging with */
+.sortable-drag
+{
+    background-color: #9ca3af; /* tw gray-400 */
+}
+
+/* the 'is selected' class for multi select */
+.sortable-selected
+{
+    background-color: #172554; /* tw blue-950 */
+    color: white;
+}
+
+/* end Sortable */
+/***************/
+
+
+
+/*************************************/
+/* queue item progress bar gradient */
+.bg-progress-gradient
+{
+    background: #00B5FF;
+    background: linear-gradient(
+            90deg,
+            rgb(255, 88, 97) 0%,
+            rgb(255, 190, 0) 50%,
+            rgb(251, 255, 0) 75%,
+            rgb(0, 169, 110) 100%
+    );
+}
+
+
+
+/*******************************/
+/* alt style for copy buttons */
+.bg-copySuccess
+{
+    background-color: #2BD4BD;
+    color: #172B28;
+    border-radius: 0.5rem;
+}

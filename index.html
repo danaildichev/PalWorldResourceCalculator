@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-gray-950 py-2 px-4 size-full max-w-full max-h-svh">
+<head>
+
+    <!---------->
+    <!-- meta -->
+
+    <title>Resource Calculator - PalBox Plus</title>
+
+    <!-- end meta -->
+    <!-------------->
+
+    <!------------>
+    <!-- styles -->
+
+    <!-- Daisy UI + Tailwind -->
+    <link href="assets/daisyui/daisyui@4.6.2.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/tailwind/tailwind@3.4.1.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/fontawesome.min.css" rel="stylesheet">
+    <!--<link href="./assets/font-awesome/css/brands.min.css" rel="stylesheet">-->
+    <link href="assets/font-awesome/css/regular.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/solid.min.css" rel="stylesheet">
+
+    <!-- local styles -->
+    <link href="assets/global-styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- end styles -->
+    <!---------------->
+
+    <!------------->
+    <!-- scripts -->
+
+    <!-- init app data and objects -->
+    <script type="module" src="resource-calculator/src/initialize.js"></script>
+
+    <!-- Alpine JS -->
+    <script defer src="assets/alpine/alpine@3.13.5.min.js"></script>
+
+    <!-- Sortable JS -->
+    <script defer src="assets/sortable/sortable@1.15.2.min.js"></script>
+
+    <!-- end scripts -->
+    <!----------------->
+
+</head>
+
+<body class="h-full">
+
+<!--------------------------->
+<!-- wrapper: page content -->
+<div class="flex flex-col h-full bg-gray-950">
+
+
+    <!----------------->
+    <!-- row: header -->
+    <header class="py-2 px-4">
+        <div class="flex items-center justify-between">
+
+            <div id="page-header-left"><i class="fa-solid fa-chart-simple text-xl mr-4"></i><h1 class="inline text-xl">Resource Calculator</h1></div>
+
+            <div id="page-header-right">
+
+                <div class="join">
+
+                    <!-- btn: toggle recipes column visibility state -->
+                    <div role="button" tabindex="0" id="btn_toggleDisplayOfRecipesColumn" class="join-item btn btn-sm">
+                        <i id="icon_toggleDisplayOfRecipesColumn" class="fa-solid fa-toggle-on text-success mr-2"></i>
+                        Recipes
+                    </div>
+
+                    <!-- btn: modal: inventory -->
+                    <div role="button" tabindex="0" class="join-item btn btn-sm" onclick="modal_inventory.showModal()">
+                        <i class="fa-solid fa-database mr-2"></i>
+                        Inventory
+                    </div>
+
+                    <!-- btn: modal: notes -->
+                    <div role="button" tabindex="0" class="join-item btn btn-sm" onclick="modal_notes.showModal()">
+                        <i class="fa-regular fa-pen-to-square mr-2"></i>
+                        Notes
+                    </div>
+
+                    <!-- btn: modal: notes -->
+                    <div role="button" tabindex="0" class="join-item btn btn-sm" onclick="modal_dataExport.showModal()">
+                        <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
+                        Data
+                    </div>
+
+                    <!-- dropdown: data import/export -->
+                    <!--<div class="join-item dropdown dropdown-hover dropdown-end">
+                        <div role="button" tabindex="0" class="join-item btn btn-sm">
+                            <i class="fa-solid fa-list-check mr-2"></i>
+                            Data
+                        </div>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box rounded-t-none w-32">
+
+                            &lt;!&ndash; import &ndash;&gt;
+                            <li>
+                                <p onclick="modal_dataImport.showModal()"><i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Import</p>
+                            </li>
+
+                            &lt;!&ndash; export &ndash;&gt;
+                            <li>
+                                <p onclick="modal_dataExport.showModal()"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Export</p>
+                            </li>
+
+                        </ul>
+                    </div>-->
+
+                    <!-- btn: modal: about -->
+                    <div role="button" tabindex="0" class="join-item btn btn-sm" onclick="modal_about.showModal()">
+                        <i class="fa-solid fa-question mr-2"></i>
+                        About
+                    </div>
+
+                    <!-- dropdown: page settings -->
+                    <!--<div role="button" tabindex="0" class="join-item btn btn-sm" onclick="modal_settings.showModal()">
+                        <i class="fa-solid fa-gear mr-2"></i>
+                        Settings
+                    </div>-->
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- end row: header -->
+    <!--------------------->
+
+
+    <!----------------->
+    <!-- row: main -->
+    <main class="flex-1 overflow-hidden py-2">
+
+        <!--------------------------->
+        <!-- wrapper: main columns -->
+        <div id="cols_wrapper" class="flex h-full gap-4">
+
+
+            <!--------------------------------->
+            <!-- column: main left - recipes -->
+            <div id="col_recipes" class="w-1/4 h-full transition-all duration-500">
+
+                <!-------------------------------------->
+                <!-- wrapper: recipes titlebar & list -->
+                <div class="flex flex-col h-full gap-4"
+                     x-data=
+                     "{
+                        recipes: window.RIH.getRecipesData(),
+                        resourceGroups: window.RIH.getListOfResourceGroups(),
+                        resourceGroupsIcons: window.RIH.getResourceGroupsIcons(),
+                        activeGroup: 'all',
+                        activateGroup(groupName) { this.activeGroup = groupName },
+                        search: '',
+                        get recipeSearchResults() { return window.RIH.getSearchResults(this.recipes, this.search.toLowerCase()) },
+                        clearRecipeSearchInput() { this.search = ''; $refs.searchRecipes.focus() }
+                     }"
+                >
+
+                    <!----------------------->
+                    <!-- titlebar: recipes -->
+                    <div>
+                        <!-- checkbox: toggle display recipes column -->
+                        <label for="chk_isDisplayed_col_recipes">
+                            <input type="checkbox" name="isDisplayed_col_recipes"
+                                   id="chk_isDisplayed_col_recipes" class="hidden"
+                                   checked
+                            >
+                        </label>
+
+                        <!-------------->
+                        <!-- titlebar -->
+                        <div class="flex justify-between items-center py-2 px-4 border-y-2 border-success bg-green-950">
+
+                            <!-- column title -->
+                            <h2 class="text-xl"><i class="fa-solid fa-bars mr-4"></i>Recipes</h2>
+
+                            <!------------------------------>
+                            <!-- dropdown: recipes groups -->
+                            <div class="dropdown dropdown-hover dropdown-end">
+                                <div tabindex="0" role="button" class="btn btn-sm btn-success uppercase">
+                                    <i class="fa-solid fa-filter"></i>
+                                    Filter
+                                </div>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] menu w-40 -mr-4 p-2
+                                    bg-green-950 rounded-none
+                                    border-b-2 border-success"
+                                >
+
+                                    <!-- favorites -->
+                                    <!--<li>
+                                        <label class="label cursor-pointer">
+                                        <span class="label-text">
+                                            <i class="fa-solid fa-star mr-2"></i>
+                                            Favorites
+                                        </span>
+                                        </label>
+                                    </li>-->
+
+                                    <!-- template: resource group option -->
+                                    <template x-for="resourceGroup in resourceGroups">
+                                        <li @click="activateGroup(resourceGroup)">
+                                            <!--<label class="label cursor-default bg-success hover:bg-success">-->
+                                            <label class="label cursor-default hover:bg-green-900 group"
+                                                   :class="activeGroup === resourceGroup ? 'bg-green-700' : ''"
+                                            >
+                                                <span class="label-text group-hover:text-white"
+                                                      :class="activeGroup === resourceGroup ? 'text-white font-bold' : ''"
+                                                >
+                                                    <i class="mr-2" :class="resourceGroupsIcons[resourceGroup]"></i>
+                                                    <span x-text="resourceGroup" class="uppercase"></span>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </template>
+                                    <!-- end template: resource group option -->
+
+                                </ul>
+                            </div>
+                            <!-- end dropdown: recipes groups -->
+                            <!---------------------------------->
+
+                        </div>
+                        <!-- end titlebar -->
+                        <!------------------>
+
+                        <!------------------------------------->
+                        <!-- input: search craft-able recipes -->
+                        <div>
+                            <div class="flex justify-between">
+
+                                <!-------------------------------------->
+                                <!-- input: search filter for recipes -->
+                                <label for="input_search_recipesColumn"></label>
+                                <input tabindex="0" type="text" placeholder="Search" id="input_search_recipesColumn"
+                                       x-model="search" x-ref="searchRecipes"
+                                       class="input input-bordered border-r-0 text-lg w-full rounded-t-none rounded-r-none rounded-bl-xl focus:outline-none"
+                                />
+
+                                <!------------------------------------------>
+                                <!-- btn: clear search filter for recipes -->
+                                <div>
+                                    <button @click="clearRecipeSearchInput()"
+                                            class="btn btn-neutral rounded-t-none rounded-l-none rounded-br-xl uppercase
+                                            focus:border-x-2 focus:border-b-2 focus:border-success focus:outline-none"
+                                    >
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+
+                                <!---------------------------------------------->
+                                <!-- dropdown: search filter modifier options -->
+                                <!--<div class="dropdown dropdown-hover dropdown-end">
+                                    <button tabindex="0" class="btn btn-sm btn-neutral w-24 h-full uppercase rounded-l-none rounded-tr-none rounded-br-box box-content border-0">
+                                        <i class="fa-solid fa-filter mr-2"></i>
+                                        Filter
+                                    </button>
+                                    <div tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-44">
+                                        <div class="flex border-y-2 border-success my-2">
+                                            <button class="basis-1/3 btn btn-sm btn-ghost rounded-none uppercase">
+                                                <i class="fa-solid fa-eye"></i>
+                                                &lt;!&ndash;All&ndash;&gt;
+                                            </button>
+                                            <button class="basis-1/3 btn btn-sm btn-ghost rounded-none uppercase">
+                                                <i class="fa-solid fa-arrows-rotate"></i>
+                                                &lt;!&ndash;Swap&ndash;&gt;
+                                            </button>
+                                            <button class="basis-1/3 btn btn-sm btn-ghost rounded-none uppercase">
+                                                <i class="fa-solid fa-eye-slash"></i>
+                                                &lt;!&ndash;None&ndash;&gt;
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <label class="label cursor-pointer">
+                                                <span class="label-text">Type 1</span>
+                                                <input type="checkbox" checked="checked" class="checkbox checkbox-success checkbox-sm" />
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="label cursor-pointer">
+                                                <span class="label-text">Type 2</span>
+                                                <input type="checkbox" checked="checked" class="checkbox checkbox-success checkbox-sm" />
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="label cursor-pointer">
+                                                <span class="label-text">Type 3</span>
+                                                <input type="checkbox" checked="checked" class="checkbox checkbox-success checkbox-sm" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!-- dropdown: search filter modifier options -->
+                                <!---------------------------------------------->
+
+                            </div>
+                        </div>
+                        <!-- end input: search craft-able recipes -->
+                        <!----------------------------------------->
+
+                    </div>
+                    <!-- end titlebar: recipes -->
+                    <!--------------------------->
+
+                    <!------------------->
+                    <!-- list: recipes -->
+                    <div class="flex-1 overflow-y-auto opacity-0 transition-opacity duration-1000" id="col_recipes_listItems">
+                        <div class="flex flex-col border-neutral">
+
+                            <!------------------->
+                            <!-- list: recipes -->
+                            <div class="flex-1 overflow-y-auto">
+                                <div class="flex flex-col border-t-2 border-neutral">
+
+                                    <template x-for="(recipe, ID) in recipeSearchResults" :key="ID">
+
+                                        <!-- list item -->
+                                        <div tabindex="0"
+                                             x-show="activeGroup === recipe.group || activeGroup === 'all'"
+                                             class="group p-2 border-b-2 border-neutral
+                                             hover:border-green-700 hover:bg-neutral"
+                                        >
+
+                                            <div class="flex justify-between">
+
+                                                <!-- list item: name -->
+                                                <p class="text-xl font-bold" x-text="recipe.name"></p>
+
+                                                <!-- list item: actions -->
+                                                <div class="join invisible group-hover:visible">
+
+                                                    <!-- add to favorites -->
+                                                    <!--<button tabindex="0" @click="window.RIH.addRecipeToFavorites(ID)"
+                                                            :id="'btn_addRecipeToFavorites-'+ID"
+                                                            class="join-item btn-recipeCol btn-addToFavorites w-8 btn btn-sm uppercase">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </button>-->
+
+                                                    <!-- remove from favorites -->
+                                                    <!--<button tabindex="0" @click="window.RIH.removeRecipeFromFavorites(ID)"
+                                                            :id="'btn_removeRecipeFromFavorites-'+ID"
+                                                            class="join-item btn-recipeCol btn-removeFromFavorites w-8 btn btn-sm btn-warning uppercase hidden">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </button>-->
+
+                                                    <!-- info -->
+                                                    <button tabindex="0" @click="window.RIMIH.showResourceInfoModal(ID)"
+                                                            :id="'btn_showResourceInfoModal-'+ID"
+                                                            class="join-item btn-recipeCol btn-showResourceModal btn- w-8 btn btn-sm btn-info uppercase">
+                                                        <i class="fa-solid fa-info"></i>
+                                                    </button>
+
+                                                    <!-- add to queue -->
+                                                    <button tabindex="0"
+                                                            :id="'btn_addRecipeToQueue-'+ID"
+                                                            class="join-item btn-recipeCol btn-addToQueue w-8 btn btn-sm btn-success uppercase"
+                                                            :class="'btn-addToQueue-'+ID"
+                                                            @click="window.RIH.addRecipeToQueue(ID); $dispatch('update-Alpine-Data-QIH-items')"
+                                                    >
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                                <!-- end list item: actions -->
+
+                                            </div>
+
+                                        </div>
+                                        <!-- end list item -->
+
+                                    </template>
+
+                                </div>
+                            </div>
+                            <!-- end list: recipes -->
+                            <!----------------------->
+
+                        </div>
+                    </div>
+                    <!-- end list: recipes -->
+                    <!----------------------->
+
+                </div>
+                <!-- end wrapper: recipes titlebar & list -->
+                <!------------------------------------------->
+
+            </div>
+            <!-- end column: main left - recipes -->
+            <!------------------------------------->
+
+            <!-------------------------------->
+            <!-- column: main right - queue -->
+            <div id="col_queue" class="w-3/4 h-full transition-all duration-500"
+                 x-data=
+                 "{
+                    resourceGroups: window.QIH.getListOfResourceGroups(),
+                    resourceGroupsIcons: window.QIH.getResourceGroupsIcons(),
+                    activeGroup: 'all',
+                    activateGroup(groupName) { this.activeGroup = groupName; },
+                 }"
+            >
+                <div class="flex flex-col h-full gap-4 relative">
+
+                    <!--------------------->
+                    <!-- titlebar: queue -->
+                    <div class="flex justify-between items-center py-2 px-4 border-y-2 border-info bg-blue-950">
+
+                        <!-- queue titlebar header -->
+                        <h2 class="text-xl"><i class="fa-solid fa-hourglass-half mr-4"></i>Queue</h2>
+
+                        <!------------------------------->
+                        <!-- btn group: recipes groups -->
+                        <div class="join">
+
+                            <!-- btn: show queue items: favorites -->
+                            <!--<button class="join-item btn btn-sm btn-ghost uppercase">
+                                <i class="fa-solid fa-star"></i>
+                                Favorites
+                            </button>-->
+
+                            <button @click="activateGroup('all')"
+                                    class="join-item btn btn-sm uppercase"
+                                    :class="activeGroup === 'all' ? 'btn-info' : 'btn-ghost'"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                                All
+                            </button>
+
+                            <template x-for="resourceGroup in resourceGroups">
+                                <button @click="activateGroup(resourceGroup)"
+                                        class="join-item btn btn-sm uppercase"
+                                        :class=
+                                        "[
+                                            activeGroup === resourceGroup ? 'btn-info' : 'btn-ghost',
+                                            resourceGroup === 'all' ? 'hidden' : ''
+                                        ]"
+                                >
+                                    <i :class="resourceGroupsIcons[resourceGroup]"></i>
+                                    <span x-text="resourceGroup"></span>
+                                </button>
+                            </template>
+
+                        </div>
+                        <!-- end btn group: recipes groups -->
+                        <!----------------------------------->
+
+                        <!-------------------------------------->
+                        <!-- dropdown: queue titlebar actions -->
+                        <div class="dropdown dropdown-hover dropdown-end">
+                            <div tabindex="0" role="button" class="join-item btn btn-sm btn-info uppercase">
+                                <i class="fa-solid fa-bolt"></i>
+                                Actions
+                            </div>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu -mr-4 p-2 bg-blue-950 border-b-2 border-info w-52" x-data>
+
+                                <!-- btn: remove all recipes from queue -->
+                                <li>
+                                    <label class="label cursor-pointer hover:bg-warning group" @click="modal_confirm_removeAllRecipesFromQueue.showModal()">
+                                    <span class="label-text group-hover:text-black">
+                                        <i class="fa-solid fa-xmark w-4 mr-2"></i>
+                                        Remove all recipes
+                                    </span>
+                                    </label>
+                                </li>
+
+                                <!-- btn: collapse all recipe collapsable contents -->
+                                <li>
+                                    <label class="label cursor-pointer hover:bg-primary group" @click="window.QIH.collapseAllCollapsableRecipeContents">
+                                    <span class="label-text group-hover:text-black">
+                                        <i class="fa-solid fa-angles-up w-4 mr-2"></i>
+                                        Collapse all recipes
+                                    </span>
+                                    </label>
+                                </li>
+
+                                <!-- btn: toggle all recipe collapsable contents -->
+                                <li>
+                                    <label class="label cursor-pointer hover:bg-primary group" @click="window.QIH.toggleAllCollapsableRecipeContents">
+                                    <span class="label-text group-hover:text-black">
+                                        <i class="fa-solid fa-rotate w-4 mr-2"></i>
+                                        Toggle all recipes
+                                    </span>
+                                    </label>
+                                </li>
+
+                                <!-- btn: expand all recipe collapsable contents -->
+                                <li>
+                                    <label class="label cursor-pointer hover:bg-primary group" @click="window.QIH.expandAllCollapsableRecipeContents">
+                                    <span class="label-text group-hover:text-black">
+                                        <i class="fa-solid fa-angles-down w-4 mr-2"></i>
+                                        Expand all recipes
+                                    </span>
+                                    </label>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- end dropdown: queue titlebar actions -->
+                        <!------------------------------------------>
+
+                    </div>
+                    <!-- end titlebar: queue -->
+                    <!------------------------->
+
+
+                    <!----------------------->
+                    <!-- queue message bar -->
+                    <div id="queue_message_bar"
+                         class="absolute top-[52px] w-full h-0 max-h-[70px]
+                         bg-slate-950 z-[2]
+                         overflow-hidden transition-all duration-1000"
+                    >
+
+                        <!-- queue message bar content -->
+                        <div class="p-4 bg-gray-950 border-b-2 border-info">
+                            <div class="flex justify-between items-center">
+
+                                <!-- message -->
+                                <div>
+                                    <p class="text-lg">
+                                        <i class="fa-solid fa-circle-exclamation mr-2 text-info text-xl"></i>
+                                        <span id="queue_message_bar_text"></span>
+                                    </p>
+                                </div>
+
+                                <!-- btn: dismiss message -->
+                                <div>
+                                    <button class="btn btn-sm uppercase"
+                                            id="btn_dismiss_queueMessageBar" data-timeout-id=""
+                                            @click="window.QIH.dismissQueueMessageBar($el)"
+                                    >
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Dismiss
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end queue message bar content -->
+
+                    </div>
+                    <!-- end queue message bar -->
+                    <!--------------------------->
+
+
+                    <!----------------------------->
+                    <!-- wrapper: queue is empty -->
+                    <div id="wrapper_queueListItemsEmpty"
+                         class="hidden flex h-full justify-center opacity-0 transition-opacity duration-1000"
+                    >
+                        <div class="w-96 h-96 self-center -mt-32">
+
+                            <!-- img: relaxaurus -->
+                            <img src="assets/images/paldeck/085.png" alt="Relaxaurus" class="-ml-4">
+
+                            <!-- speech bubble -->
+                            <div class="relative">
+
+                                <!-- tail -->
+                                <div class="absolute z-0 w-24 h-6 bg-cyan-100 -rotate-[60deg] ml-4 -mt-4 rounded-box"></div>
+                                <div class="absolute z-0 w-24 h-6 bg-cyan-100 rotate-[90deg] ml-9 -mt-3  rounded-box"></div>
+
+                                <!-- phrase -->
+                                <p class="relative z-[1] p-3 rounded-3xl
+                                                  text-2xl text-black text-center font-bold
+                                                  bg-cyan-100 shadow-lg shadow-cyan-200/75"
+                                   id="relaxaurusSays"
+                                >
+                                    Add a recipe to get started!
+                                </p>
+
+                            </div>
+                            <!-- end speech bubble -->
+
+                        </div>
+                    </div>
+                    <!-- end wrapper: queue is empty -->
+                    <!--------------------------------->
+
+
+                    <!-------------------------------->
+                    <!-- wrapper: list: queue items -->
+                    <div id="wrapper_queueListItems"
+                         class="hidden flex-1 overflow-y-auto opacity-0 transition-opacity duration-1000 flex flex-col gap-4"></div>
+                    <!-- end wrapper: list: queue items -->
+                    <!------------------------------------>
+
+                </div>
+            </div>
+            <!-- end column: main right - queue -->
+            <!------------------------------------>
+
+        </div>
+        <!-- end wrapper: main columns -->
+        <!------------------------------->
+
+    </main>
+    <!-- end row: main -->
+    <!-------------------->
+
+</div>
+<!-- end wrapper: page content -->
+<!------------------------------->
+
+<!------------>
+<!-- modals -->
+<aside>
+
+    <!-- modal: notes -->
+    <dialog id="modal_notes" class="modal" x-data>
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-gray-400 print:hidden">
+
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-regular fa-pen-to-square mr-2"></i>
+                    Notes
+                </h3>
+
+                <!-- dropdown: modal options -->
+                <div class="dropdown dropdown-hover dropdown-end mr-4 p-4">
+                    <div role="button" class="join-item text-xl">
+                        <i class="fa-solid fa-bolt mr-2"></i>
+                        Actions
+                    </div>
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+
+                        <!-- btn: Clear -->
+                        <li role="button" class="w-32" @click="$refs.wrapper_userNotes.innerHTML = ''">
+                            <p><i class="fa-solid fa-ban mr-2"></i>Clear</p>
+                        </li>
+
+                        <!-- btn: Copy -->
+                        <li role="button" class="w-32 bg-null"
+                            @click=
+                            "
+                                window.DIH.copyToClipboardFrom('wrapper_modalContentBox_userNotes', 'innerText');
+                                window.DIH.flashTriggerState($el, 'bg-null', 'bg-copySuccess', 1000);
+                            "
+                        >
+                            <p><i class="fa-solid fa-copy mr-2"></i>Copy</p>
+                        </li>
+
+                        <!-- btn: Paste -->
+                        <li role="button" class="w-32" @click="window.DIH.pasteFromClipboardTo('wrapper_modalContentBox_userNotes', 'innerText', 'append')">
+                            <p><i class="fa-solid fa-paste mr-2"></i>
+                                Paste</p>
+                        </li>
+
+                        <!-- btn: Save -->
+                        <li role="button" class="w-32" @click="window.IH.saveToLocal($refs.wrapper_userNotes.innerText, 'PalWorldResourceCalculator-Notes.txt')">
+                            <p><i class="fa-solid fa-download mr-2"></i>
+                                Save</p>
+                        </li>
+
+                        <!-- btn: Print -->
+                        <li role="button" class="w-32" @click="window.print()">
+                            <p><i class="fa-solid fa-print mr-2"></i>Print</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end dropdown: modal options -->
+
+                <!-- close modal -->
+                <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-error hover:text-black" onclick="modal_notes.close()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- note content box -->
+            <div id="wrapper_modalContentBox_userNotes" x-ref="wrapper_userNotes"
+                 contenteditable="true"
+                 class="bg-slate-900 p-4 text-2xl focus-visible:bg-gray-950 focus-visible:outline-none rounded-b-box"
+            ></div>
+            <!-- end note content box -->
+
+        </div>
+    </dialog>
+    <!-- end modal: notes -->
+
+    <!-- modal: inventory -->
+    <dialog id="modal_inventory" class="modal">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950"
+             x-data=
+                 "{
+                    resources: window.IH.getJSON('DataTable'),
+                    resourceGroups: ['craft', 'food', 'meds', 'tech', 'build', 'armor', 'weapons', 'ammo', 'spheres'],
+                    resourceGroupsIcons: window.RIH.getResourceGroupsIcons(),
+                    activeGroup: 'all',
+                    activateGroup(groupName) { this.activeGroup = groupName },
+                    search: '',
+                    get resourceSearchResults() { return window.RIH.getSearchResults(this.resources, this.search.toLowerCase()) },
+                    clearInventorySearchInput() { this.search = ''; $refs.searchInventory.focus() }
+                }"
+        >
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 justify-between items-center bg-gray-950 border-y-2 border-gray-400">
+
+                <!----------->
+                <!-- title -->
+                <div>
+                    <h3 class="font-bold text-2xl p-4">
+                        <i class="fa-solid fa-database mr-2"></i>
+                        Inventory
+                    </h3>
+                </div>
+                <!-- end title -->
+                <!--------------->
+
+                <!---------------------->
+                <!-- inventory groups -->
+                <div>
+                    <div class="join">
+
+                        <button @click="activateGroup('all')"
+                                class="join-item btn btn-sm uppercase"
+                                :class="activeGroup === 'all' ? 'btn-info' : 'btn-ghost'"
+                        >
+                            <i class="mr-2" :class="resourceGroupsIcons['all']"></i>
+                            All
+                        </button>
+
+                        <!------------------------------------->
+                        <!-- template: resource group option -->
+                        <template x-for="resourceGroup in resourceGroups">
+
+                            <button @click="activateGroup(resourceGroup)"
+                                    class="join-item btn btn-sm uppercase"
+                                    :class="activeGroup === resourceGroup ? 'btn-info' : 'btn-ghost'; activeGroup === 'all' ? 'btn-error' : ''"
+                            >
+                                <i class="mr-2" :class="resourceGroupsIcons[resourceGroup]"></i>
+                                <span x-text="resourceGroup" class=""></span>
+                            </button>
+
+                        </template>
+                        <!-- end template: resource group option -->
+                        <!----------------------------------------->
+
+                    </div>
+                </div>
+                <!-- end inventory groups -->
+                <!-------------------------->
+
+                <!---------------------->
+                <!-- titlebar actions -->
+                <div class="flex">
+
+                    <!-------------------------------->
+                    <!-- dropdown: inventory search -->
+                    <div class="dropdown dropdown-hover dropdown-left">
+
+                        <!--------------------------------------->
+                        <!-- inventory search dropdown trigger -->
+                        <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-info hover:text-black">
+                            <label for="input_search_inventoryModal">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </label>
+                        </div>
+
+                        <!-------------------------------------->
+                        <!-- inventory search dropdown target -->
+                        <div class="dropdown-content z-[1] text-xl rounded-box rounded-t-none">
+
+                            <div class="flex h-16">
+
+                                <!-- btn: clear input search inventory -->
+                                <button @click="clearInventorySearchInput"
+                                        class="btn p-4 w-16 h-full text-center text-2xl rounded-none
+                                                border-r-2 border-y-0 border-l-0 border-gray-950
+                                                bg-slate-900 hover:text-info"
+                                >
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+
+                                <!-- input: search inventory -->
+                                <input type="text" id="input_search_inventoryModal"
+                                       x-ref="searchInventory" x-model="search"
+                                       placeholder="Search"
+                                       class="w-64 py-2 pr-4 bg-slate-900 rounded rounded-r-none text-2xl text-info text-right focus:outline-none"
+                                >
+
+                            </div>
+
+                        </div>
+                        <!-- end inventory search dropdown target -->
+                        <!------------------------------------------>
+
+                    </div>
+                    <!-- end dropdown: inventory search -->
+                    <!------------------------------------>
+
+                    <!---------------------->
+                    <!-- btn: close modal -->
+                    <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-error hover:text-black" onclick="modal_inventory.close()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                </div>
+                <!-- end titlebar actions -->
+                <!-------------------------->
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- inventory content box -->
+            <div id="wrapper_modalContentBox_userInventory" class="max-h-[960px] overflow-auto">
+
+                <div class="grid grid-cols-3 auto-rows-auto justify-items-center gap-8 mt-8">
+
+                    <!------------------------->
+                    <!-- inventory grid cell -->
+                    <template x-for="(resource, ID) in resourceSearchResults">
+
+                        <!-- inventory item flex box -->
+                        <div x-show="activeGroup === resource.group || activeGroup === 'all'"
+                             class="flex items-center gap-6 rounded-box p-4"
+                        >
+
+                            <!-- img -->
+                            <div class="row-span-2 w-fit min-width-[100px]">
+                                <label :for="'inventoryModal_input_resource_'+ID" class="cursor-pointer">
+                                    <img :src="'./assets/images/items/'+resource.img" :alt="'Thumbnail for '+resource.name"
+                                         class="w-[100px] h-[100px] rounded">
+                                </label>
+                            </div>
+
+                            <!-- name and inventory -->
+                            <div class="">
+
+                                <!-- name -->
+                                <div class="mb-4">
+                                    <p class="text-3xl font-bold">
+                                        <label :for="'inventoryModal_input_resource_'+ID" class="cursor-pointer">
+                                            <span x-text="resource.name"></span>
+                                        </label>
+                                    </p>
+                                </div>
+
+                                <!-- stock -->
+                                <div class="flex">
+
+                                    <!-- btn: decrement stock count -->
+                                    <div role="button"
+                                         @click="window.IIH.decrementInventoryFor(ID)"
+                                         class="btn rounded-r-none text-2xl
+                                                p-4 w-16 h-full text-center
+                                                bg-slate-800 hover:text-info"
+                                         :class="'btn_inventoryChange-'+ID"
+                                    >
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+
+                                    <!-- input: inventory -->
+                                    <div class="relative">
+
+                                        <!-- input -->
+                                        <input type="text" :id="'inventoryModal_input_resource_'+ID"
+                                               :value="resource.inventory"
+                                               class="inventory-input inventory-modal-input h-full max-w-36 mx-1 py-2 px-4
+                                               bg-slate-800 text-2xl text-info
+                                               focus:outline-none focus:ring-1 focus:ring-info"
+                                               :class="'inventory-input-resource-'+ID"
+                                               @input="window.IIH.setInventoryFor(ID, $el.value, $el, `inventoryModal_input_errorMessage_${ID}`)"
+                                               @focus="$el.select()"
+                                               @focusout="if ($el.value === '' || Number($el.value) < 0 || !window.IIH.validateInventoryValue($el.value))
+                                               {
+                                                   window.IIH.setInventoryFor(ID, 0, $el, `inventoryModal_input_errorMessage_${ID}`);
+                                                   $el.value = 0;
+                                               }"
+                                        >
+
+                                        <!-- error message -->
+                                        <p :id="'inventoryModal_input_errorMessage_'+ID" class="hidden absolute text-xl text-error">Numbers only</p>
+
+                                    </div>
+                                    <!-- end input inventory -->
+
+                                    <!-- btn: increment stock count -->
+                                    <div role="button"
+                                         @click="window.IIH.incrementInventoryFor(ID)"
+                                         class="btn rounded-l-none text-2xl
+                                                p-4 w-16 h-full text-center
+                                                bg-slate-800 hover:text-info"
+                                         :class="'btn_inventoryChange-'+ID"
+                                    >
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- inventory item flex box -->
+
+                        <!--<div class="bg-slate-800">
+                            <span x-text="ID"></span>
+                        </div>-->
+
+                    </template>
+                    <!-- end inventory grid cell -->
+                    <!----------------------------->
+
+                </div>
+
+            </div>
+            <!-- end inventory content box -->
+
+        </div>
+    </dialog>
+    <!-- end modal: inventory -->
+
+    <!-- modal: data import -->
+    <dialog id="modal_dataImport" class="modal">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>
+                    Data Import
+                </h3>
+
+                <!-- dropdown: modal options -->
+                <!--<div class="dropdown dropdown-hover dropdown-end mr-4 p-4">
+                    <div role="button" class="join-item text-xl">
+                        <i class="fa-solid fa-database mr-2"></i>
+                        Actions
+                    </div>
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                        <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
+                    </ul>
+                </div>-->
+                <!-- end dropdown: modal options -->
+
+                <!-- close modal -->
+                <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-error hover:text-black" onclick="modal_dataImport.close()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- data import content box -->
+            <div id="wrapper_modalContentBox_dataImport" class="">
+
+                <p class="text-2xl text-center bg-slate-900 py-8 rounded-b-box">This module is under construction</p>
+
+                <!-- TEST: paste buttons -->
+                <!--<p>
+                    <button @click="window.DIH.pasteFromClipboardTo('exportedJSON_queue', 'innerHTML', 'replace')"
+                    class="btn btn-info">
+                        test paste
+                    </button>
+                    <button @click="window.DIH.pasteFromClipboardTo('exportedJSON_queue', 'innerHTML', 'prepend')"
+                    class="btn btn-primary">
+                        test prepend
+                    </button>
+                    <button @click="window.DIH.pasteFromClipboardTo('exportedJSON_queue', 'innerHTML', 'append')"
+                    class="btn btn-secondary">
+                        test append
+                    </button>
+                </p>-->
+
+            </div>
+            <!-- end data import content box -->
+
+        </div>
+    </dialog>
+    <!-- end modal: data import -->
+
+    <!-- modal: data export -->
+    <dialog id="modal_dataExport" class="modal">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
+                    Data Export
+                </h3>
+
+                <!-- dropdown: modal options -->
+                <!--<div class="dropdown dropdown-hover dropdown-end mr-4 p-4">
+                    <div role="button" class="join-item text-xl">
+                        <i class="fa-solid fa-database mr-2"></i>
+                        Actions
+                    </div>
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                        <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
+                    </ul>
+                </div>-->
+                <!-- end dropdown: modal options -->
+
+                <!-- close modal -->
+                <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-error hover:text-black" onclick="modal_dataExport.close()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- data export content box -->
+            <div id="wrapper_modalContentBox_dataExport" class="" x-data>
+
+                <!-------------------------------->
+                <!-- instructions for exporting -->
+                <div class="bg-slate-900 mb-12 p-8 rounded-box" tabindex="0">
+
+                    <p class="mb-4 text-2xl"><span class="mr-4 text-primary underline">OPTION 1:</span> Press the "Save" button to open your system's file picker. Then save your data to the corresponding javascript file.</p>
+
+                    <p class="mb-4 text-2xl"><span class="mr-4 text-info underline">OPTION 2:</span> Press the "Get" then "Cut" buttons to put your data in the clipboard. Your data will be formatted as the JSON that goes in the corresponding javascript file.</p>
+
+                    <p class="mb-4 text-2xl">For more details, refer to the "About" modal.</p>
+
+                </div>
+                <!-- end instructions for exporting -->
+                <!------------------------------------>
+
+                <!---------------------->
+                <!-- export inventory -->
+                <div class="flex flex-col bg-slate-900 mt-12 px-8 py-12 rounded-box">
+
+                    <!-- inventory json string -->
+                    <div>
+                        <textarea id="textarea_stringifiedInventorySnapshot"
+                                  x-ref="textarea_stringifiedInventorySnapshot"
+                                  class="px-8 pt-8 w-full text-2xl font-bold text-nowrap
+                                         bg-slate-800 border-2 border-info focus:outline-none
+                                         rounded-md rounded-br-none resize-none"></textarea>
+                    </div>
+
+                    <!-- explanation of what to do with the inventory json string -->
+                    <div class="flex justify-between">
+
+                        <div>
+
+                            <!-- header -->
+                            <p class="mb-4 pt-4 pl-4 text-2xl"><span class="text-white"><i class="fa-solid fa-database mr-4"></i>inventory.js</span>
+                                <span class="mx-4">|</span> elements are: "resourceID": inventoryAmount</p>
+
+                            <!-- save button -->
+                            <p>
+                                <button class="btn btn-primary text-white"
+                                        @click="window.IIH.saveJSON_inventory()"
+                                >
+                                    <i class="fa-solid fa-download"></i>
+                                    Save
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <!-- btn group -->
+                        <div>
+
+                            <!-- btn: get inventory snapshot -->
+                            <button @click="$refs.textarea_stringifiedInventorySnapshot.innerHTML = window.IIH.stringifyInventorySnapshot()"
+                                    id="btn_getStringifiedJSON_inventory"
+                                    class="btn btn-info min-w-32 transition uppercase -mt-2 rounded-t-none">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                                Get
+                            </button>
+
+                            <!-- btn: cut inventory json -->
+                            <button id="btn_copy_exportedJSON_inventory"
+                                    class="btn btn-info min-w-32 transition uppercase -mt-2 rounded-t-none"
+                                    @click=
+                                    "
+                                        window.DIH.copyToClipboardFrom('textarea_stringifiedInventorySnapshot', 'innerHTML', 'btn_copy_exportedJSON_inventory');
+                                        $refs.textarea_stringifiedInventorySnapshot.innerHTML = '';
+                                    "
+                            >
+                                <i class="fa-solid fa-scissors"></i>
+                                Cut
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end export inventory -->
+                <!-------------------------->
+
+                <!---------------------->
+                <!-- export queue -->
+                <div class="flex flex-col bg-slate-900 mt-12 px-8 py-12 rounded-box">
+
+                    <!-- queue json string -->
+                    <div>
+                            <textarea id="textarea_stringifiedQueueSnapshot"
+                                      x-ref="textarea_stringifiedQueueSnapshot"
+                                      class="px-8 pt-8 w-full text-2xl font-bold text-nowrap
+                                     bg-slate-800 border-2 border-info focus:outline-none
+                                     rounded-md rounded-br-none resize-none"></textarea>
+                    </div>
+
+                    <!-- explanation of what to do with the queue json string -->
+                    <div class="flex justify-between">
+
+                        <div>
+                            <p class="mb-4 pt-4 pl-4 text-2xl"><span class="text-white"><i class="fa-solid fa-hourglass-half mr-4"></i>queue.js</span> <span class="mx-4">|</span> elements are: "resourceID": quotaAmount</p>
+
+                            <!-- save button -->
+                            <p>
+                                <button class="btn btn-primary text-white"
+                                        @click="window.QIH.saveJSON_queue()"
+                                >
+                                    <i class="fa-solid fa-download"></i>
+                                    Save
+                                </button>
+                            </p>
+
+                        </div>
+
+                        <!-- btn group -->
+                        <div>
+
+                            <!-- btn: get queue json -->
+                            <button @click="$refs.textarea_stringifiedQueueSnapshot.innerHTML = window.QIH.stringifyQueueSnapshot()"
+                                    id="btn_getStringifiedJSON_queue"
+                                    class="btn btn-info min-w-32 transition uppercase -mt-2 rounded-t-none">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                                Get
+                            </button>
+
+                            <!-- btn: copy queue json -->
+                            <button id="btn_copy_exportedJSON_queue"
+                                    class="btn btn-info min-w-32 transition uppercase -mt-2 rounded-t-none"
+                                    @click=
+                                    "
+                                        window.DIH.copyToClipboardFrom('textarea_stringifiedQueueSnapshot', 'innerHTML', 'btn_copy_exportedJSON_queue');
+                                        $refs.textarea_stringifiedQueueSnapshot.innerHTML = '';
+                                    "
+                            >
+                                <i class="fa-solid fa-scissors"></i>
+                                Cut
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end export queue -->
+                <!-------------------------->
+
+            </div>
+            <!-- end data export content box -->
+
+        </div>
+    </dialog>
+    <!-- end modal: data export -->
+
+    <!-- modal: about -->
+    <dialog id="modal_about" class="modal"
+            x-data=
+            "{
+                activePanel: 'recipes',
+                activatePanel(panel) { this.activePanel = panel }
+            }"
+    >
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-solid fa-question mr-2"></i>
+                    About
+                </h3>
+
+                <!-- dropdown: modal options -->
+                <!--<div class="dropdown dropdown-hover dropdown-end mr-4 p-4">
+                    <div role="button" class="join-item text-xl">
+                        <i class="fa-solid fa-database mr-2"></i>
+                        Actions
+                    </div>
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                        <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
+                    </ul>
+                </div>-->
+                <!-- end dropdown: modal options -->
+
+                <!-- link: github -->
+                <button class="btn-sm btn-ghost text-2xl p-4 h-full w-16 text-center hover:bg-info group"
+                     @click="window.open('https://github.com/danaildichev/PalWorldResourceCalculator/', '_blank')"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="#A6ADBB" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class="group-hover:fill-black"/>
+                    </svg>
+                </button>
+
+                <!-- close modal -->
+                <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-error hover:text-black" onclick="modal_about.close()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- about content box -->
+            <div id="wrapper_modalContentBox_about" class="grid grid-cols-[2fr_10fr] gap-8 pt-8">
+
+                <!------------------------>
+                <!-- column: left - TOC -->
+                <div>
+
+                    <p class="py-2 bg-slate-900 border-y-2 border-slate-700 text-center text-xl">Table of Contents</p>
+
+                    <ul class="p-4 bg-slate-900 border-b-2 border-slate-700">
+
+                        <!-- btn: activate panel recipes -->
+                        <li @click="activatePanel('recipes')"
+                            class="py-2 px-4 text-lg cursor-pointer rounded-lg"
+                            :class="[
+                                (activePanel === 'recipes') ? 'bg-blue-900 text-white font-bold' : '',
+                                (activePanel !== 'recipes') ? 'hover:bg-slate-800 hover:text-white' : '',
+                            ]"
+                        >
+                            <i class="fa-solid fa-bars mr-2"></i>
+                            Recipes
+                        </li>
+
+
+                        <!-- btn: activate panel queue -->
+                        <li @click="activatePanel('queue')"
+                            class="py-2 px-4 text-lg cursor-pointer rounded-lg"
+                            :class="[
+                                (activePanel === 'queue') ? 'bg-blue-900 text-white font-bold' : '',
+                                (activePanel !== 'queue') ? 'hover:bg-slate-800 hover:text-white' : '',
+                            ]"
+                        >
+                            <i class="fa-solid fa-hourglass-half mr-2"></i>
+                            Queue
+                        </li>
+
+
+                        <!-- btn: activate panel inventory -->
+                        <li @click="activatePanel('inventory')"
+                            class="py-2 px-4 text-lg cursor-pointer rounded-lg"
+                            :class="[
+                                (activePanel === 'inventory') ? 'bg-blue-900 text-white font-bold' : '',
+                                (activePanel !== 'inventory') ? 'hover:bg-slate-800 hover:text-white' : '',
+                            ]"
+                        >
+                            <i class="fa-solid fa-database mr-2"></i>
+                            Inventory
+                        </li>
+
+
+                        <!-- btn: activate panel notes -->
+                        <li @click="activatePanel('notes')"
+                            class="py-2 px-4 text-lg cursor-pointer rounded-lg"
+                            :class="[
+                                (activePanel === 'notes') ? 'bg-blue-900 text-white font-bold' : '',
+                                (activePanel !== 'notes') ? 'hover:bg-slate-800 hover:text-white' : '',
+                            ]"
+                        >
+                            <i class="fa-solid fa-pen-to-square mr-2"></i>
+                            Notes
+                        </li>
+
+
+                        <!-- btn: activate panel dataExport -->
+                        <li @click="activatePanel('dataExport')"
+                            class="py-2 px-4 text-lg cursor-pointer rounded-lg"
+                            :class="[
+                                (activePanel === 'dataExport') ? 'bg-blue-900 text-white font-bold' : '',
+                                (activePanel !== 'dataExport') ? 'hover:bg-slate-800 hover:text-white' : '',
+                            ]"
+                        >
+                            <i class="fa-solid fa-right-from-bracket mr-2"></i>
+                            Data Export
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- end column: left - TOC -->
+                <!---------------------------->
+
+                <!----------------------------------------->
+                <!-- column: right: About content panels -->
+                <div>
+
+                    <!-------------------->
+                    <!-- panel: recipes -->
+                    <div x-show="activePanel == 'recipes'">
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Search &amp; Filter
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">The recipes column shows you resources that can be crafted.</li>
+                                    <li class="mb-2">"Atomic" resources, like Stone and Wood, do not appear in this list because they do not have a recipe.</li>
+                                    <li class="mb-2">Type any part of the name of the resource you are looking for.</li>
+                                    <li class="mb-2">You can clear the search results by clicking on the button with the <i class="fa-solid fa-xmark min-w-[30px] text-center bg-gray-950 p-2 rounded mx-2 kbd-sm"></i> icon.</li>
+                                    <li class="mb-2">Hover over "Filter" to show the resource groups dropdown.</li>
+                                    <li class="mb-2">Select a resource group to limit which resources appear in the recipes list.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                List Items
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Hover over a resource to show its "Info" and "Add to Queue" buttons.</li>
+
+                                    <li class="mb-2">"Info" Button: <i class="fa-solid fa-info min-w-[30px] text-center bg-gray-950 p-2 rounded mx-2 kbd-sm"></i>
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">The "Resource Info Modal" will show you details about that resource and two tabbed panels with additional information.</li>
+                                            <li class="mb-2">If that resource has a recipe, the "Recipe" tab will show you which ingredients and how many are required to make 1 unit.</li>
+                                            <li class="mb-2">If that resource is used as an ingredient for other craftable resources, the "Used In" tab will show you which ones.</li>
+                                            <li class="mb-2">You can click on any resources listed in the "Recipe" and "Used In" tabs to see details about that resource.</li>
+                                            <li class="mb-2">The "Resource Info Modal" will also allow you to add or remove an item from your Queue.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="mb-2">"Add to Queue" Button: <i class="fa-solid fa-plus min-w-[30px] text-center bg-gray-950 p-2 rounded mx-2 kbd-sm"></i>
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">Pressing this button will send that resource to your Queue.</li>
+                                            <li class="mb-2">You are ready to start using the Queue.</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Stats
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <p>There are more than a thousand "things" in Pal World. This app focuses on (713) items that are somehow related to crafting.</p>
+                                <p>With our data set we found out that <span class="font-bold underline">only 61 items</span> are used as ingredients.</p>
+                                <p>Percentages are based on the total number of ingredient entries, 1859.</p>
+
+                                <!-- recipes stats table -->
+                                <div class="mt-8" x-data=
+                                     "{
+                                        recipesStats:
+                                        [
+                                            {name:'Ingot', freq:'231', pct:'12.426'},
+                                            {name:'Ancient Civ Parts', freq:'187', pct:'10.059'},
+                                            {name:'Wood', freq:'185', pct:'9.951'},
+                                            {name:'Paldium Fragment', freq:'146', pct:'7.853'},
+                                            {name:'Leather', freq:'144', pct:'7.746'},
+                                            {name:'Stone', freq:'126', pct:'6.777'},
+                                            {name:'Cloth', freq:'110', pct:'5.917'},
+                                            {name:'Fiber', freq:'110', pct:'5.917'},
+                                            {name:'Refined Ingot', freq:'76', pct:'4.088'},
+                                            {name:'Flame Organ', freq:'59', pct:'3.173'},
+                                            {name:'Nail', freq:'45', pct:'2.420'},
+                                            {name:'Ice Organ', freq:'39', pct:'2.097'},
+                                            {name:'Polymer', freq:'37', pct:'1.990'},
+                                            {name:'High Quality Cloth', freq:'33', pct:'1.775'},
+                                            {name:'Pal Metal Ingot', freq:'29', pct:'1.559'},
+                                            {name:'Carbon Fiber', freq:'25', pct:'1.344'},
+                                            {name:'Elec Organ', freq:'23', pct:'1.237'},
+                                            {name:'High Quality Pal Oil', freq:'20', pct:'1.075'},
+                                            {name:'Pal Fluids', freq:'18', pct:'0.968'},
+                                            {name:'Wool', freq:'17', pct:'0.914'},
+                                            {name:'Cement', freq:'15', pct:'0.806'},
+                                            {name:'Circuit Board', freq:'15', pct:'0.806'},
+                                            {name:'Red Berries', freq:'15', pct:'0.806'},
+                                            {name:'Flour', freq:'11', pct:'0.591'},
+                                            {name:'Horn', freq:'10', pct:'0.537'},
+                                            {name:'Tocotoco Feather', freq:'10', pct:'0.537'},
+                                            {name:'Venom Gland', freq:'9', pct:'0.484'},
+                                            {name:'Bone', freq:'8', pct:'0.430'},
+                                            {name:'Egg', freq:'8', pct:'0.430'},
+                                            {name:'Milk', freq:'8', pct:'0.430'},
+                                            {name:'Gunpowder', freq:'7', pct:'0.376'},
+                                            {name:'Tomato', freq:'7', pct:'0.376'},
+                                            {name:'Charcoal', freq:'6', pct:'0.322'},
+                                            {name:'Lettuce', freq:'6', pct:'0.322'},
+                                            {name:'Beautiful Flower', freq:'5', pct:'0.268'},
+                                            {name:'Gumoss Leaf', freq:'5', pct:'0.268'},
+                                            {name:'Katress Hair', freq:'5', pct:'0.268'},
+                                            {name:'Penking Plume', freq:'5', pct:'0.268'},
+                                            {name:'Mushroom', freq:'4', pct:'0.215'},
+                                            {name:'Chikipi Poultry', freq:'3', pct:'0.161'},
+                                            {name:'Eikthyrdeer Venison', freq:'3', pct:'0.161'},
+                                            {name:'Lamball Mutton', freq:'3', pct:'0.161'},
+                                            {name:'Mozzarina Meat', freq:'3', pct:'0.161'},
+                                            {name:'Ore', freq:'3', pct:'0.161'},
+                                            {name:'Rushoar Pork', freq:'3', pct:'0.161'},
+                                            {name:'Coal', freq:'2', pct:'0.107'},
+                                            {name:'Galeclaw Poultry', freq:'2', pct:'0.107'},
+                                            {name:'Raw Dumud', freq:'2', pct:'0.107'},
+                                            {name:'Raw Kelpsea', freq:'2', pct:'0.107'},
+                                            {name:'Reindrix Venison', freq:'2', pct:'0.107'},
+                                            {name:'Wheat', freq:'2', pct:'0.107'},
+                                            {name:'Berry Seeds', freq:'1', pct:'0.053'},
+                                            {name:'Broncherry Meat', freq:'1', pct:'0.053'},
+                                            {name:'Caprity Meat', freq:'1', pct:'0.053'},
+                                            {name:'Honey', freq:'1', pct:'0.053'},
+                                            {name:'Lettuce Seeds', freq:'1', pct:'0.053'},
+                                            {name:'Mammorest Meat', freq:'1', pct:'0.053'},
+                                            {name:'Pure Quartz', freq:'1', pct:'0.053'},
+                                            {name:'Sulfur', freq:'1', pct:'0.053'},
+                                            {name:'Tomato Seeds', freq:'1', pct:'0.053'},
+                                            {name:'Wheat Seeds', freq:'1', pct:'0.053'}
+                                        ]
+                                     }"
+                                >
+
+                                    <table class="table w-[50%] text-2xl">
+
+                                        <!-- head -->
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Occurs</th>
+                                                <th>&</th>
+                                            </tr>
+                                        </thead>
+
+                                        <!-- body -->
+                                        <tbody>
+
+                                            <template x-for="(stat, index) in recipesStats">
+                                                <tr>
+                                                    <td x-text="(index + 1)"></td>
+                                                    <td x-text="stat.name"></td>
+                                                    <td x-text="stat.freq"></td>
+                                                    <td x-text="stat.pct+'%'"></td>
+                                                </tr>
+                                            </template>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                                <!-- end recipes stats table -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end panel: recipes -->
+                    <!------------------------>
+
+                    <!------------------>
+                    <!-- panel: queue -->
+                    <div x-show="activePanel == 'queue'" x-cloak>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Filter
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Use the buttons in the middle of the Queue titlebar to filter which resources are shown in the Queue.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Actions
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">You can clear your Queue.</li>
+                                    <li class="mb-2">Collapse all ingredient tables.</li>
+                                    <li class="mb-2">Swap collapsed/expanded state of ingredient tables for all items in the Queue.</li>
+                                    <li class="mb-2">Expand all ingredient tables.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                List Item Components
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Drag handle</li>
+
+                                    <li class="mb-2">Quota
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">Decrement button</li>
+                                            <li class="mb-2">Quota input field</li>
+                                            <li class="mb-2">Increment button</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="mb-2">Queue item action buttons
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">Info button</li>
+                                            <li class="mb-2">Expand/Collapse ingredients list</li>
+                                            <li class="mb-2">Remove queue item</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="mb-2">Progress bar</li>
+
+                                    <li class="mb-2">Ingredients Table
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+
+                                            <li class="mb-2">Ingredients list
+                                                <ul class="list-disc list-inside ml-8 mt-2">
+                                                    <li class="mb-2">Name</li>
+                                                    <li class="mb-2">Required quantity</li>
+                                                    <li class="mb-2">Inventory
+                                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                                            <li class="mb-2">Decrement button</li>
+                                                            <li class="mb-2">Inventory input field</li>
+                                                            <li class="mb-2">Increment button</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mb-2">Percentage of inventory to required quantity</li>
+                                                    <li class="mb-2">Amount needed</li>
+                                                    <li class="mb-2">Percentage of amount needed to required quantity</li>
+                                                    <li class="mb-2">Ingredient action buttons
+                                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                                            <li class="mb-2">Info button</li>
+                                                            <li class="mb-2">Add Ingredient to Queue button</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="mb-2">Table summary
+                                                <ul class="list-disc list-inside ml-8 mt-2">
+                                                    <li class="mb-2">Sum of required quantities</li>
+                                                    <li class="mb-2">Sum of inventory pieces that count towards covering the sum of required quantities</li>
+                                                    <li class="mb-2">The percentage of sum of inventory pieces to the sum of required quantities</li>
+                                                    <li class="mb-2">The sum of amounts needed</li>
+                                                    <li class="mb-2">The percentage of sum of amounts needed to sum of required quantitites</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Using List Items
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Use the drag handle to re-order your Queue.</li>
+                                    <li class="mb-2">Click the drag handle to select one or more items and move them together.</li>
+                                    <li class="mb-2">The quota field is for controlling how many units you want to make.
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">The Resource Calculator will update the queue item's UI to reflect changes.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">Use the expand/collapse button to toggle the ingredients list.</li>
+                                    <li class="mb-2">The progress bar indicates how close your inventory is to covering the sum of required ingredient quantities.</li>
+                                    <li class="mb-2">Use the inventory input field to record how much of each ingredient you have.
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">The Resource Calculator will update the queue item's UI to reflect changes.</li>
+                                            <li class="mb-2">The Resource Calculator will also update the UI of any other queue items that have that ingredient in their recipe.</li>
+                                            <li class="mb-2">These changes are synced with the Inventory modal.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">A recipe that has only 1 ingredient will not display a summary row.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end panel: queue -->
+                    <!---------------------->
+
+                    <!---------------------->
+                    <!-- panel: inventory -->
+                    <div x-show="activePanel == 'inventory'" x-cloak>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Search &amp; Filter
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Use the filter buttons to limit which resources are shown in the Inventory modal's grid.</li>
+                                    <li class="mb-2">Use the search bar to find a particular resource.
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">Type any part of that resource's name.</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Grid Items
+                            </div>
+                            <div class="collapse-content text-2xl">
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Use the inventory input field and/or the decrement/increment buttons to change the amount of inventory you have for that resource.</li>
+                                    <li class="mb-2">Changes made here are automatically applied to any Queue items that have that resource in their ingredients list.</li>
+                                    <li class="mb-2">You can click on the name or thumbnail of a resource to focus in on the input field.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end panel: inventory -->
+                    <!-------------------------->
+
+                    <!------------------>
+                    <!-- panel: notes -->
+                    <div x-show="activePanel == 'notes'" x-cloak>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Actions
+                            </div>
+                            <div class="collapse-content text-2xl">
+                                <ul class="list-disc list-inside">
+                                    <li class="mb-2">Clear the contents of the note area.</li>
+                                    <li class="mb-2">Copy the contents of the note area to your clipboard.</li>
+                                    <li class="mb-2">Append content from your clipboard to the notes area.</li>
+                                    <li class="mb-2">Save your notes as a text file.</li>
+                                    <li class="mb-2">Print your notes.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Content Area
+                            </div>
+                            <div class="collapse-content text-2xl">
+                                <ul class="list-disc list-inside">
+                                    <li class="mb-2">You can type anything you'd like here.</li>
+                                    <li class="mb-2">If you do not see a blinking cursor, it means the content area is not in focus.</li>
+                                    <li class="mb-2">When the content area is not in focus it will have a background color that is different than the Notes modal.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end panel: notes -->
+                    <!---------------------->
+
+                    <!----------------------->
+                    <!-- panel: dataExport -->
+                    <div x-show="activePanel == 'dataExport'" x-cloak>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Option 1: The "Save" Button
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">Press this button to turn the state of your data into a file.</li>
+                                    <li class="mb-2">Depending on what system and browser you are using this will result in a file picker or a direct download.</li>
+                                    <li class="mb-2">Navigate to the folder where you installed this app, for example
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">C:\xampp\htdocs\PalWorldResourceCalculator</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">Find the corresponding JS file in &lt;appPath&gt;\resource-calculator\src\JSON</li>
+                                    <li class="mb-2">Then overwrite the file.</li>
+                                    <li class="mb-2">The next time you (re)load this app, it will initialize with the data you just saved.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                Option 2: The "Get" and "Cut" Buttons
+                            </div>
+                            <div class="collapse-content text-2xl">
+                                <ul class="list-disc list-inside">
+                                    <li class="mb-2">Press the "Get" button to put your app data in the corresponding textarea as JSON.</li>
+                                    <li class="mb-2">Press the "Cut" button to extract it from the textarea and write it to your clipboard.</li>
+                                    <li class="mb-2">Navigate to the folder where you installed this app, for example
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">C:\xampp\htdocs\PalWorldResourceCalculator</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">Find the corresponding JS file in &lt;appPath&gt;\resource-calculator\src\JSON</li>
+                                    <li class="mb-2">Then overwrite the file.</li>
+                                    <li class="mb-2">The next time you (re)load this app, it will initialize with the data you just saved.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                            <input type="checkbox" />
+                            <div class="collapse-title text-3xl font-medium">
+                                More Details
+                            </div>
+                            <div class="collapse-content text-2xl">
+
+                                <p>resources.js</p>
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2"><span class="text-error">Do not make edits.</span></li>
+                                    <li class="mb-2">Contains a few details about resources.</li>
+
+                                </ul>
+
+
+                                <p class="mt-6">recipes.js</p>
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2"><span class="text-error">Do not make edits.</span></li>
+                                    <li class="mb-2">Stores a resource's ingredients and their required quantities.</li>
+
+                                </ul>
+
+
+                                <p class="mt-6">inventory.js</p>
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2"><span class="text-info">Make careful edits.</span></li>
+                                    <li class="mb-2">Stores a resource's inventory level.</li>
+                                    <li class="mb-2">All resource IDs from "resources.js" must be listed.</li>
+                                    <li class="mb-2">All inventory amounts must be 0 or more.</li>
+
+                                </ul>
+
+
+                                <p class="mt-6">queue.js</p>
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2"><span class="text-info">Make careful edits.</span></li>
+                                    <li class="mb-2">Stores queue items, their quota, and represents the order in which queue items will appear.</li>
+                                    <li class="mb-2">At a minimum that file must export {}</li>
+                                    <li class="mb-2">If you wish to write out your queue items they must be written within the curly braces as:<br>"resourceID": quotaAmount, "resourceID": quotaAmount, etc...
+                                        <ul class="list-disc list-inside ml-8 mt-2">
+                                            <li class="mb-2">resourceID must be wrapped in double quotes.</li>
+                                            <li class="mb-2">resourceID must be a valid ID from "resources.js"</li>
+                                            <li class="mb-2">quotaAmount must be a number (no double quotes)</li>
+                                            <li class="mb-2">quotaAmount must be 1 or more.</li>
+                                        </ul>
+
+                                    </li>
+
+
+                                </ul>
+
+
+                                <p class="mt-6">favorites.js</p>
+                                <ul class="list-disc list-inside">
+
+                                    <li class="mb-2">This file is not in use. Like a couple of other ideas, this could be a version 2 kind of thing.</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end panel: dataExport -->
+                    <!--------------------------->
+
+
+                </div>
+                <!-- end column: right: About content panels -->
+                <!---------------------------------------------->
+
+            </div>
+            <!-- end about content box -->
+
+        </div>
+    </dialog>
+    <!-- end modal: about -->
+
+    <!-- modal: settings -->
+    <dialog id="modal_settings" class="modal">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-solid fa-gear mr-2"></i>
+                    Settings
+                </h3>
+
+                <!-- dropdown: modal options -->
+                <!--<div class="dropdown dropdown-hover dropdown-end mr-4 p-4">
+                    <div role="button" class="join-item text-xl">
+                        <i class="fa-solid fa-database mr-2"></i>
+                        Actions
+                    </div>
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                        <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
+                        <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
+                    </ul>
+                </div>-->
+                <!-- end dropdown: modal options -->
+
+                <!-- close modal -->
+                <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-error hover:text-black" onclick="modal_settings.close()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- settings content box -->
+            <div id="wrapper_modalContentBox_settings" class="">
+
+                <p class="text-2xl text-center bg-slate-900 py-8 rounded-b-box">This module is under construction</p>
+
+            </div>
+            <!-- end settings content box -->
+
+        </div>
+    </dialog>
+    <!-- end modal: settings -->
+
+    <!-- modal: confirm remove all recipes from queue -->
+    <dialog id="modal_confirm_removeAllRecipesFromQueue" class="modal backdrop-blur" x-data>
+
+        <div class="modal-box bg-gray-950">
+
+            <!-- modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-warning">
+
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-solid fa-masks-theater mr-2"></i>
+                    Confirm
+                </h3>
+
+                <!-- close modal -->
+                <div role="button" onclick="modal_confirm_removeAllRecipesFromQueue.close()"
+                     class="text-2xl p-4 w-16 text-center hover:bg-warning hover:text-black"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end modal titlebar -->
+
+            <!-- confirm remove all recipes content box -->
+            <div id="wrapper_modalContentBox_removeAllRecipesFromQueue" class="">
+
+                <p class="text-xl font-bold mt-4 mb-2">Are you sure?</p>
+                <p class="text-xl mb-4">This will remove <span id="dataTarget_currentQueueItemCount">0</span> recipes from the queue.</p>
+
+                <button class="btn btn-block uppercase hover:btn-success" @click="window.QIH.removeAllItemsFromRecipesColumn()">
+                    <i class="fa-solid fa-check"></i>Yes
+                </button>
+
+            </div>
+            <!-- end confirm remove all recipes content box -->
+
+        </div>
+
+        <!-- btn: close modal if clicked outside -->
+        <form method="dialog" class="modal-backdrop"><button></button></form>
+
+    </dialog>
+    <!-- end modal: confirm remove all recipes from queue -->
+
+</aside>
+<!-- end modals -->
+<!---------------->
+
+<!------------------------------------------------------------------------>
+<!-- modal: resource info: dynamic based on ID passed in from btn click -->
+<aside>
+
+    <!-------------------->
+    <!-- resource modal -->
+    <dialog id="modal_resourceInfo" class="modal backdrop-blur" x-data>
+        <div class="modal-box bg-gray-950">
+
+            <!----------------------------->
+            <!-- resource modal titlebar -->
+            <div class="flex bg-gray-950 border-y-2 border-info">
+
+                <!-- icon and resource.name -->
+                <h3 class="grow font-bold text-2xl p-4">
+                    <i class="fa-solid fa-microscope mr-2"></i>
+                    <span id="resourceInfoModal_resourceName"></span>
+                </h3>
+
+                <!-- btn: close modal -->
+                <div role="button" class="text-2xl p-4 w-16 text-center hover:bg-info hover:text-black"
+                     @click="window.RIMIH.closeResourceInfoModal()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            </div>
+            <!-- end resource modal titlebar -->
+            <!--------------------------------->
+
+            <!------------------------------->
+            <!-- resource info content box -->
+            <div id="wrapper_modalContentBox_resourceInfo" class="">
+
+                <!------------------->
+                <!-- resource data -->
+                <div class="p-4 rounded-b-xl mb-4">
+
+                    <div class="flex gap-4 justify-around items-center">
+
+                        <!-- this resource's img -->
+                        <div>
+                            <img id="resourceInfoModal_resourceThumbnail" src="" alt="" class="w-[160px] h-[160px] rounded">
+                        </div>
+
+                        <!-- this resource's details -->
+                        <div>
+
+                            <!-- this group membership -->
+                            <p class="mb-2 flex items-end">
+                                <span class="w-24">Group:</span>
+                                <span id="resourceInfoModal_resourceGroup" class="font-bold text-info text-2xl capitalize"></span>
+                            </p>
+
+                            <!-- this resource's inventory -->
+                            <p class="mb-2 flex items-end">
+                                <span class="w-24">Inventory:</span>
+                                <span id="resourceInfoModal_resourceInventory" class="font-bold text-info text-2xl"></span>
+                            </p>
+
+                            <!-- this resource's quantity in queue -->
+                            <p class="flex items-end">
+                                <span class="w-24">In Queue:</span>
+                                <span id="dataTarget_resourceIsInQueue" class="font-bold text-info text-2xl"></span>
+                            </p>
+
+                            <!-------------------------->
+                            <!-- queue action buttons -->
+                            <div class="mt-4">
+
+                                <!-- btn: add to queue -->
+                                <button id="btn_resourceInfoModal_addResourceToQueue"
+                                        data-id="" x-ref="btn_RIM_ARTQ"
+                                        class="btn btn-block btn-sm hidden hover:btn-success"
+                                        @click=
+                                        "
+                                            window.RIH.addRecipeToQueue($el.dataset.id);
+                                            $el.classList.add('hidden');
+                                            $refs.btn_RIM_RRFQ.classList.remove('hidden');
+                                        "
+                                >
+                                    <i class="fa-solid fa-plus mr-2 inline"></i>
+                                    <span class="min-w-[132px] inline">Add to Queue</span>
+                                </button>
+
+                                <!-- btn: remove from to queue -->
+                                <button id="btn_resourceInfoModal_removeResourceFromQueue"
+                                        data-id="" x-ref="btn_RIM_RRFQ"
+                                        class="btn btn-block btn-sm hidden hover:btn-warning"
+                                        @click=
+                                        "
+                                            window.QIH.removeItemFromRecipesColumn($el.dataset.id);
+                                            $el.classList.add('hidden');
+                                            $refs.btn_RIM_ARTQ.classList.remove('hidden');
+                                        "
+                                >
+                                    <i class="fa-solid fa-minus mr-2 inline"></i>
+                                    <span class="min-w-[132px] inline">Remove from Queue</span>
+                                </button>
+
+                            </div>
+                            <!-- end queue action buttons -->
+                            <!------------------------------>
+
+
+                        </div>
+                        <!-- end this resource's details -->
+
+                    </div>
+
+                </div>
+                <!-- end resource data -->
+                <!----------------------->
+
+
+                <!-------------->
+                <!-- tab list -->
+                <div role="tablist" class="tabs tabs-lifted">
+
+                    <!----------------->
+                    <!-- tab: recipe -->
+                    <input type="radio" id="tab_resourceInfoModal_recipeDataset_ingredients" aria-label="Recipe"
+                           name="tabs_resourceInfoModal_recipeDatasets" role="tab" class="tab" checked
+                           style="width:120px"
+                    />
+
+                    <!------------------->
+                    <!-- panel: recipe -->
+                    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 max-h-[433px] overflow-auto">
+                        <div id="resourceInfoModal_ingredientsList"
+                             class="grid grid-cols-2 gap-8 text-center"
+                        ><!-- grid cells are dynamically generated --></div>
+                    </div>
+                    <!-- end panel: recipe -->
+                    <!----------------------->
+
+
+                    <!------------------>
+                    <!-- tab: used in -->
+                    <input type="radio" id="tab_resourceInfoModal_recipeDataset_usedIn" aria-label="Used in"
+                           name="tabs_resourceInfoModal_recipeDatasets" role="tab" class="tab"
+                           style="width:120px"
+                    />
+
+                    <!-------------------->
+                    <!-- panel: used in -->
+                    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 max-h-[433px] overflow-auto">
+                        <div id="resourceInfoModal_ingredientOfList"
+                             class="grid grid-cols-2 gap-8 text-center"
+                        ><!-- grid cells are dynamically generated --></div>
+                    </div>
+                    <!-- end panel: used in -->
+                    <!------------------------>
+
+                </div>
+                <!-- end tab list -->
+                <!------------------>
+
+
+            </div>
+            <!-- end resource info content box -->
+            <!----------------------------------->
+
+        </div>
+
+        <!-- btn: close the resource info modal if clicked outside -->
+        <form method="dialog" class="modal-backdrop"><button @click="window.RIMIH.closeResourceInfoModal()"></button></form>
+
+    </dialog>
+    <!-- end resource modal -->
+    <!------------------------>
+
+</aside>
+<!-- end modal: resource info: dynamic based on ID passed in from btn click -->
+<!---------------------------------------------------------------------------->
+
+<!---------------------------------->
+<!-- modal: loading splash screen -->
+<aside>
+    <dialog id="modal_loadingSplashScreen" class="modal modal-open backdrop-blur">
+    <div class="modal-box  bg-gray-950">
+
+        <!------------------------------------>
+        <!-- loading splash screen titlebar -->
+        <div class="flex bg-gray-950 border-y-2 border-gray-400 text-center">
+
+            <!-- icon and resource.name -->
+            <h3 class="grow font-bold text-2xl p-4">
+                <i class="fa-solid fa-gear mr-2 loadingSpinner"></i>
+                Loading
+            </h3>
+
+        </div>
+        <!-- end loading splash screen titlebar -->
+        <!---------------------------------------->
+
+    </div>
+</dialog>
+</aside>
+<!-- end modal: loading splash screen -->
+<!-------------------------------------->
+
+
+<!------------->
+<!-- scripts -->
+
+<!-- init Sortable -->
+<script>
+
+    // --------
+    // Sortable
+    // https://github.com/SortableJS/Sortable?tab=readme-ov-file#options
+
+    // ------------------------
+    // get queue column element
+    const queueColumn = document.getElementById('wrapper_queueListItems');
+
+    // ------
+    // config
+    const sortableConfig =
+            {
+                dataIdAttr: 'data-id', // List item ID from DataTable
+                animation: 150,
+                handle: '.sortable-handle',
+                direction: 'vertical',
+                draggable: '.sortable-item',
+                ghostClass: "sortable-ghost",
+                chosenClass: "sortable-chosen",
+                dragClass: "sortable-drag",
+                multiDrag: true,
+                selectedClass: 'sortable-selected',
+                fallbackTolerance: 3,
+                onEnd: (evt) => { window.QIH.acceptQueueItemDragEvent(evt) }
+            }
+
+    // -------------
+    // init Sortable
+    document.addEventListener('DOMContentLoaded', () =>
+    {
+        const sortable = Sortable.create(queueColumn, sortableConfig);
+    });
+
+    // end Sortable
+    // ------------
+</script>
+<!-- end init Sortable -->
+
+<!-- end scripts -->
+<!----------------->
+
+</body>
+
+</html>
