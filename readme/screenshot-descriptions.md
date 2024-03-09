@@ -16,7 +16,7 @@ The user has added "Giga Sphere" to their Queue.
 # 06_gigaSphereIngredientsTable
 The user has expanded the ingredients table for "Giga Sphere".
 
-# 07_gigaSphereQuotaChnaged
+# 07_gigaSphereQuotaChanged
 The user has changed the quota for "Giga Sphere" to 50.
 
 # 08_gigaSphereInventoryAppliedToNewItemWithSimilarIngredients
