@@ -10,6 +10,8 @@ An easy to use crafting to do list with inventory tracking and extra features.
 - Use the inventory inputs to tell the app what you already have.
 - Then the app will tell you what you need to get to complete your goal.
 
+Supports in game items up to version 1.5.X for Steam and Game Pass.
+
 ## Initial Screen
 ![Initial screen](https://github.com/danaildichev/PalWorldResourceCalculator/blob/main/readme/01_initial.png)
 
@@ -29,7 +31,7 @@ See more screenshots at [PalWorldResourceCalculator/readme](https://github.com/d
 - [API](#api)
 - [Issues](#issues)
 - [Contributing](#contributing)
-- [To Do](#to-do)
+- [To Do (3)](#to-do)
 - [License](#license)
 
 ## Live Demo
@@ -70,6 +72,10 @@ Open an issue or hit me up.
 PRs accepted.
 
 ## To Do
+
+- Optimize JSON data.
+- Optimize start up routines in `initilaize.js`.
+- Update JSON data for new items released in Palworld v0.2.0.6 (Raid Boss "Bellanoir")
 
 ## License
 
