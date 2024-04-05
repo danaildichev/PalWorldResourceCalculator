@@ -3,7 +3,7 @@ Crafting &amp; Inventory Tracking for Pal World
 
 Watch a demo on YouTube at [https://www.youtube.com/watch?v=MYMQfKZfxzY](https://www.youtube.com/watch?v=MYMQfKZfxzY)
 
-![Static Badge](https://img.shields.io/badge/version-1.1-blue)
+![Static Badge](https://img.shields.io/badge/version-1.1-blue) April 5, 2024
 
 An easy to use crafting to do list with inventory tracking and extra features.
 - Decide what you want to make and how many.
@@ -11,7 +11,7 @@ An easy to use crafting to do list with inventory tracking and extra features.
 - Then the app will tell you what you need to get to complete your goal.
 
 > [!NOTE]
-> Supports in game items up to Pal World v1.5.X for Steam and Game Pass. Updates for new items released in v0.2.0.6 (Raid Boss "Bellanoir") coming soon.
+> Supports in-game items up to Pal World v1.5.X. Updates for new items released in v0.2.0.6 (Raid Boss "Bellanoir") coming soon.
 
 ## Initial Screen
 ![Initial screen](https://github.com/danaildichev/PalWorldResourceCalculator/blob/main/readme/01_initial.png)
