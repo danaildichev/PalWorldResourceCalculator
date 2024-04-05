@@ -11,7 +11,8 @@ An easy to use crafting to do list with inventory tracking and extra features.
 - Then the app will tell you what you need to get to complete your goal.
 
 > [!NOTE]
-> Supports game version 1.5.X for Steam and Game Pass.
+> Supports in game items up to Pal World v1.5.X for Steam and Game Pass.
+> Updates for Pal World v0.2.0.6 (Raid Boss "Bellanoir") coming soon.
 
 ## Initial Screen
 ![Initial screen](https://github.com/danaildichev/PalWorldResourceCalculator/blob/main/readme/01_initial.png)
