@@ -1230,7 +1230,7 @@ export default class QueueEntryBuilder
         newEntry.recipe.forEach((Ingredient) =>
         {
             // get ingredient data
-            const IngredientData = window.QIH.JSON.DataTable[Ingredient.id];
+            const IngredientData = window.QIH.JSON.resources[Ingredient.id];
             
             // get ingredient row el IDs
             const rowElID = this.getIngredientRowElIDs(newEntry, Ingredient);

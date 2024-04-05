@@ -2,7 +2,6 @@
 // import json
 import inventory from "../JSON/inventory.js";
 import resources from "../JSON/resources.js";
-import recipes from "../JSON/recipes.js";
 import queue from "../JSON/queue.js";
 import favorites from "../JSON/favorites.js";
 
@@ -18,92 +17,13 @@ export default class JsonHandler
     {
         this.inventory = inventory;
         this.resources = resources;
-        this.recipes = recipes;
         this.queue = queue;
         this.favorites = favorites;
-        this.DataTable = this.buildDataTable();
-        this.buildCollectionsOfUsesForResourcesFromRecipes();
         this.Clipboard = new ClipboardHandler();
         this.Clipboard.init(); // async checks for clipboard permissions
         this.resourceGroups = ["all", "craft", "food", "meds", "tech", "build", "armor", "weapons", "ammo", "spheres"];
     }
     // end constructor
-    
-    
-    /**
-     * Compile resources, inventory, and recipes JSON into  one object
-     *
-     * @return {Object}
-     */
-    buildDataTable()
-    {
-        // --------------------
-        // start with resources
-        let DataTable = this.resources
-        
-        // ------------------------
-        // append accompanying data
-        for (const resourceID in DataTable)
-        {
-            // append inventory as exists in inventory.json at time of page load
-            DataTable[resourceID].inventory = this.getEntryAt('inventory', resourceID);
-            
-            // append recipe if exists
-            const recipe = this.getEntryAt('recipes', resourceID);
-            if (recipe !== undefined) { DataTable[resourceID].recipe = recipe; }
-            
-            // create an empty list to hold this resource's uses
-            // e.g. which recipes use this resource
-            DataTable[resourceID].usedInRecipesFor = [];
-            
-        }
-        
-        // return data
-        return DataTable;
-        
-    }
-    // end buildDataTable()
-    
-    
-    /**
-     * Populate every DataTable entry's 'usedInRecipesFor' array with objects
-     * that contain the ID of the recipe and the required qty for corresponding entry.
-     * E.g. DataTable entry X, Bone, is used in recipe Y, Cement, with qty 2.
-     * Since DataTable entry Y has a 'recipe' key that contains {id: X, qty: 2},
-     * this function reciprocates {id: Y, qty: 2} in DataTable entry X's 'usedInRecipesFor' key.
-     *
-     * @return {undefined}
-     */
-    buildCollectionsOfUsesForResourcesFromRecipes()
-    {
-        // iterate through each recipe
-        for (const recipeID of Object.keys(this.recipes))
-        {
-            // get the ingredients list for the recipe in the current iteration
-            const ingredientsList = this.recipes[recipeID];
-            
-            // for each ingredient in ingredientsList
-            // ingredient is an object that contains
-            // the ingredient's resource id and required qty
-            // to make 1 instance of recipeID
-            ingredientsList.forEach((ingredient) =>
-            {
-                // create an object that holds a 'use' for the ingredient
-                // where in 'use' is: the recipeID that the ingredient is used in and what qty
-                const use = {id: recipeID, qty:ingredient.qty};
-                
-                // get a reference to the 'usedInRecipesFor' array of the ingredient's record in DataTable
-                const useTarget = this.DataTable[ingredient.id].usedInRecipesFor;
-                
-                // push the 'use' to the array
-                useTarget.push(use);
-                
-            });
-            // end for each ingredient in ingredientsList
-        }
-        // end iterate through each recipe
-    }
-    // end buildCollectionsOfUsesForResourcesFromRecipes()
     
     
     /**
