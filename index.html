@@ -149,7 +149,7 @@
                 <div class="flex flex-col h-full gap-4"
                      x-data=
                      "{
-                        recipes: window.RIH.getRecipesData(),
+                        recipes: window.IH.getJSON('resources'),
                         resourceGroups: window.RIH.getListOfResourceGroups(),
                         resourceGroupsIcons: window.RIH.getResourceGroupsIcons(),
                         activeGroup: 'all',
@@ -318,58 +318,65 @@
 
                                     <template x-for="(recipe, ID) in recipeSearchResults" :key="ID">
 
-                                        <!-- list item -->
-                                        <div tabindex="0"
-                                             x-show="activeGroup === recipe.group || activeGroup === 'all'"
-                                             class="group p-2 border-b-2 border-neutral
-                                             hover:border-green-700 hover:bg-neutral"
-                                        >
+                                        <!-- show recipes that have ingredients -->
+                                        <!-- e.g. do not show resources like 'Stone' or 'Ancient Civ Parts' -->
+                                        <div x-show="recipe.recipe != null">
 
-                                            <div class="flex justify-between">
+                                            <!-- list item -->
+                                            <div tabindex="0"
+                                                 x-show="activeGroup === recipe.group || activeGroup === 'all'"
+                                                 class="group p-2 border-b-2 border-neutral
+                                                 hover:border-green-700 hover:bg-neutral"
+                                            >
 
-                                                <!-- list item: name -->
-                                                <p class="text-xl font-bold" x-text="recipe.name"></p>
+                                                <div class="flex justify-between">
 
-                                                <!-- list item: actions -->
-                                                <div class="join invisible group-hover:visible">
+                                                    <!-- list item: name -->
+                                                    <p class="text-xl font-bold" x-text="recipe.name"></p>
 
-                                                    <!-- add to favorites -->
-                                                    <!--<button tabindex="0" @click="window.RIH.addRecipeToFavorites(ID)"
-                                                            :id="'btn_addRecipeToFavorites-'+ID"
-                                                            class="join-item btn-recipeCol btn-addToFavorites w-8 btn btn-sm uppercase">
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </button>-->
+                                                    <!-- list item: actions -->
+                                                    <div class="join invisible group-hover:visible">
 
-                                                    <!-- remove from favorites -->
-                                                    <!--<button tabindex="0" @click="window.RIH.removeRecipeFromFavorites(ID)"
-                                                            :id="'btn_removeRecipeFromFavorites-'+ID"
-                                                            class="join-item btn-recipeCol btn-removeFromFavorites w-8 btn btn-sm btn-warning uppercase hidden">
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </button>-->
+                                                        <!-- add to favorites -->
+                                                        <!--<button tabindex="0" @click="window.RIH.addRecipeToFavorites(ID)"
+                                                                :id="'btn_addRecipeToFavorites-'+ID"
+                                                                class="join-item btn-recipeCol btn-addToFavorites w-8 btn btn-sm uppercase">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </button>-->
 
-                                                    <!-- info -->
-                                                    <button tabindex="0" @click="window.RIMIH.showResourceInfoModal(ID)"
-                                                            :id="'btn_showResourceInfoModal-'+ID"
-                                                            class="join-item btn-recipeCol btn-showResourceModal btn- w-8 btn btn-sm btn-info uppercase">
-                                                        <i class="fa-solid fa-info"></i>
-                                                    </button>
+                                                        <!-- remove from favorites -->
+                                                        <!--<button tabindex="0" @click="window.RIH.removeRecipeFromFavorites(ID)"
+                                                                :id="'btn_removeRecipeFromFavorites-'+ID"
+                                                                class="join-item btn-recipeCol btn-removeFromFavorites w-8 btn btn-sm btn-warning uppercase hidden">
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </button>-->
 
-                                                    <!-- add to queue -->
-                                                    <button tabindex="0"
-                                                            :id="'btn_addRecipeToQueue-'+ID"
-                                                            class="join-item btn-recipeCol btn-addToQueue w-8 btn btn-sm btn-success uppercase"
-                                                            :class="'btn-addToQueue-'+ID"
-                                                            @click="window.RIH.addRecipeToQueue(ID); $dispatch('update-Alpine-Data-QIH-items')"
-                                                    >
-                                                        <i class="fa-solid fa-plus"></i>
-                                                    </button>
+                                                        <!-- info -->
+                                                        <button tabindex="0" @click="window.RIMIH.showResourceInfoModal(ID)"
+                                                                :id="'btn_showResourceInfoModal-'+ID"
+                                                                class="join-item btn-recipeCol btn-showResourceModal btn- w-8 btn btn-sm btn-info uppercase">
+                                                            <i class="fa-solid fa-info"></i>
+                                                        </button>
+
+                                                        <!-- add to queue -->
+                                                        <button tabindex="0"
+                                                                :id="'btn_addRecipeToQueue-'+ID"
+                                                                class="join-item btn-recipeCol btn-addToQueue w-8 btn btn-sm btn-success uppercase"
+                                                                :class="'btn-addToQueue-'+ID"
+                                                                @click="window.RIH.addRecipeToQueue(ID); $dispatch('update-Alpine-Data-QIH-items')"
+                                                        >
+                                                            <i class="fa-solid fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <!-- end list item: actions -->
+
                                                 </div>
-                                                <!-- end list item: actions -->
 
                                             </div>
+                                            <!-- end list item -->
 
                                         </div>
-                                        <!-- end list item -->
+                                        <!-- end show recipes that have ingredient -->
 
                                     </template>
 
@@ -689,7 +696,7 @@
         <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950"
              x-data=
                  "{
-                    resources: window.IH.getJSON('DataTable'),
+                    resources: window.IH.getJSON('resources'),
                     resourceGroups: ['craft', 'food', 'meds', 'tech', 'build', 'armor', 'weapons', 'ammo', 'spheres'],
                     resourceGroupsIcons: window.RIH.getResourceGroupsIcons(),
                     activeGroup: 'all',

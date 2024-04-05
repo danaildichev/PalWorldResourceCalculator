@@ -24,7 +24,7 @@ export default class InventoryInterfaceHandler extends InterfaceHandler
     stringifyInventorySnapshot()
     {
         // get snapshot
-        const snapshot = this.JSON.makeSnapshot('DataTable', ['inventory'], true);
+        const snapshot = this.JSON.makeSnapshot('resources', ['inventory'], true);
         
         // extract inventory value from snapshot structure
         for (const ID of Object.keys(snapshot)) { snapshot[ID] = Number(snapshot[ID]['inventory']); }
@@ -111,7 +111,7 @@ export default class InventoryInterfaceHandler extends InterfaceHandler
     decrementInventoryFor(ID)
     {
         // decrement or make 0
-        let decremented =  --this.JSON.DataTable[ID].inventory;
+        let decremented =  --this.JSON.resources[ID].inventory;
         if (decremented < 0) { decremented = 0 }
         this.setInventoryAt(ID, decremented);
         
@@ -134,7 +134,7 @@ export default class InventoryInterfaceHandler extends InterfaceHandler
     {
         // increment the inventory count
         // update values in inventory input fields for this ID
-        const incremented = ++this.JSON.DataTable[ID].inventory;
+        const incremented = ++this.JSON.resources[ID].inventory;
         this.updateInventoryInputFields(ID, incremented);
     }
     // end incrementInventoryFor()

@@ -59,7 +59,7 @@ export default class ResourceInfoModalInterfaceHandler extends InterfaceHandler
         recipe.forEach((ingredient) =>
         {
             // get ingredient data
-            const ingredientData = this.JSON.getEntryAt('DataTable', ingredient.id)
+            const ingredientData = this.JSON.getEntryAt('resources', ingredient.id)
             
             // get the details from ingredient data that are needed for recipe panel
             let ingredientAsResource = {};
@@ -163,7 +163,7 @@ export default class ResourceInfoModalInterfaceHandler extends InterfaceHandler
         usedInList.forEach((ingredientOf) =>
         {
             // get the Resource entry from DataTable
-            const resourceOf = this.JSON.getEntryAt('DataTable', ingredientOf.id);
+            const resourceOf = this.JSON.getEntryAt('resources', ingredientOf.id);
             resourceOf.id = ingredientOf.id;
             
             // push the Resource
@@ -313,7 +313,7 @@ export default class ResourceInfoModalInterfaceHandler extends InterfaceHandler
     setDataInResourceInfoModal(ID)
     {
         // get the resource data
-        const Resource = this.JSON.getEntryAt('DataTable', ID)
+        const Resource = this.JSON.getEntryAt('resources', ID)
         
         // get the elements that need to be updated with resource data
         const modalEls = this.getResourceInfoModalElements();

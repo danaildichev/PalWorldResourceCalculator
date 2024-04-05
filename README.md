@@ -32,7 +32,7 @@ See more screenshots at [PalWorldResourceCalculator/readme](https://github.com/d
 - [API](#api)
 - [Issues](#issues)
 - [Contributing](#contributing)
-- [To Do (3)](#to-do)
+- [To Do (1)](#to-do)
 - [License](#license)
 
 ## Live Demo
@@ -74,8 +74,6 @@ PRs accepted.
 
 ## To Do
 
-- Optimize JSON data.
-- Optimize start up routines in `initilaize.js`.
 - Update JSON data for new items released in Palworld v0.2.0.6 (Raid Boss "Bellanoir")
 
 ## License

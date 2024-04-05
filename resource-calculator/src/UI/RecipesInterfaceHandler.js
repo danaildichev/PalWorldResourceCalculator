@@ -41,7 +41,7 @@ export default class RecipesInterfaceHandler extends InterfaceHandler
      *
      * @return {string[]}
      */
-    getRecipeIDs() { return this.JSON.getKeysOf('recipes'); }
+    getRecipeIDs() { return this.JSON.getKeysOf('resources'); }
     // end getRecipeIDs()
     
     
@@ -63,8 +63,9 @@ export default class RecipesInterfaceHandler extends InterfaceHandler
      */
     getRecipesData()
     {
-        const recipesKeys = Array.from(this.JSON.getKeysOf('recipes'));
-        return this.JSON.collectFrom(this.JSON.DataTable, recipesKeys);
+        const recipesKeys = Array.from(this.JSON.getKeysOf('resources'));
+        console.log(recipesKeys);
+        return this.JSON.collectFrom(this.JSON.resources, recipesKeys);
     }
     // end getRecipesData()
     

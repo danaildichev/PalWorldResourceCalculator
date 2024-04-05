@@ -160,7 +160,7 @@ export default class InterfaceHandler
      * @param {String} ID
      * @return {Object}
      */
-    getRecipeAt(ID) { return this.JSON.getEntryAt('recipes', ID) }
+    getRecipeAt(ID) { return this.JSON.getEntryAt('resources', ID) }
     // end getRecipeAt()
     
     
@@ -170,7 +170,7 @@ export default class InterfaceHandler
      * @param {Number|String} ID
      * @return {Object}
      */
-    getInventoryAt(ID) { return this.JSON.getValueAt('DataTable', ID, 'inventory') }
+    getInventoryAt(ID) { return this.JSON.getValueAt('resources', ID, 'inventory') }
     // end getInventoryAt()
     
     
@@ -183,7 +183,7 @@ export default class InterfaceHandler
      */
     setInventoryAt(ID, value)
     {
-        this.JSON.setValueAt('DataTable', ID, 'inventory', value);
+        this.JSON.setValueAt('resources', ID, 'inventory', value);
     }
     // end setInventoryAt()
     
@@ -194,7 +194,7 @@ export default class InterfaceHandler
      * @param {String} ID
      * @return {Object}
      */
-    getDataTableEntryAt(ID) { return this.JSON.getEntryAt('DataTable', ID) }
+    getDataTableEntryAt(ID) { return this.JSON.getEntryAt('resources', ID) }
     // end getDataTableEntryAt()
     
     

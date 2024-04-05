@@ -264,7 +264,7 @@ export default class QueueInterfaceHandler extends InterfaceHandler
         
         return {
             id: ID,
-            ...this.JSON.DataTable[ID],
+            ...this.JSON.resources[ID],
             quota: quota,
             incidentOf: [],
             els:
@@ -410,7 +410,7 @@ export default class QueueInterfaceHandler extends InterfaceHandler
     {
         // ------------------------------------------
         // if there is no recipe for this resource ID
-        if (!this.JSON.recipes[ID])
+        if (!this.JSON.resources[ID])
         {
             // alert the user that they cannot add this resource to the queue
             this.flashQueueMessageBar(`${this.JSON.resources[ID]['name']} does not have a recipe. It cannot be added to your Queue.`);
