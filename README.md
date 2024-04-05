@@ -3,7 +3,7 @@ Crafting &amp; Inventory Tracking for Pal World
 
 Watch a demo on YouTube at [https://www.youtube.com/watch?v=MYMQfKZfxzY](https://www.youtube.com/watch?v=MYMQfKZfxzY)
 
-![Static Badge](https://img.shields.io/badge/version-1-blue)
+![Static Badge](https://img.shields.io/badge/version-1.1-blue)
 
 An easy to use crafting to do list with inventory tracking and extra features.
 - Decide what you want to make and how many.
