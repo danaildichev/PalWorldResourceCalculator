@@ -1,3 +1,10 @@
+# I stopped playing Palworld.
+
+This app is not being maintained
+
+
+---
+
 # Pal World Resource Calculator
 Crafting &amp; Inventory Tracking for Pal World
 
@@ -11,7 +18,7 @@ An easy to use crafting to do list with inventory tracking and extra features.
 - Then the app will tell you what you need to get to complete your goal.
 
 > [!NOTE]
-> Supports in-game items up to Pal World v1.5.X. Updates for new items released in v0.2.0.6 (Raid Boss "Bellanoir") coming soon.
+> Supports in-game items up to Pal World v1.5.X. Updates for new items released in or after v0.2.0.6 (Raid Boss "Bellanoir") NOT planned.
 
 ## Initial Screen
 ![Initial screen](https://github.com/danaildichev/PalWorldResourceCalculator/blob/main/readme/01_initial.png)
@@ -36,7 +43,7 @@ See more screenshots at [PalWorldResourceCalculator/readme](https://github.com/d
 - [License](#license)
 
 ## Live Demo
-Under consideration.
+NOT available.
 
 For now you can watch a demo on YouTube at [https://www.youtube.com/watch?v=MYMQfKZfxzY](https://www.youtube.com/watch?v=MYMQfKZfxzY)
 
@@ -77,6 +84,7 @@ PRs accepted.
 ## To Do
 
 - Update JSON data for new items released in Palworld v0.2.0.6 (Raid Boss "Bellanoir")
+- Update JSON data for new items released in Sakurajima update
 
 ## License
 
