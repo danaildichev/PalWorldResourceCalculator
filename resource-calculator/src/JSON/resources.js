@@ -26,131 +26,71 @@ export default {
         "usedInRecipesFor": [
             {
                 "id": "43",
-                "qty": 5
-            },
-            {
-                "id": "44",
-                "qty": 10
-            },
-            {
-                "id": "45",
-                "qty": 20
-            },
-            {
-                "id": "46",
-                "qty": 30
-            },
-            {
-                "id": "69",
-                "qty": 4
-            },
-            {
-                "id": "70",
-                "qty": 6
-            },
-            {
-                "id": "71",
-                "qty": 8
-            },
-            {
-                "id": "72",
-                "qty": 14
-            },
-            {
-                "id": "100",
                 "qty": 1
             },
             {
-                "id": "101",
+                "id": "44",
                 "qty": 2
             },
             {
-                "id": "102",
+                "id": "45",
+                "qty": 3
+            },
+            {
+                "id": "46",
                 "qty": 4
             },
             {
                 "id": "103",
-                "qty": 10
-            },
-            {
-                "id": "108",
-                "qty": 5
-            },
-            {
-                "id": "109",
-                "qty": 7
+                "qty": 1
             },
             {
                 "id": "110",
-                "qty": 9
+                "qty": 1
             },
             {
                 "id": "111",
-                "qty": 15
-            },
-            {
-                "id": "113",
-                "qty": 9
-            },
-            {
-                "id": "114",
-                "qty": 11
-            },
-            {
-                "id": "115",
-                "qty": 13
-            },
-            {
-                "id": "116",
-                "qty": 19
-            },
-            {
-                "id": "118",
-                "qty": 4
-            },
-            {
-                "id": "119",
-                "qty": 6
-            },
-            {
-                "id": "120",
-                "qty": 8
-            },
-            {
-                "id": "121",
-                "qty": 14
-            },
-            {
-                "id": "123",
-                "qty": 7
-            },
-            {
-                "id": "124",
-                "qty": 9
-            },
-            {
-                "id": "125",
-                "qty": 11
-            },
-            {
-                "id": "126",
-                "qty": 17
-            },
-            {
-                "id": "133",
                 "qty": 2
             },
             {
-                "id": "134",
+                "id": "113",
+                "qty": 2
+            },
+            {
+                "id": "114",
+                "qty": 3
+            },
+            {
+                "id": "115",
                 "qty": 4
             },
             {
-                "id": "135",
-                "qty": 6
+                "id": "116",
+                "qty": 5
+            },
+            {
+                "id": "121",
+                "qty": 1
+            },
+            {
+                "id": "123",
+                "qty": 1
+            },
+            {
+                "id": "124",
+                "qty": 2
+            },
+            {
+                "id": "125",
+                "qty": 3
+            },
+            {
+                "id": "126",
+                "qty": 4
             },
             {
                 "id": "136",
-                "qty": 12
+                "qty": 1
             },
             {
                 "id": "142",
@@ -177,348 +117,116 @@ export default {
                 "qty": 2
             },
             {
-                "id": "176",
-                "qty": 4
-            },
-            {
-                "id": "177",
-                "qty": 6
-            },
-            {
-                "id": "178",
-                "qty": 8
-            },
-            {
-                "id": "179",
-                "qty": 14
-            },
-            {
-                "id": "183",
-                "qty": 4
-            },
-            {
-                "id": "184",
-                "qty": 6
-            },
-            {
-                "id": "185",
-                "qty": 8
-            },
-            {
-                "id": "186",
-                "qty": 14
-            },
-            {
-                "id": "189",
-                "qty": 3
-            },
-            {
-                "id": "190",
-                "qty": 5
-            },
-            {
-                "id": "191",
-                "qty": 7
-            },
-            {
                 "id": "192",
-                "qty": 13
+                "qty": 1
             },
             {
                 "id": "221",
-                "qty": 8
+                "qty": 5
             },
             {
                 "id": "222",
-                "qty": 15
-            },
-            {
-                "id": "225",
-                "qty": 4
-            },
-            {
-                "id": "226",
-                "qty": 6
-            },
-            {
-                "id": "227",
-                "qty": 8
-            },
-            {
-                "id": "228",
-                "qty": 14
-            },
-            {
-                "id": "230",
-                "qty": 4
-            },
-            {
-                "id": "231",
-                "qty": 6
-            },
-            {
-                "id": "232",
-                "qty": 8
-            },
-            {
-                "id": "233",
-                "qty": 14
+                "qty": 10
             },
             {
                 "id": "235",
                 "qty": 1
             },
             {
-                "id": "243",
-                "qty": 4
-            },
-            {
-                "id": "244",
-                "qty": 6
-            },
-            {
-                "id": "245",
-                "qty": 8
-            },
-            {
-                "id": "246",
-                "qty": 14
-            },
-            {
-                "id": "250",
-                "qty": 4
-            },
-            {
-                "id": "251",
-                "qty": 6
-            },
-            {
-                "id": "252",
-                "qty": 8
-            },
-            {
-                "id": "253",
-                "qty": 14
-            },
-            {
-                "id": "257",
-                "qty": 3
-            },
-            {
-                "id": "258",
-                "qty": 5
-            },
-            {
                 "id": "259",
-                "qty": 7
+                "qty": 1
             },
             {
                 "id": "260",
-                "qty": 14
-            },
-            {
-                "id": "267",
-                "qty": 5
-            },
-            {
-                "id": "268",
-                "qty": 7
+                "qty": 2
             },
             {
                 "id": "269",
-                "qty": 9
+                "qty": 1
             },
             {
                 "id": "270",
-                "qty": 15
+                "qty": 2
             },
             {
                 "id": "272",
-                "qty": 9
+                "qty": 2
             },
             {
                 "id": "273",
-                "qty": 11
+                "qty": 3
             },
             {
                 "id": "274",
-                "qty": 13
+                "qty": 4
             },
             {
                 "id": "275",
-                "qty": 19
-            },
-            {
-                "id": "277",
-                "qty": 4
-            },
-            {
-                "id": "278",
-                "qty": 6
-            },
-            {
-                "id": "279",
-                "qty": 8
+                "qty": 5
             },
             {
                 "id": "280",
-                "qty": 14
+                "qty": 1
             },
             {
                 "id": "282",
-                "qty": 7
+                "qty": 1
             },
             {
                 "id": "283",
-                "qty": 9
+                "qty": 2
             },
             {
                 "id": "284",
-                "qty": 11
+                "qty": 3
             },
             {
                 "id": "285",
-                "qty": 17
-            },
-            {
-                "id": "288",
                 "qty": 4
-            },
-            {
-                "id": "289",
-                "qty": 6
-            },
-            {
-                "id": "290",
-                "qty": 8
-            },
-            {
-                "id": "291",
-                "qty": 14
             },
             {
                 "id": "300",
-                "qty": 10
+                "qty": 5
             },
             {
                 "id": "301",
-                "qty": 20
+                "qty": 10
             },
             {
                 "id": "311",
-                "qty": 15
+                "qty": 7
             },
             {
                 "id": "312",
-                "qty": 30
-            },
-            {
-                "id": "339",
-                "qty": 4
-            },
-            {
-                "id": "340",
-                "qty": 6
-            },
-            {
-                "id": "341",
-                "qty": 8
-            },
-            {
-                "id": "342",
-                "qty": 14
-            },
-            {
-                "id": "366",
                 "qty": 20
             },
             {
-                "id": "371",
-                "qty": 4
-            },
-            {
-                "id": "372",
-                "qty": 6
-            },
-            {
-                "id": "373",
-                "qty": 8
-            },
-            {
-                "id": "374",
-                "qty": 14
-            },
-            {
                 "id": "387",
-                "qty": 4
+                "qty": 3
             },
             {
                 "id": "388",
                 "qty": 5
             },
             {
-                "id": "393",
-                "qty": 4
-            },
-            {
-                "id": "394",
-                "qty": 6
-            },
-            {
                 "id": "395",
-                "qty": 8
-            },
-            {
-                "id": "396",
-                "qty": 14
-            },
-            {
-                "id": "403",
-                "qty": 4
-            },
-            {
-                "id": "404",
-                "qty": 6
-            },
-            {
-                "id": "405",
-                "qty": 8
-            },
-            {
-                "id": "406",
-                "qty": 14
-            },
-            {
-                "id": "420",
-                "qty": 4
-            },
-            {
-                "id": "421",
-                "qty": 6
-            },
-            {
-                "id": "422",
-                "qty": 8
-            },
-            {
-                "id": "423",
-                "qty": 14
-            },
-            {
-                "id": "446",
                 "qty": 1
             },
             {
-                "id": "447",
+                "id": "396",
                 "qty": 2
             },
             {
-                "id": "448",
-                "qty": 4
+                "id": "405",
+                "qty": 1
+            },
+            {
+                "id": "406",
+                "qty": 2
             },
             {
                 "id": "449",
-                "qty": 10
+                "qty": 1
             },
             {
                 "id": "455",
@@ -526,251 +234,143 @@ export default {
             },
             {
                 "id": "459",
-                "qty": 8
+                "qty": 2
             },
             {
                 "id": "460",
-                "qty": 10
-            },
-            {
-                "id": "461",
-                "qty": 12
-            },
-            {
-                "id": "462",
-                "qty": 18
-            },
-            {
-                "id": "464",
-                "qty": 9
-            },
-            {
-                "id": "465",
-                "qty": 11
-            },
-            {
-                "id": "466",
-                "qty": 13
-            },
-            {
-                "id": "467",
-                "qty": 19
-            },
-            {
-                "id": "476",
                 "qty": 3
             },
             {
-                "id": "477",
+                "id": "461",
+                "qty": 4
+            },
+            {
+                "id": "462",
                 "qty": 5
             },
             {
-                "id": "478",
-                "qty": 7
+                "id": "464",
+                "qty": 2
+            },
+            {
+                "id": "465",
+                "qty": 3
+            },
+            {
+                "id": "466",
+                "qty": 4
+            },
+            {
+                "id": "467",
+                "qty": 5
             },
             {
                 "id": "479",
-                "qty": 13
-            },
-            {
-                "id": "482",
-                "qty": 4
-            },
-            {
-                "id": "483",
-                "qty": 6
-            },
-            {
-                "id": "484",
-                "qty": 8
-            },
-            {
-                "id": "485",
-                "qty": 14
+                "qty": 1
             },
             {
                 "id": "501",
-                "qty": 5
+                "qty": 1
             },
             {
                 "id": "502",
-                "qty": 10
+                "qty": 2
             },
             {
                 "id": "503",
-                "qty": 20
+                "qty": 3
             },
             {
                 "id": "504",
-                "qty": 30
+                "qty": 4
             },
             {
                 "id": "518",
-                "qty": 6
+                "qty": 3
             },
             {
                 "id": "519",
-                "qty": 8
+                "qty": 4
             },
             {
                 "id": "520",
-                "qty": 10
-            },
-            {
-                "id": "521",
-                "qty": 16
-            },
-            {
-                "id": "525",
-                "qty": 7
-            },
-            {
-                "id": "526",
-                "qty": 9
-            },
-            {
-                "id": "527",
-                "qty": 11
-            },
-            {
-                "id": "528",
-                "qty": 17
-            },
-            {
-                "id": "547",
-                "qty": 10
-            },
-            {
-                "id": "548",
-                "qty": 20
-            },
-            {
-                "id": "549",
-                "qty": 30
-            },
-            {
-                "id": "550",
-                "qty": 40
-            },
-            {
-                "id": "559",
-                "qty": 10
-            },
-            {
-                "id": "568",
-                "qty": 4
-            },
-            {
-                "id": "569",
-                "qty": 6
-            },
-            {
-                "id": "570",
-                "qty": 8
-            },
-            {
-                "id": "571",
-                "qty": 14
-            },
-            {
-                "id": "575",
                 "qty": 5
             },
             {
-                "id": "583",
-                "qty": 4
-            },
-            {
-                "id": "584",
+                "id": "521",
                 "qty": 6
             },
             {
-                "id": "585",
-                "qty": 8
+                "id": "525",
+                "qty": 1
             },
             {
-                "id": "586",
-                "qty": 14
-            },
-            {
-                "id": "627",
-                "qty": 4
-            },
-            {
-                "id": "628",
-                "qty": 6
-            },
-            {
-                "id": "629",
-                "qty": 8
-            },
-            {
-                "id": "630",
-                "qty": 14
-            },
-            {
-                "id": "641",
-                "qty": 4
-            },
-            {
-                "id": "642",
-                "qty": 6
-            },
-            {
-                "id": "643",
-                "qty": 8
-            },
-            {
-                "id": "644",
-                "qty": 14
-            },
-            {
-                "id": "646",
+                "id": "526",
                 "qty": 2
             },
             {
-                "id": "647",
+                "id": "527",
+                "qty": 3
+            },
+            {
+                "id": "528",
                 "qty": 4
             },
             {
-                "id": "648",
+                "id": "547",
+                "qty": 5
+            },
+            {
+                "id": "548",
                 "qty": 6
+            },
+            {
+                "id": "549",
+                "qty": 7
+            },
+            {
+                "id": "550",
+                "qty": 8
+            },
+            {
+                "id": "559",
+                "qty": 5
+            },
+            {
+                "id": "575",
+                "qty": 3
             },
             {
                 "id": "649",
-                "qty": 12
-            },
-            {
-                "id": "651",
-                "qty": 2
-            },
-            {
-                "id": "652",
-                "qty": 4
-            },
-            {
-                "id": "653",
-                "qty": 6
+                "qty": 1
             },
             {
                 "id": "654",
-                "qty": 12
+                "qty": 1
             },
             {
-                "id": "682",
-                "qty": 4
+                "id": "731",
+                "qty": 50
             },
             {
-                "id": "683",
-                "qty": 6
+                "id": "763",
+                "qty": 40
             },
             {
-                "id": "684",
-                "qty": 8
+                "id": "776",
+                "qty": 30
             },
             {
-                "id": "685",
-                "qty": 14
+                "id": "801",
+                "qty": 20
+            },
+            {
+                "id": "805",
+                "qty": 30
+            },
+            {
+                "id": "808",
+                "qty": 10
             }
         ]
     },
@@ -1509,11 +1109,11 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": 593,
-                "qty": 1
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -1561,7 +1161,7 @@ export default {
             },
             {
                 "id": 84,
-                "qty": 30
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -1569,6 +1169,84 @@ export default {
     "43": {
         "name": "Assault Rifle +1",
         "key": "AssaultRifle_Default2",
+        "img": "assault-rifle.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 50
+            },
+            {
+                "id": 493,
+                "qty": 12
+            },
+            {
+                "id": 84,
+                "qty": 12
+            },
+            {
+                "id": 2,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "44": {
+        "name": "Assault Rifle +2",
+        "key": "AssaultRifle_Default3",
+        "img": "assault-rifle.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 60
+            },
+            {
+                "id": 493,
+                "qty": 15
+            },
+            {
+                "id": 84,
+                "qty": 15
+            },
+            {
+                "id": 2,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "45": {
+        "name": "Assault Rifle +3",
+        "key": "AssaultRifle_Default4",
+        "img": "assault-rifle.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 70
+            },
+            {
+                "id": 493,
+                "qty": 17
+            },
+            {
+                "id": 84,
+                "qty": 17
+            },
+            {
+                "id": 2,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "46": {
+        "name": "Assault Rifle +4",
+        "key": "AssaultRifle_Default5",
         "img": "assault-rifle.png",
         "group": "weapons",
         "inventory": 0,
@@ -1583,89 +1261,11 @@ export default {
             },
             {
                 "id": 84,
-                "qty": 60
-            },
-            {
-                "id": 2,
-                "qty": 5
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "44": {
-        "name": "Assault Rifle +2",
-        "key": "AssaultRifle_Default3",
-        "img": "assault-rifle.png",
-        "group": "weapons",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 120
-            },
-            {
-                "id": 493,
-                "qty": 30
-            },
-            {
-                "id": 84,
-                "qty": 90
-            },
-            {
-                "id": 2,
-                "qty": 10
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "45": {
-        "name": "Assault Rifle +3",
-        "key": "AssaultRifle_Default4",
-        "img": "assault-rifle.png",
-        "group": "weapons",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 180
-            },
-            {
-                "id": 493,
-                "qty": 45
-            },
-            {
-                "id": 84,
-                "qty": 135
-            },
-            {
-                "id": 2,
                 "qty": 20
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "46": {
-        "name": "Assault Rifle +4",
-        "key": "AssaultRifle_Default5",
-        "img": "assault-rifle.png",
-        "group": "weapons",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 270
-            },
-            {
-                "id": 493,
-                "qty": 67
-            },
-            {
-                "id": 84,
-                "qty": 202
             },
             {
                 "id": 2,
-                "qty": 30
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -1706,6 +1306,10 @@ export default {
             {
                 "id": 321,
                 "qty": 50
+            },
+            {
+                "id": 818,
+                "qty": 10
             },
             {
                 "id": 473,
@@ -2005,19 +1609,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 30
+                "qty": 36
             },
             {
                 "id": 516,
-                "qty": 30
+                "qty": 36
             },
             {
                 "id": 321,
-                "qty": 20
+                "qty": 24
             },
             {
                 "id": 473,
-                "qty": 40
+                "qty": 48
             }
         ],
         "usedInRecipesFor": []
@@ -2135,10 +1739,6 @@ export default {
             {
                 "id": 97,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -2153,10 +1753,6 @@ export default {
             {
                 "id": 97,
                 "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -2171,10 +1767,6 @@ export default {
             {
                 "id": 97,
                 "qty": 49
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -2189,10 +1781,6 @@ export default {
             {
                 "id": 97,
                 "qty": 73
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -2405,30 +1993,34 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 104,
-                "qty": 2
+                "id": 90,
+                "qty": 5
+            },
+            {
+                "id": 202,
+                "qty": 1
             }
         ],
         "usedInRecipesFor": [
             {
                 "id": "42",
-                "qty": 30
+                "qty": 10
             },
             {
                 "id": "43",
-                "qty": 60
+                "qty": 12
             },
             {
                 "id": "44",
-                "qty": 90
+                "qty": 15
             },
             {
                 "id": "45",
-                "qty": 135
+                "qty": 17
             },
             {
                 "id": "46",
-                "qty": 202
+                "qty": 20
             },
             {
                 "id": "165",
@@ -2444,7 +2036,7 @@ export default {
             },
             {
                 "id": "220",
-                "qty": 20
+                "qty": 15
             },
             {
                 "id": "301",
@@ -2459,56 +2051,72 @@ export default {
                 "qty": 20
             },
             {
-                "id": "361",
-                "qty": 3
-            },
-            {
                 "id": "500",
-                "qty": 40
+                "qty": 10
             },
             {
                 "id": "501",
-                "qty": 80
+                "qty": 12
             },
             {
                 "id": "502",
-                "qty": 120
+                "qty": 15
             },
             {
                 "id": "503",
-                "qty": 180
+                "qty": 17
             },
             {
                 "id": "504",
-                "qty": 270
+                "qty": 20
             },
             {
                 "id": "546",
-                "qty": 50
+                "qty": 25
             },
             {
                 "id": "547",
-                "qty": 100
+                "qty": 31
             },
             {
                 "id": "548",
-                "qty": 150
+                "qty": 37
             },
             {
                 "id": "549",
-                "qty": 225
+                "qty": 43
             },
             {
                 "id": "550",
-                "qty": 337
+                "qty": 50
             },
             {
                 "id": "559",
                 "qty": 30
             },
             {
-                "id": "656",
+                "id": "750",
+                "qty": 50
+            },
+            {
+                "id": "753",
+                "qty": 20
+            },
+            {
+                "id": "757",
+                "qty": 40
+            },
+            {
+                "id": "759",
+                "qty": 30
+            },
+            {
+                "id": "809",
                 "qty": 2
+            },
+            {
+                "id": "819",
+                "qty": 1
             }
         ]
     },
@@ -2587,7 +2195,7 @@ export default {
         "recipe": [
             {
                 "id": 593,
-                "qty": 50
+                "qty": 20
             },
             {
                 "id": 67,
@@ -2616,20 +2224,12 @@ export default {
                 "qty": 20
             },
             {
-                "id": "313",
-                "qty": 2
-            },
-            {
                 "id": "319",
                 "qty": 30
             },
             {
                 "id": "325",
                 "qty": 1
-            },
-            {
-                "id": "361",
-                "qty": 5
             },
             {
                 "id": "399",
@@ -2656,8 +2256,8 @@ export default {
                 "qty": 1
             },
             {
-                "id": "656",
-                "qty": 3
+                "id": "765",
+                "qty": 200
             }
         ]
     },
@@ -2702,6 +2302,10 @@ export default {
             },
             {
                 "id": "75",
+                "qty": 5
+            },
+            {
+                "id": "84",
                 "qty": 5
             },
             {
@@ -2796,11 +2400,11 @@ export default {
         "recipe": [
             {
                 "id": 505,
-                "qty": 4
+                "qty": 2
             },
             {
                 "id": 493,
-                "qty": 2
+                "qty": 1
             }
         ],
         "usedInRecipesFor": [
@@ -2827,10 +2431,6 @@ export default {
             {
                 "id": "171",
                 "qty": 20
-            },
-            {
-                "id": "333",
-                "qty": 50
             },
             {
                 "id": "351",
@@ -2863,6 +2463,10 @@ export default {
             {
                 "id": "672",
                 "qty": 10
+            },
+            {
+                "id": "809",
+                "qty": 2
             }
         ]
     },
@@ -2999,19 +2603,19 @@ export default {
             },
             {
                 "id": "100",
-                "qty": 4
+                "qty": 3
             },
             {
                 "id": "101",
-                "qty": 6
+                "qty": 4
             },
             {
                 "id": "102",
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": "103",
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": "107",
@@ -3019,19 +2623,19 @@ export default {
             },
             {
                 "id": "108",
-                "qty": 16
+                "qty": 10
             },
             {
                 "id": "109",
-                "qty": 24
+                "qty": 12
             },
             {
                 "id": "110",
-                "qty": 36
+                "qty": 14
             },
             {
                 "id": "111",
-                "qty": 54
+                "qty": 16
             },
             {
                 "id": "158",
@@ -3056,10 +2660,6 @@ export default {
             {
                 "id": "179",
                 "qty": 49
-            },
-            {
-                "id": "180",
-                "qty": 10
             },
             {
                 "id": "194",
@@ -3111,19 +2711,19 @@ export default {
             },
             {
                 "id": "267",
-                "qty": 16
+                "qty": 10
             },
             {
                 "id": "268",
-                "qty": 24
+                "qty": 12
             },
             {
                 "id": "269",
-                "qty": 36
+                "qty": 14
             },
             {
                 "id": "270",
-                "qty": 54
+                "qty": 16
             },
             {
                 "id": "292",
@@ -3179,19 +2779,19 @@ export default {
             },
             {
                 "id": "393",
-                "qty": 10
+                "qty": 6
             },
             {
                 "id": "394",
-                "qty": 15
+                "qty": 7
             },
             {
                 "id": "395",
-                "qty": 22
+                "qty": 8
             },
             {
                 "id": "396",
-                "qty": 33
+                "qty": 10
             },
             {
                 "id": "419",
@@ -3231,7 +2831,7 @@ export default {
             },
             {
                 "id": "508",
-                "qty": 15
+                "qty": 10
             },
             {
                 "id": "567",
@@ -3291,19 +2891,19 @@ export default {
             },
             {
                 "id": "646",
-                "qty": 6
+                "qty": 4
             },
             {
                 "id": "647",
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": "648",
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": "649",
-                "qty": 19
+                "qty": 7
             },
             {
                 "id": "650",
@@ -3311,19 +2911,19 @@ export default {
             },
             {
                 "id": "651",
-                "qty": 6
+                "qty": 4
             },
             {
                 "id": "652",
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": "653",
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": "654",
-                "qty": 19
+                "qty": 7
             },
             {
                 "id": "681",
@@ -3344,6 +2944,22 @@ export default {
             {
                 "id": "685",
                 "qty": 49
+            },
+            {
+                "id": "739",
+                "qty": 12
+            },
+            {
+                "id": "740",
+                "qty": 12
+            },
+            {
+                "id": "746",
+                "qty": 12
+            },
+            {
+                "id": "747",
+                "qty": 10
             }
         ]
     },
@@ -3379,6 +2995,10 @@ export default {
             {
                 "id": 97,
                 "qty": 2
+            },
+            {
+                "id": 195,
+                "qty": 7
             }
         ],
         "usedInRecipesFor": []
@@ -3392,11 +3012,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 4
+                "qty": 3
             },
             {
-                "id": 2,
-                "qty": 1
+                "id": 195,
+                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -3410,11 +3030,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 6
+                "qty": 4
             },
             {
-                "id": 2,
-                "qty": 2
+                "id": 195,
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -3428,11 +3048,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 9
+                "qty": 5
             },
             {
-                "id": 2,
-                "qty": 4
+                "id": 195,
+                "qty": 12
             }
         ],
         "usedInRecipesFor": []
@@ -3446,11 +3066,15 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 13
+                "qty": 6
+            },
+            {
+                "id": 195,
+                "qty": 14
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -3463,12 +3087,16 @@ export default {
         "inventory": 0,
         "usedInRecipesFor": [
             {
-                "id": "84",
+                "id": "516",
                 "qty": 2
             },
             {
-                "id": "516",
-                "qty": 2
+                "id": "810",
+                "qty": 8
+            },
+            {
+                "id": "826",
+                "qty": 5
             }
         ]
     },
@@ -3543,6 +3171,88 @@ export default {
         "recipe": [
             {
                 "id": 321,
+                "qty": 50
+            },
+            {
+                "id": 357,
+                "qty": 16
+            },
+            {
+                "id": 97,
+                "qty": 10
+            },
+            {
+                "id": 317,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "109": {
+        "name": "Cold Resistant Metal Armor +2",
+        "key": "CopperArmorCold_3",
+        "img": "cold-resistant-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 321,
+                "qty": 60
+            },
+            {
+                "id": 357,
+                "qty": 19
+            },
+            {
+                "id": 97,
+                "qty": 12
+            },
+            {
+                "id": 317,
+                "qty": 12
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "110": {
+        "name": "Cold Resistant Metal Armor +3",
+        "key": "CopperArmorCold_4",
+        "img": "cold-resistant-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 321,
+                "qty": 70
+            },
+            {
+                "id": 357,
+                "qty": 22
+            },
+            {
+                "id": 97,
+                "qty": 14
+            },
+            {
+                "id": 317,
+                "qty": 14
+            },
+            {
+                "id": 2,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "111": {
+        "name": "Cold Resistant Metal Armor +4",
+        "key": "CopperArmorCold_5",
+        "img": "cold-resistant-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 321,
                 "qty": 80
             },
             {
@@ -3559,97 +3269,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 5
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "109": {
-        "name": "Cold Resistant Metal Armor +2",
-        "key": "CopperArmorCold_3",
-        "img": "cold-resistant-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 321,
-                "qty": 120
-            },
-            {
-                "id": 357,
-                "qty": 39
-            },
-            {
-                "id": 97,
-                "qty": 24
-            },
-            {
-                "id": 317,
-                "qty": 24
-            },
-            {
-                "id": 2,
-                "qty": 7
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "110": {
-        "name": "Cold Resistant Metal Armor +3",
-        "key": "CopperArmorCold_4",
-        "img": "cold-resistant-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 321,
-                "qty": 180
-            },
-            {
-                "id": 357,
-                "qty": 58
-            },
-            {
-                "id": 97,
-                "qty": 36
-            },
-            {
-                "id": 317,
-                "qty": 36
-            },
-            {
-                "id": 2,
-                "qty": 9
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "111": {
-        "name": "Cold Resistant Metal Armor +4",
-        "key": "CopperArmorCold_5",
-        "img": "cold-resistant-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 321,
-                "qty": 270
-            },
-            {
-                "id": 357,
-                "qty": 87
-            },
-            {
-                "id": 97,
-                "qty": 54
-            },
-            {
-                "id": 317,
-                "qty": 54
-            },
-            {
-                "id": 2,
-                "qty": 15
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -3671,11 +3291,11 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 6
+                "qty": 3
             },
             {
-                "id": 317,
-                "qty": 16
+                "id": 817,
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -3689,23 +3309,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 357,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 296,
-                "qty": 12
+                "qty": 3
             },
             {
-                "id": 317,
-                "qty": 32
+                "id": 817,
+                "qty": 6
             },
             {
                 "id": 2,
-                "qty": 9
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -3719,23 +3339,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 357,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 296,
-                "qty": 18
+                "qty": 4
             },
             {
-                "id": 317,
-                "qty": 48
+                "id": 817,
+                "qty": 7
             },
             {
                 "id": 2,
-                "qty": 11
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -3749,23 +3369,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 357,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 296,
-                "qty": 27
+                "qty": 5
             },
             {
-                "id": 317,
-                "qty": 72
+                "id": 817,
+                "qty": 8
             },
             {
                 "id": 2,
-                "qty": 13
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -3779,23 +3399,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 357,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 296,
-                "qty": 40
+                "qty": 6
             },
             {
-                "id": 317,
-                "qty": 108
+                "id": 817,
+                "qty": 10
             },
             {
                 "id": 2,
-                "qty": 19
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -3814,6 +3434,10 @@ export default {
             {
                 "id": 317,
                 "qty": 4
+            },
+            {
+                "id": 321,
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -3827,15 +3451,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": 317,
-                "qty": 8
+                "qty": 5
             },
             {
-                "id": 2,
-                "qty": 4
+                "id": 321,
+                "qty": 12
             }
         ],
         "usedInRecipesFor": []
@@ -3849,15 +3473,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": 317,
-                "qty": 12
+                "qty": 6
             },
             {
-                "id": 2,
-                "qty": 6
+                "id": 321,
+                "qty": 15
             }
         ],
         "usedInRecipesFor": []
@@ -3871,15 +3495,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": 317,
-                "qty": 18
+                "qty": 7
             },
             {
-                "id": 2,
-                "qty": 8
+                "id": 321,
+                "qty": 17
             }
         ],
         "usedInRecipesFor": []
@@ -3893,15 +3517,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": 317,
-                "qty": 27
+                "qty": 8
+            },
+            {
+                "id": 321,
+                "qty": 20
             },
             {
                 "id": 2,
-                "qty": 14
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -3923,11 +3551,11 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 3
+                "qty": 2
             },
             {
-                "id": 317,
-                "qty": 12
+                "id": 817,
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -3935,6 +3563,96 @@ export default {
     "123": {
         "name": "Cold Resistant Refined Metal Armor +1",
         "key": "IronArmorCold_2",
+        "img": "cold-resistant-refined-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 50
+            },
+            {
+                "id": 357,
+                "qty": 25
+            },
+            {
+                "id": 296,
+                "qty": 2
+            },
+            {
+                "id": 817,
+                "qty": 5
+            },
+            {
+                "id": 2,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "124": {
+        "name": "Cold Resistant Refined Metal Armor +2",
+        "key": "IronArmorCold_3",
+        "img": "cold-resistant-refined-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 60
+            },
+            {
+                "id": 357,
+                "qty": 30
+            },
+            {
+                "id": 296,
+                "qty": 3
+            },
+            {
+                "id": 817,
+                "qty": 6
+            },
+            {
+                "id": 2,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "125": {
+        "name": "Cold Resistant Refined Metal Armor +3",
+        "key": "IronArmorCold_4",
+        "img": "cold-resistant-refined-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 70
+            },
+            {
+                "id": 357,
+                "qty": 35
+            },
+            {
+                "id": 296,
+                "qty": 4
+            },
+            {
+                "id": 817,
+                "qty": 7
+            },
+            {
+                "id": 2,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "126": {
+        "name": "Cold Resistant Refined Metal Armor +4",
+        "key": "IronArmorCold_5",
         "img": "cold-resistant-refined-metal-armor.png",
         "group": "armor",
         "inventory": 0,
@@ -3949,105 +3667,15 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 6
+                "qty": 5
             },
             {
-                "id": 317,
-                "qty": 24
-            },
-            {
-                "id": 2,
-                "qty": 7
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "124": {
-        "name": "Cold Resistant Refined Metal Armor +2",
-        "key": "IronArmorCold_3",
-        "img": "cold-resistant-refined-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 120
-            },
-            {
-                "id": 357,
-                "qty": 60
-            },
-            {
-                "id": 296,
-                "qty": 9
-            },
-            {
-                "id": 317,
-                "qty": 36
+                "id": 817,
+                "qty": 8
             },
             {
                 "id": 2,
-                "qty": 9
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "125": {
-        "name": "Cold Resistant Refined Metal Armor +3",
-        "key": "IronArmorCold_4",
-        "img": "cold-resistant-refined-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 180
-            },
-            {
-                "id": 357,
-                "qty": 90
-            },
-            {
-                "id": 296,
-                "qty": 13
-            },
-            {
-                "id": 317,
-                "qty": 54
-            },
-            {
-                "id": 2,
-                "qty": 11
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "126": {
-        "name": "Cold Resistant Refined Metal Armor +4",
-        "key": "IronArmorCold_5",
-        "img": "cold-resistant-refined-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 270
-            },
-            {
-                "id": 357,
-                "qty": 135
-            },
-            {
-                "id": 296,
-                "qty": 19
-            },
-            {
-                "id": 317,
-                "qty": 81
-            },
-            {
-                "id": 2,
-                "qty": 17
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -4150,7 +3778,12 @@ export default {
         "img": "cotton-candy.png",
         "group": "food",
         "inventory": 0,
-        "usedInRecipesFor": []
+        "usedInRecipesFor": [
+            {
+                "id": "827",
+                "qty": 5
+            }
+        ]
     },
     "132": {
         "name": "Crossbow",
@@ -4173,7 +3806,7 @@ export default {
             },
             {
                 "id": 440,
-                "qty": 5
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -4181,6 +3814,84 @@ export default {
     "133": {
         "name": "Crossbow +1",
         "key": "BowGun_2",
+        "img": "crossbow.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 686,
+                "qty": 62
+            },
+            {
+                "id": 593,
+                "qty": 50
+            },
+            {
+                "id": 321,
+                "qty": 12
+            },
+            {
+                "id": 440,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "134": {
+        "name": "Crossbow +2",
+        "key": "BowGun_3",
+        "img": "crossbow.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 686,
+                "qty": 75
+            },
+            {
+                "id": 593,
+                "qty": 60
+            },
+            {
+                "id": 321,
+                "qty": 15
+            },
+            {
+                "id": 440,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "135": {
+        "name": "Crossbow +3",
+        "key": "BowGun_4",
+        "img": "crossbow.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 686,
+                "qty": 87
+            },
+            {
+                "id": 593,
+                "qty": 70
+            },
+            {
+                "id": 321,
+                "qty": 17
+            },
+            {
+                "id": 440,
+                "qty": 4
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "136": {
+        "name": "Crossbow +4",
+        "key": "BowGun_5",
         "img": "crossbow.png",
         "group": "weapons",
         "inventory": 0,
@@ -4199,101 +3910,11 @@ export default {
             },
             {
                 "id": 440,
-                "qty": 10
+                "qty": 5
             },
             {
                 "id": 2,
-                "qty": 2
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "134": {
-        "name": "Crossbow +2",
-        "key": "BowGun_3",
-        "img": "crossbow.png",
-        "group": "weapons",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 686,
-                "qty": 150
-            },
-            {
-                "id": 593,
-                "qty": 120
-            },
-            {
-                "id": 321,
-                "qty": 30
-            },
-            {
-                "id": 440,
-                "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 4
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "135": {
-        "name": "Crossbow +3",
-        "key": "BowGun_4",
-        "img": "crossbow.png",
-        "group": "weapons",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 686,
-                "qty": 225
-            },
-            {
-                "id": 593,
-                "qty": 180
-            },
-            {
-                "id": 321,
-                "qty": 45
-            },
-            {
-                "id": 440,
-                "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 6
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "136": {
-        "name": "Crossbow +4",
-        "key": "BowGun_5",
-        "img": "crossbow.png",
-        "group": "weapons",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 686,
-                "qty": 337
-            },
-            {
-                "id": 593,
-                "qty": 270
-            },
-            {
-                "id": 321,
-                "qty": 67
-            },
-            {
-                "id": 440,
-                "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 12
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -4738,6 +4359,10 @@ export default {
             {
                 "id": 493,
                 "qty": 7
+            },
+            {
+                "id": 824,
+                "qty": 25
             }
         ],
         "usedInRecipesFor": []
@@ -4816,6 +4441,10 @@ export default {
             {
                 "id": "553",
                 "qty": 2
+            },
+            {
+                "id": "724",
+                "qty": 15
             }
         ]
     },
@@ -5212,6 +4841,22 @@ export default {
             {
                 "id": "664",
                 "qty": 2
+            },
+            {
+                "id": "740",
+                "qty": 20
+            },
+            {
+                "id": "747",
+                "qty": 10
+            },
+            {
+                "id": "773",
+                "qty": 200
+            },
+            {
+                "id": "819",
+                "qty": 1
             }
         ]
     },
@@ -5339,10 +4984,6 @@ export default {
             {
                 "id": 321,
                 "qty": 3
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -5365,10 +5006,6 @@ export default {
             {
                 "id": 321,
                 "qty": 4
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -5391,10 +5028,6 @@ export default {
             {
                 "id": 321,
                 "qty": 6
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -5417,10 +5050,6 @@ export default {
             {
                 "id": 321,
                 "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -5437,12 +5066,12 @@ export default {
                 "qty": 30
             },
             {
-                "id": 97,
+                "id": 296,
                 "qty": 10
             },
             {
-                "id": 516,
-                "qty": 30
+                "id": 814,
+                "qty": 5
             },
             {
                 "id": 202,
@@ -5475,7 +5104,7 @@ export default {
                 "qty": 30
             },
             {
-                "id": 711,
+                "id": 686,
                 "qty": 10
             }
         ],
@@ -5493,12 +5122,8 @@ export default {
                 "qty": 45
             },
             {
-                "id": 711,
+                "id": 686,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -5515,12 +5140,8 @@ export default {
                 "qty": 67
             },
             {
-                "id": 711,
+                "id": 686,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -5537,12 +5158,8 @@ export default {
                 "qty": 100
             },
             {
-                "id": 711,
+                "id": 686,
                 "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -5559,12 +5176,8 @@ export default {
                 "qty": 150
             },
             {
-                "id": 711,
+                "id": 686,
                 "qty": 49
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -5595,8 +5208,8 @@ export default {
                 "qty": 10
             },
             {
-                "id": 473,
-                "qty": 5
+                "id": 357,
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -5610,15 +5223,11 @@ export default {
         "recipe": [
             {
                 "id": 195,
-                "qty": 20
+                "qty": 12
             },
             {
-                "id": 473,
-                "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 3
+                "id": 357,
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -5632,15 +5241,11 @@ export default {
         "recipe": [
             {
                 "id": 195,
-                "qty": 30
-            },
-            {
-                "id": 473,
                 "qty": 15
             },
             {
-                "id": 2,
-                "qty": 5
+                "id": 357,
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -5654,15 +5259,11 @@ export default {
         "recipe": [
             {
                 "id": 195,
-                "qty": 45
+                "qty": 17
             },
             {
-                "id": 473,
-                "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 7
+                "id": 357,
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -5676,15 +5277,15 @@ export default {
         "recipe": [
             {
                 "id": 195,
-                "qty": 67
+                "qty": 20
             },
             {
-                "id": 473,
-                "qty": 33
+                "id": 357,
+                "qty": 4
             },
             {
                 "id": 2,
-                "qty": 13
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -5801,6 +5402,26 @@ export default {
                 "qty": 20
             },
             {
+                "id": "99",
+                "qty": 7
+            },
+            {
+                "id": "100",
+                "qty": 8
+            },
+            {
+                "id": "101",
+                "qty": 10
+            },
+            {
+                "id": "102",
+                "qty": 12
+            },
+            {
+                "id": "103",
+                "qty": 14
+            },
+            {
                 "id": "127",
                 "qty": 10
             },
@@ -5874,19 +5495,19 @@ export default {
             },
             {
                 "id": "189",
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": "190",
-                "qty": 30
+                "qty": 15
             },
             {
                 "id": "191",
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": "192",
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": "194",
@@ -5906,10 +5527,6 @@ export default {
             },
             {
                 "id": "206",
-                "qty": 10
-            },
-            {
-                "id": "208",
                 "qty": 10
             },
             {
@@ -5981,24 +5598,16 @@ export default {
                 "qty": 90
             },
             {
-                "id": "314",
-                "qty": 10
-            },
-            {
                 "id": "315",
                 "qty": 24
             },
             {
-                "id": "320",
-                "qty": 10
-            },
-            {
                 "id": "336",
-                "qty": 60
+                "qty": 72
             },
             {
                 "id": "337",
-                "qty": 50
+                "qty": 60
             },
             {
                 "id": "345",
@@ -6046,19 +5655,39 @@ export default {
             },
             {
                 "id": "446",
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": "447",
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": "448",
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": "449",
-                "qty": 100
+                "qty": 30
+            },
+            {
+                "id": "475",
+                "qty": 20
+            },
+            {
+                "id": "476",
+                "qty": 25
+            },
+            {
+                "id": "477",
+                "qty": 30
+            },
+            {
+                "id": "478",
+                "qty": 35
+            },
+            {
+                "id": "479",
+                "qty": 40
             },
             {
                 "id": "492",
@@ -6083,10 +5712,6 @@ export default {
             {
                 "id": "538",
                 "qty": 5
-            },
-            {
-                "id": "562",
-                "qty": 10
             },
             {
                 "id": "563",
@@ -6179,6 +5804,24 @@ export default {
             {
                 "id": "713",
                 "qty": 50
+            },
+            {
+                "id": "806",
+                "qty": 10
+            },
+            {
+                "id": "807",
+                "qty": 10
+            },
+            {
+                "id": "836",
+                "qty": 5
+            }
+        ],
+        "recipe": [
+            {
+                "id": 686,
+                "qty": 1
             }
         ]
     },
@@ -6217,11 +5860,11 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": 593,
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": 202,
@@ -6251,7 +5894,7 @@ export default {
             },
             {
                 "id": 440,
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": 202,
@@ -6366,6 +6009,10 @@ export default {
                 "qty": 20
             },
             {
+                "id": "84",
+                "qty": 1
+            },
+            {
                 "id": "128",
                 "qty": 3
             },
@@ -6415,19 +6062,19 @@ export default {
             },
             {
                 "id": "267",
-                "qty": 16
+                "qty": 10
             },
             {
                 "id": "268",
-                "qty": 24
+                "qty": 12
             },
             {
                 "id": "269",
-                "qty": 36
+                "qty": 14
             },
             {
                 "id": "270",
-                "qty": 54
+                "qty": 16
             },
             {
                 "id": "271",
@@ -6435,19 +6082,19 @@ export default {
             },
             {
                 "id": "272",
-                "qty": 32
+                "qty": 20
             },
             {
                 "id": "273",
-                "qty": 48
+                "qty": 24
             },
             {
                 "id": "274",
-                "qty": 72
+                "qty": 28
             },
             {
                 "id": "275",
-                "qty": 108
+                "qty": 32
             },
             {
                 "id": "276",
@@ -6455,19 +6102,19 @@ export default {
             },
             {
                 "id": "277",
-                "qty": 8
+                "qty": 5
             },
             {
                 "id": "278",
-                "qty": 12
+                "qty": 6
             },
             {
                 "id": "279",
-                "qty": 18
+                "qty": 7
             },
             {
                 "id": "280",
-                "qty": 27
+                "qty": 8
             },
             {
                 "id": "281",
@@ -6475,19 +6122,19 @@ export default {
             },
             {
                 "id": "282",
-                "qty": 24
+                "qty": 15
             },
             {
                 "id": "283",
-                "qty": 36
+                "qty": 18
             },
             {
                 "id": "284",
-                "qty": 54
+                "qty": 21
             },
             {
                 "id": "285",
-                "qty": 81
+                "qty": 24
             },
             {
                 "id": "286",
@@ -6507,7 +6154,7 @@ export default {
             },
             {
                 "id": "336",
-                "qty": 24
+                "qty": 28
             },
             {
                 "id": "346",
@@ -6555,23 +6202,39 @@ export default {
             },
             {
                 "id": "646",
-                "qty": 4
+                "qty": 3
             },
             {
                 "id": "647",
-                "qty": 6
+                "qty": 4
             },
             {
                 "id": "648",
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": "649",
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": "660",
                 "qty": 10
+            },
+            {
+                "id": "735",
+                "qty": 10
+            },
+            {
+                "id": "737",
+                "qty": 20
+            },
+            {
+                "id": "739",
+                "qty": 20
+            },
+            {
+                "id": "810",
+                "qty": 4
             }
         ]
     },
@@ -6657,6 +6320,10 @@ export default {
             {
                 "id": "554",
                 "qty": 1
+            },
+            {
+                "id": "724",
+                "qty": 20
             }
         ]
     },
@@ -6742,16 +6409,12 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 195,
-                "qty": 10
+                "id": 255,
+                "qty": 1
             },
             {
                 "id": 593,
                 "qty": 10
-            },
-            {
-                "id": 255,
-                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -6849,19 +6512,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 120
+                "qty": 43
             },
             {
-                "id": 516,
-                "qty": 240
+                "id": 826,
+                "qty": 43
             },
             {
                 "id": 661,
-                "qty": 60
+                "qty": 72
             },
             {
                 "id": 473,
-                "qty": 90
+                "qty": 96
             }
         ],
         "usedInRecipesFor": []
@@ -6875,19 +6538,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 100
+                "qty": 36
             },
             {
-                "id": 516,
-                "qty": 200
+                "id": 826,
+                "qty": 36
             },
             {
                 "id": 317,
-                "qty": 50
+                "qty": 60
             },
             {
                 "id": 473,
-                "qty": 75
+                "qty": 80
             }
         ],
         "usedInRecipesFor": []
@@ -6979,7 +6642,7 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 686,
+                "id": 824,
                 "qty": 50
             },
             {
@@ -7009,12 +6672,12 @@ export default {
                 "qty": 20
             },
             {
-                "id": 686,
+                "id": 824,
                 "qty": 100
             },
             {
                 "id": 84,
-                "qty": 20
+                "qty": 15
             },
             {
                 "id": 296,
@@ -7044,7 +6707,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 8
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -7058,11 +6721,15 @@ export default {
         "recipe": [
             {
                 "id": 2,
-                "qty": 15
+                "qty": 10
             },
             {
                 "id": 473,
                 "qty": 50
+            },
+            {
+                "id": 321,
+                "qty": 20
             }
         ],
         "usedInRecipesFor": []
@@ -7084,11 +6751,11 @@ export default {
             },
             {
                 "id": 686,
-                "qty": 7
+                "qty": 5
             },
             {
                 "id": 593,
-                "qty": 7
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -7117,10 +6784,6 @@ export default {
             {
                 "id": 321,
                 "qty": 37
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -7135,10 +6798,6 @@ export default {
             {
                 "id": 321,
                 "qty": 55
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -7153,10 +6812,6 @@ export default {
             {
                 "id": 321,
                 "qty": 82
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -7171,10 +6826,6 @@ export default {
             {
                 "id": 321,
                 "qty": 123
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -7211,10 +6862,6 @@ export default {
             {
                 "id": 195,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -7233,10 +6880,6 @@ export default {
             {
                 "id": 195,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -7255,10 +6898,6 @@ export default {
             {
                 "id": 195,
                 "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -7277,10 +6916,6 @@ export default {
             {
                 "id": 195,
                 "qty": 49
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -7453,10 +7088,6 @@ export default {
             {
                 "id": 631,
                 "qty": 7
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -7471,10 +7102,6 @@ export default {
             {
                 "id": 631,
                 "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -7489,10 +7116,6 @@ export default {
             {
                 "id": 631,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -7507,10 +7130,6 @@ export default {
             {
                 "id": 631,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -7583,10 +7202,6 @@ export default {
             {
                 "id": 254,
                 "qty": 7
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -7601,10 +7216,6 @@ export default {
             {
                 "id": 254,
                 "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -7619,10 +7230,6 @@ export default {
             {
                 "id": 254,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -7637,10 +7244,6 @@ export default {
             {
                 "id": 254,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -7708,16 +7311,40 @@ export default {
                 "qty": 1
             },
             {
+                "id": "314",
+                "qty": 1
+            },
+            {
+                "id": "320",
+                "qty": 1
+            },
+            {
                 "id": "541",
                 "qty": 2
             },
             {
-                "id": "545",
-                "qty": 5
+                "id": "562",
+                "qty": 1
             },
             {
                 "id": "564",
                 "qty": 3
+            },
+            {
+                "id": "751",
+                "qty": 10
+            },
+            {
+                "id": "756",
+                "qty": 10
+            },
+            {
+                "id": "758",
+                "qty": 8
+            },
+            {
+                "id": "760",
+                "qty": 6
             }
         ]
     },
@@ -7748,15 +7375,11 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 100
+                "qty": 62
             },
             {
                 "id": 298,
-                "qty": 30
-            },
-            {
-                "id": 2,
-                "qty": 3
+                "qty": 18
             }
         ],
         "usedInRecipesFor": []
@@ -7770,15 +7393,11 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 150
+                "qty": 75
             },
             {
                 "id": 298,
-                "qty": 45
-            },
-            {
-                "id": 2,
-                "qty": 5
+                "qty": 22
             }
         ],
         "usedInRecipesFor": []
@@ -7792,15 +7411,15 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 225
+                "qty": 87
             },
             {
                 "id": 298,
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": 2,
-                "qty": 7
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -7814,15 +7433,15 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 337
-            },
-            {
-                "id": 298,
                 "qty": 100
             },
             {
+                "id": 298,
+                "qty": 30
+            },
+            {
                 "id": 2,
-                "qty": 14
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -7976,6 +7595,88 @@ export default {
         "recipe": [
             {
                 "id": 321,
+                "qty": 50
+            },
+            {
+                "id": 357,
+                "qty": 16
+            },
+            {
+                "id": 97,
+                "qty": 10
+            },
+            {
+                "id": 202,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "268": {
+        "name": "Heat Resistant Metal Armor +2",
+        "key": "CopperArmorHeat_3",
+        "img": "heat-resistant-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 321,
+                "qty": 60
+            },
+            {
+                "id": 357,
+                "qty": 19
+            },
+            {
+                "id": 97,
+                "qty": 12
+            },
+            {
+                "id": 202,
+                "qty": 12
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "269": {
+        "name": "Heat Resistant Metal Armor +3",
+        "key": "CopperArmorHeat_4",
+        "img": "heat-resistant-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 321,
+                "qty": 70
+            },
+            {
+                "id": 357,
+                "qty": 22
+            },
+            {
+                "id": 97,
+                "qty": 14
+            },
+            {
+                "id": 202,
+                "qty": 14
+            },
+            {
+                "id": 2,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "270": {
+        "name": "Heat Resistant Metal Armor +4",
+        "key": "CopperArmorHeat_5",
+        "img": "heat-resistant-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 321,
                 "qty": 80
             },
             {
@@ -7992,97 +7693,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 5
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "268": {
-        "name": "Heat Resistant Metal Armor +2",
-        "key": "CopperArmorHeat_3",
-        "img": "heat-resistant-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 321,
-                "qty": 120
-            },
-            {
-                "id": 357,
-                "qty": 39
-            },
-            {
-                "id": 97,
-                "qty": 24
-            },
-            {
-                "id": 202,
-                "qty": 24
-            },
-            {
-                "id": 2,
-                "qty": 7
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "269": {
-        "name": "Heat Resistant Metal Armor +3",
-        "key": "CopperArmorHeat_4",
-        "img": "heat-resistant-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 321,
-                "qty": 180
-            },
-            {
-                "id": 357,
-                "qty": 58
-            },
-            {
-                "id": 97,
-                "qty": 36
-            },
-            {
-                "id": 202,
-                "qty": 36
-            },
-            {
-                "id": 2,
-                "qty": 9
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "270": {
-        "name": "Heat Resistant Metal Armor +4",
-        "key": "CopperArmorHeat_5",
-        "img": "heat-resistant-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 321,
-                "qty": 270
-            },
-            {
-                "id": 357,
-                "qty": 87
-            },
-            {
-                "id": 97,
-                "qty": 54
-            },
-            {
-                "id": 202,
-                "qty": 54
-            },
-            {
-                "id": 2,
-                "qty": 15
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -8104,7 +7715,7 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 6
+                "qty": 3
             },
             {
                 "id": 202,
@@ -8122,23 +7733,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 357,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 296,
-                "qty": 12
+                "qty": 3
             },
             {
                 "id": 202,
-                "qty": 32
+                "qty": 20
             },
             {
                 "id": 2,
-                "qty": 9
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -8152,23 +7763,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 357,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 296,
-                "qty": 18
+                "qty": 4
             },
             {
                 "id": 202,
-                "qty": 48
+                "qty": 24
             },
             {
                 "id": 2,
-                "qty": 11
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -8182,23 +7793,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 357,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 296,
-                "qty": 27
+                "qty": 5
             },
             {
                 "id": 202,
-                "qty": 72
+                "qty": 28
             },
             {
                 "id": 2,
-                "qty": 13
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -8212,23 +7823,23 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 357,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 296,
-                "qty": 40
+                "qty": 6
             },
             {
                 "id": 202,
-                "qty": 108
+                "qty": 32
             },
             {
                 "id": 2,
-                "qty": 19
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -8247,6 +7858,10 @@ export default {
             {
                 "id": 202,
                 "qty": 4
+            },
+            {
+                "id": 321,
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -8260,15 +7875,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": 202,
-                "qty": 8
+                "qty": 5
             },
             {
-                "id": 2,
-                "qty": 4
+                "id": 321,
+                "qty": 12
             }
         ],
         "usedInRecipesFor": []
@@ -8282,15 +7897,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": 202,
-                "qty": 12
+                "qty": 6
             },
             {
-                "id": 2,
-                "qty": 6
+                "id": 321,
+                "qty": 15
             }
         ],
         "usedInRecipesFor": []
@@ -8304,15 +7919,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": 202,
-                "qty": 18
+                "qty": 7
             },
             {
-                "id": 2,
-                "qty": 8
+                "id": 321,
+                "qty": 17
             }
         ],
         "usedInRecipesFor": []
@@ -8326,15 +7941,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": 202,
-                "qty": 27
+                "qty": 8
+            },
+            {
+                "id": 321,
+                "qty": 20
             },
             {
                 "id": 2,
-                "qty": 14
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -8356,7 +7975,7 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": 202,
@@ -8374,23 +7993,23 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": 357,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 296,
-                "qty": 6
+                "qty": 2
             },
             {
                 "id": 202,
-                "qty": 24
+                "qty": 15
             },
             {
                 "id": 2,
-                "qty": 7
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -8404,23 +8023,23 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 120
-            },
-            {
-                "id": 357,
                 "qty": 60
             },
             {
+                "id": 357,
+                "qty": 30
+            },
+            {
                 "id": 296,
-                "qty": 9
+                "qty": 3
             },
             {
                 "id": 202,
-                "qty": 36
+                "qty": 18
             },
             {
                 "id": 2,
-                "qty": 9
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -8434,23 +8053,23 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": 357,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 296,
-                "qty": 13
+                "qty": 4
             },
             {
                 "id": 202,
-                "qty": 54
+                "qty": 21
             },
             {
                 "id": 2,
-                "qty": 11
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -8464,23 +8083,23 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 270
+                "qty": 80
             },
             {
                 "id": 357,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 296,
-                "qty": 19
+                "qty": 5
             },
             {
                 "id": 202,
-                "qty": 81
+                "qty": 24
             },
             {
                 "id": 2,
-                "qty": 17
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -8539,10 +8158,6 @@ export default {
             {
                 "id": 711,
                 "qty": 7
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -8561,10 +8176,6 @@ export default {
             {
                 "id": 711,
                 "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -8583,10 +8194,6 @@ export default {
             {
                 "id": 711,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -8605,10 +8212,6 @@ export default {
             {
                 "id": 711,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -8629,8 +8232,8 @@ export default {
                 "qty": 10
             },
             {
-                "id": 516,
-                "qty": 30
+                "id": 321,
+                "qty": 20
             },
             {
                 "id": 170,
@@ -8707,48 +8310,56 @@ export default {
             {
                 "id": 711,
                 "qty": 10
+            },
+            {
+                "id": 357,
+                "qty": 1
             }
         ],
         "usedInRecipesFor": [
             {
                 "id": "112",
-                "qty": 6
-            },
-            {
-                "id": "113",
-                "qty": 12
-            },
-            {
-                "id": "114",
-                "qty": 18
-            },
-            {
-                "id": "115",
-                "qty": 27
-            },
-            {
-                "id": "116",
-                "qty": 40
-            },
-            {
-                "id": "122",
                 "qty": 3
             },
             {
-                "id": "123",
+                "id": "113",
+                "qty": 3
+            },
+            {
+                "id": "114",
+                "qty": 4
+            },
+            {
+                "id": "115",
+                "qty": 5
+            },
+            {
+                "id": "116",
                 "qty": 6
             },
             {
+                "id": "122",
+                "qty": 2
+            },
+            {
+                "id": "123",
+                "qty": 2
+            },
+            {
                 "id": "124",
-                "qty": 9
+                "qty": 3
             },
             {
                 "id": "125",
-                "qty": 13
+                "qty": 4
             },
             {
                 "id": "126",
-                "qty": 19
+                "qty": 5
+            },
+            {
+                "id": "180",
+                "qty": 10
             },
             {
                 "id": "220",
@@ -8756,43 +8367,43 @@ export default {
             },
             {
                 "id": "271",
-                "qty": 6
-            },
-            {
-                "id": "272",
-                "qty": 12
-            },
-            {
-                "id": "273",
-                "qty": 18
-            },
-            {
-                "id": "274",
-                "qty": 27
-            },
-            {
-                "id": "275",
-                "qty": 40
-            },
-            {
-                "id": "281",
                 "qty": 3
             },
             {
-                "id": "282",
+                "id": "272",
+                "qty": 3
+            },
+            {
+                "id": "273",
+                "qty": 4
+            },
+            {
+                "id": "274",
+                "qty": 5
+            },
+            {
+                "id": "275",
                 "qty": 6
             },
             {
+                "id": "281",
+                "qty": 2
+            },
+            {
+                "id": "282",
+                "qty": 2
+            },
+            {
                 "id": "283",
-                "qty": 9
+                "qty": 3
             },
             {
                 "id": "284",
-                "qty": 13
+                "qty": 4
             },
             {
                 "id": "285",
-                "qty": 19
+                "qty": 5
             },
             {
                 "id": "355",
@@ -8804,43 +8415,107 @@ export default {
             },
             {
                 "id": "458",
-                "qty": 4
-            },
-            {
-                "id": "459",
-                "qty": 8
-            },
-            {
-                "id": "460",
-                "qty": 12
-            },
-            {
-                "id": "461",
-                "qty": 18
-            },
-            {
-                "id": "462",
-                "qty": 27
-            },
-            {
-                "id": "517",
                 "qty": 2
             },
             {
-                "id": "518",
+                "id": "459",
+                "qty": 2
+            },
+            {
+                "id": "460",
+                "qty": 3
+            },
+            {
+                "id": "461",
                 "qty": 4
             },
             {
+                "id": "462",
+                "qty": 5
+            },
+            {
+                "id": "517",
+                "qty": 1
+            },
+            {
+                "id": "518",
+                "qty": 1
+            },
+            {
                 "id": "519",
-                "qty": 6
+                "qty": 2
             },
             {
                 "id": "520",
-                "qty": 9
+                "qty": 3
             },
             {
                 "id": "521",
-                "qty": 13
+                "qty": 4
+            },
+            {
+                "id": "732",
+                "qty": 32
+            },
+            {
+                "id": "733",
+                "qty": 24
+            },
+            {
+                "id": "735",
+                "qty": 24
+            },
+            {
+                "id": "736",
+                "qty": 30
+            },
+            {
+                "id": "737",
+                "qty": 36
+            },
+            {
+                "id": "738",
+                "qty": 24
+            },
+            {
+                "id": "741",
+                "qty": 48
+            },
+            {
+                "id": "742",
+                "qty": 20
+            },
+            {
+                "id": "743",
+                "qty": 18
+            },
+            {
+                "id": "745",
+                "qty": 20
+            },
+            {
+                "id": "748",
+                "qty": 24
+            },
+            {
+                "id": "749",
+                "qty": 28
+            },
+            {
+                "id": "762",
+                "qty": 20
+            },
+            {
+                "id": "806",
+                "qty": 20
+            },
+            {
+                "id": "807",
+                "qty": 20
+            },
+            {
+                "id": "829",
+                "qty": 2
             }
         ]
     },
@@ -8903,19 +8578,19 @@ export default {
             },
             {
                 "id": "257",
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": "258",
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": "259",
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": "260",
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": "376",
@@ -8956,6 +8631,18 @@ export default {
             {
                 "id": "680",
                 "qty": 15
+            },
+            {
+                "id": "743",
+                "qty": 20
+            },
+            {
+                "id": "803",
+                "qty": 20
+            },
+            {
+                "id": "827",
+                "qty": 5
             }
         ]
     },
@@ -9002,7 +8689,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -9032,7 +8719,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 20
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -9197,7 +8884,7 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 686,
+                "id": 824,
                 "qty": 30
             },
             {
@@ -9258,7 +8945,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 15
+                "qty": 7
             }
         ],
         "usedInRecipesFor": []
@@ -9272,11 +8959,15 @@ export default {
         "recipe": [
             {
                 "id": 2,
-                "qty": 30
+                "qty": 20
             },
             {
                 "id": 473,
                 "qty": 100
+            },
+            {
+                "id": 321,
+                "qty": 30
             }
         ],
         "usedInRecipesFor": []
@@ -9298,11 +8989,11 @@ export default {
             },
             {
                 "id": 686,
-                "qty": 10
+                "qty": 8
             },
             {
-                "id": 88,
-                "qty": 2
+                "id": 593,
+                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -9315,8 +9006,8 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 195,
-                "qty": 10
+                "id": 255,
+                "qty": 1
             },
             {
                 "id": 593,
@@ -9394,39 +9085,19 @@ export default {
             },
             {
                 "id": "108",
-                "qty": 16
+                "qty": 10
             },
             {
                 "id": "109",
-                "qty": 24
+                "qty": 12
             },
             {
                 "id": "110",
-                "qty": 36
+                "qty": 14
             },
             {
                 "id": "111",
-                "qty": 54
-            },
-            {
-                "id": "112",
                 "qty": 16
-            },
-            {
-                "id": "113",
-                "qty": 32
-            },
-            {
-                "id": "114",
-                "qty": 48
-            },
-            {
-                "id": "115",
-                "qty": 72
-            },
-            {
-                "id": "116",
-                "qty": 108
             },
             {
                 "id": "117",
@@ -9434,39 +9105,19 @@ export default {
             },
             {
                 "id": "118",
-                "qty": 8
+                "qty": 5
             },
             {
                 "id": "119",
-                "qty": 12
+                "qty": 6
             },
             {
                 "id": "120",
-                "qty": 18
+                "qty": 7
             },
             {
                 "id": "121",
-                "qty": 27
-            },
-            {
-                "id": "122",
-                "qty": 12
-            },
-            {
-                "id": "123",
-                "qty": 24
-            },
-            {
-                "id": "124",
-                "qty": 36
-            },
-            {
-                "id": "125",
-                "qty": 54
-            },
-            {
-                "id": "126",
-                "qty": 81
+                "qty": 8
             },
             {
                 "id": "129",
@@ -9482,7 +9133,7 @@ export default {
             },
             {
                 "id": "214",
-                "qty": 50
+                "qty": 60
             },
             {
                 "id": "314",
@@ -9518,19 +9169,19 @@ export default {
             },
             {
                 "id": "651",
-                "qty": 4
+                "qty": 3
             },
             {
                 "id": "652",
-                "qty": 6
+                "qty": 4
             },
             {
                 "id": "653",
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": "654",
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": "659",
@@ -9539,6 +9190,22 @@ export default {
             {
                 "id": "713",
                 "qty": 20
+            },
+            {
+                "id": "744",
+                "qty": 50
+            },
+            {
+                "id": "746",
+                "qty": 20
+            },
+            {
+                "id": "748",
+                "qty": 20
+            },
+            {
+                "id": "817",
+                "qty": 1
             }
         ]
     },
@@ -9554,7 +9221,7 @@ export default {
                 "qty": 24
             },
             {
-                "id": 321,
+                "id": 516,
                 "qty": 24
             },
             {
@@ -9598,8 +9265,8 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 195,
-                "qty": 10
+                "id": 255,
+                "qty": 1
             },
             {
                 "id": 593,
@@ -9699,7 +9366,7 @@ export default {
             },
             {
                 "id": "64",
-                "qty": 20
+                "qty": 24
             },
             {
                 "id": "65",
@@ -9747,19 +9414,39 @@ export default {
             },
             {
                 "id": "108",
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": "109",
-                "qty": 120
+                "qty": 60
             },
             {
                 "id": "110",
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": "111",
-                "qty": 270
+                "qty": 80
+            },
+            {
+                "id": "117",
+                "qty": 10
+            },
+            {
+                "id": "118",
+                "qty": 12
+            },
+            {
+                "id": "119",
+                "qty": 15
+            },
+            {
+                "id": "120",
+                "qty": 17
+            },
+            {
+                "id": "121",
+                "qty": 20
             },
             {
                 "id": "128",
@@ -9779,19 +9466,19 @@ export default {
             },
             {
                 "id": "133",
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": "134",
-                "qty": 30
+                "qty": 15
             },
             {
                 "id": "135",
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": "136",
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": "139",
@@ -9914,6 +9601,10 @@ export default {
                 "qty": 30
             },
             {
+                "id": "222",
+                "qty": 20
+            },
+            {
                 "id": "223",
                 "qty": 2
             },
@@ -9955,19 +9646,19 @@ export default {
             },
             {
                 "id": "257",
-                "qty": 100
+                "qty": 62
             },
             {
                 "id": "258",
-                "qty": 150
+                "qty": 75
             },
             {
                 "id": "259",
-                "qty": 225
+                "qty": 87
             },
             {
                 "id": "260",
-                "qty": 337
+                "qty": 100
             },
             {
                 "id": "261",
@@ -9987,19 +9678,39 @@ export default {
             },
             {
                 "id": "267",
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": "268",
-                "qty": 120
+                "qty": 60
             },
             {
                 "id": "269",
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": "270",
-                "qty": 270
+                "qty": 80
+            },
+            {
+                "id": "276",
+                "qty": 10
+            },
+            {
+                "id": "277",
+                "qty": 12
+            },
+            {
+                "id": "278",
+                "qty": 15
+            },
+            {
+                "id": "279",
+                "qty": 17
+            },
+            {
+                "id": "280",
+                "qty": 20
             },
             {
                 "id": "286",
@@ -10026,6 +9737,10 @@ export default {
                 "qty": 100
             },
             {
+                "id": "292",
+                "qty": 20
+            },
+            {
                 "id": "295",
                 "qty": 5
             },
@@ -10038,6 +9753,10 @@ export default {
                 "qty": 20
             },
             {
+                "id": "312",
+                "qty": 30
+            },
+            {
                 "id": "313",
                 "qty": 3
             },
@@ -10048,10 +9767,6 @@ export default {
             {
                 "id": "316",
                 "qty": 5
-            },
-            {
-                "id": "318",
-                "qty": 24
             },
             {
                 "id": "322",
@@ -10092,14 +9807,6 @@ export default {
             {
                 "id": "331",
                 "qty": 5
-            },
-            {
-                "id": "336",
-                "qty": 60
-            },
-            {
-                "id": "337",
-                "qty": 50
             },
             {
                 "id": "345",
@@ -10170,10 +9877,6 @@ export default {
                 "qty": 35
             },
             {
-                "id": "381",
-                "qty": 10
-            },
-            {
                 "id": "383",
                 "qty": 5
             },
@@ -10186,6 +9889,10 @@ export default {
                 "qty": 20
             },
             {
+                "id": "388",
+                "qty": 10
+            },
+            {
                 "id": "389",
                 "qty": 1
             },
@@ -10195,23 +9902,23 @@ export default {
             },
             {
                 "id": "393",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "394",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "395",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "396",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "397",
-                "qty": 5
+                "qty": 15
             },
             {
                 "id": "398",
@@ -10235,23 +9942,23 @@ export default {
             },
             {
                 "id": "403",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "404",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "405",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "406",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "407",
-                "qty": 5
+                "qty": 15
             },
             {
                 "id": "408",
@@ -10330,10 +10037,6 @@ export default {
                 "qty": 1
             },
             {
-                "id": "441",
-                "qty": 300
-            },
-            {
                 "id": "442",
                 "qty": 15
             },
@@ -10354,8 +10057,24 @@ export default {
                 "qty": 20
             },
             {
-                "id": "470",
-                "qty": 300
+                "id": "475",
+                "qty": 10
+            },
+            {
+                "id": "476",
+                "qty": 12
+            },
+            {
+                "id": "477",
+                "qty": 15
+            },
+            {
+                "id": "478",
+                "qty": 17
+            },
+            {
+                "id": "479",
+                "qty": 20
             },
             {
                 "id": "480",
@@ -10380,10 +10099,6 @@ export default {
             {
                 "id": "506",
                 "qty": 15
-            },
-            {
-                "id": "507",
-                "qty": 30
             },
             {
                 "id": "508",
@@ -10412,10 +10127,6 @@ export default {
             {
                 "id": "536",
                 "qty": 100
-            },
-            {
-                "id": "539",
-                "qty": 20
             },
             {
                 "id": "540",
@@ -10470,6 +10181,10 @@ export default {
                 "qty": 5
             },
             {
+                "id": "621",
+                "qty": 30
+            },
+            {
                 "id": "623",
                 "qty": 5
             },
@@ -10500,10 +10215,6 @@ export default {
             {
                 "id": "664",
                 "qty": 10
-            },
-            {
-                "id": "666",
-                "qty": 18
             },
             {
                 "id": "667",
@@ -10750,19 +10461,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 100
+                "qty": 70
             },
             {
-                "id": 516,
-                "qty": 200
+                "id": 770,
+                "qty": 60
             },
             {
-                "id": 94,
-                "qty": 50
+                "id": 714,
+                "qty": 24
             },
             {
                 "id": 473,
-                "qty": 140
+                "qty": 210
             }
         ],
         "usedInRecipesFor": []
@@ -10820,23 +10531,23 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 36
+                "qty": 43
             },
             {
                 "id": 195,
-                "qty": 60
+                "qty": 72
             },
             {
-                "id": 321,
-                "qty": 60
+                "id": 814,
+                "qty": 28
             },
             {
                 "id": 202,
-                "qty": 24
+                "qty": 28
             },
             {
                 "id": 473,
-                "qty": 48
+                "qty": 57
             }
         ],
         "usedInRecipesFor": []
@@ -10850,23 +10561,23 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 30
+                "qty": 36
             },
             {
                 "id": 195,
-                "qty": 50
+                "qty": 60
             },
             {
-                "id": 321,
-                "qty": 50
+                "id": 516,
+                "qty": 24
             },
             {
-                "id": 456,
-                "qty": 20
+                "id": 817,
+                "qty": 24
             },
             {
                 "id": 473,
-                "qty": 40
+                "qty": 48
             }
         ],
         "usedInRecipesFor": []
@@ -10895,10 +10606,6 @@ export default {
             {
                 "id": 343,
                 "qty": 7
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -10913,10 +10620,6 @@ export default {
             {
                 "id": 343,
                 "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -10931,10 +10634,6 @@ export default {
             {
                 "id": 343,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -10949,10 +10648,6 @@ export default {
             {
                 "id": 343,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -11308,7 +11003,7 @@ export default {
             },
             {
                 "id": "64",
-                "qty": 30
+                "qty": 36
             },
             {
                 "id": "65",
@@ -11328,19 +11023,19 @@ export default {
             },
             {
                 "id": "108",
-                "qty": 26
+                "qty": 16
             },
             {
                 "id": "109",
-                "qty": 39
+                "qty": 19
             },
             {
                 "id": "110",
-                "qty": 58
+                "qty": 22
             },
             {
                 "id": "111",
-                "qty": 87
+                "qty": 26
             },
             {
                 "id": "112",
@@ -11348,19 +11043,19 @@ export default {
             },
             {
                 "id": "113",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "114",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "115",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "116",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "117",
@@ -11368,19 +11063,19 @@ export default {
             },
             {
                 "id": "118",
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": "119",
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": "120",
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": "121",
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": "122",
@@ -11388,19 +11083,19 @@ export default {
             },
             {
                 "id": "123",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "124",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "125",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "126",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "138",
@@ -11471,6 +11166,26 @@ export default {
                 "qty": 30
             },
             {
+                "id": "188",
+                "qty": 1
+            },
+            {
+                "id": "189",
+                "qty": 1
+            },
+            {
+                "id": "190",
+                "qty": 2
+            },
+            {
+                "id": "191",
+                "qty": 3
+            },
+            {
+                "id": "192",
+                "qty": 4
+            },
+            {
                 "id": "194",
                 "qty": 30
             },
@@ -11488,11 +11203,11 @@ export default {
             },
             {
                 "id": "213",
-                "qty": 120
+                "qty": 43
             },
             {
                 "id": "214",
-                "qty": 100
+                "qty": 36
             },
             {
                 "id": "217",
@@ -11520,19 +11235,19 @@ export default {
             },
             {
                 "id": "267",
-                "qty": 26
+                "qty": 16
             },
             {
                 "id": "268",
-                "qty": 39
+                "qty": 19
             },
             {
                 "id": "269",
-                "qty": 58
+                "qty": 22
             },
             {
                 "id": "270",
-                "qty": 87
+                "qty": 26
             },
             {
                 "id": "271",
@@ -11540,19 +11255,19 @@ export default {
             },
             {
                 "id": "272",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "273",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "274",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "275",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "276",
@@ -11560,19 +11275,19 @@ export default {
             },
             {
                 "id": "277",
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": "278",
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": "279",
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": "280",
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": "281",
@@ -11580,23 +11295,27 @@ export default {
             },
             {
                 "id": "282",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "283",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "284",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "285",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "292",
                 "qty": 30
+            },
+            {
+                "id": "296",
+                "qty": 1
             },
             {
                 "id": "309",
@@ -11612,15 +11331,15 @@ export default {
             },
             {
                 "id": "333",
-                "qty": 100
+                "qty": 70
             },
             {
                 "id": "336",
-                "qty": 36
+                "qty": 43
             },
             {
                 "id": "337",
-                "qty": 30
+                "qty": 36
             },
             {
                 "id": "345",
@@ -11668,23 +11387,23 @@ export default {
             },
             {
                 "id": "393",
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": "394",
-                "qty": 30
+                "qty": 15
             },
             {
                 "id": "395",
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": "396",
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": "441",
-                "qty": 100
+                "qty": 36
             },
             {
                 "id": "442",
@@ -11696,23 +11415,23 @@ export default {
             },
             {
                 "id": "459",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "460",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "461",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "462",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "470",
-                "qty": 100
+                "qty": 36
             },
             {
                 "id": "475",
@@ -11720,19 +11439,19 @@ export default {
             },
             {
                 "id": "476",
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": "477",
-                "qty": 30
+                "qty": 15
             },
             {
                 "id": "478",
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": "479",
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": "506",
@@ -11756,19 +11475,19 @@ export default {
             },
             {
                 "id": "518",
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": "519",
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": "520",
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": "521",
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": "532",
@@ -11857,6 +11576,74 @@ export default {
             {
                 "id": "713",
                 "qty": 30
+            },
+            {
+                "id": "732",
+                "qty": 40
+            },
+            {
+                "id": "733",
+                "qty": 38
+            },
+            {
+                "id": "734",
+                "qty": 30
+            },
+            {
+                "id": "735",
+                "qty": 30
+            },
+            {
+                "id": "736",
+                "qty": 40
+            },
+            {
+                "id": "737",
+                "qty": 48
+            },
+            {
+                "id": "738",
+                "qty": 36
+            },
+            {
+                "id": "739",
+                "qty": 24
+            },
+            {
+                "id": "740",
+                "qty": 24
+            },
+            {
+                "id": "741",
+                "qty": 60
+            },
+            {
+                "id": "742",
+                "qty": 30
+            },
+            {
+                "id": "743",
+                "qty": 36
+            },
+            {
+                "id": "745",
+                "qty": 24
+            },
+            {
+                "id": "746",
+                "qty": 24
+            },
+            {
+                "id": "747",
+                "qty": 20
+            },
+            {
+                "id": "748",
+                "qty": 24
+            },
+            {
+                "id": "749",
+                "qty": 43
             }
         ]
     },
@@ -11927,19 +11714,19 @@ export default {
         "recipe": [
             {
                 "id": 473,
-                "qty": 10
+                "qty": 5
             },
             {
                 "id": 468,
-                "qty": 5
-            },
-            {
-                "id": 84,
                 "qty": 3
             },
             {
-                "id": 88,
-                "qty": 5
+                "id": 824,
+                "qty": 3
+            },
+            {
+                "id": 593,
+                "qty": 20
             }
         ],
         "usedInRecipesFor": []
@@ -12068,12 +11855,8 @@ export default {
                 "qty": 20
             },
             {
-                "id": 686,
-                "qty": 50
-            },
-            {
-                "id": 2,
-                "qty": 20
+                "id": 829,
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -12168,10 +11951,6 @@ export default {
             {
                 "id": 321,
                 "qty": 3
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -12190,10 +11969,6 @@ export default {
             {
                 "id": 321,
                 "qty": 4
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -12212,10 +11987,6 @@ export default {
             {
                 "id": 321,
                 "qty": 6
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -12234,10 +12005,6 @@ export default {
             {
                 "id": 321,
                 "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -12322,6 +12089,10 @@ export default {
             {
                 "id": "380",
                 "qty": 1
+            },
+            {
+                "id": "724",
+                "qty": 2
             }
         ]
     },
@@ -12385,7 +12156,7 @@ export default {
                 "qty": 25
             },
             {
-                "id": 321,
+                "id": 516,
                 "qty": 10
             },
             {
@@ -12487,8 +12258,8 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 686,
-                "qty": 50
+                "id": 836,
+                "qty": 5
             },
             {
                 "id": 67,
@@ -12522,7 +12293,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 4
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -12541,6 +12312,10 @@ export default {
             {
                 "id": 473,
                 "qty": 30
+            },
+            {
+                "id": 321,
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -12562,11 +12337,11 @@ export default {
             },
             {
                 "id": 686,
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": 593,
-                "qty": 5
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -12650,19 +12425,15 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 357,
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": 97,
-                "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 4
+                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -12676,19 +12447,15 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 357,
-                "qty": 30
-            },
-            {
-                "id": 97,
                 "qty": 15
             },
             {
-                "id": 2,
-                "qty": 6
+                "id": 97,
+                "qty": 7
             }
         ],
         "usedInRecipesFor": []
@@ -12702,19 +12469,19 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 357,
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": 97,
-                "qty": 22
+                "qty": 8
             },
             {
                 "id": 2,
-                "qty": 8
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -12728,19 +12495,19 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 357,
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": 97,
-                "qty": 33
+                "qty": 10
             },
             {
                 "id": 2,
-                "qty": 14
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -12762,7 +12529,7 @@ export default {
             },
             {
                 "id": 321,
-                "qty": 5
+                "qty": 15
             }
         ],
         "usedInRecipesFor": []
@@ -12866,15 +12633,11 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 473,
-                "qty": 20
-            },
-            {
-                "id": 2,
-                "qty": 4
+                "qty": 12
             }
         ],
         "usedInRecipesFor": []
@@ -12888,15 +12651,11 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 60
-            },
-            {
-                "id": 473,
                 "qty": 30
             },
             {
-                "id": 2,
-                "qty": 6
+                "id": 473,
+                "qty": 15
             }
         ],
         "usedInRecipesFor": []
@@ -12910,15 +12669,15 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 473,
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": 2,
-                "qty": 8
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -12932,15 +12691,15 @@ export default {
         "recipe": [
             {
                 "id": 321,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 473,
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": 2,
-                "qty": 14
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -12962,7 +12721,7 @@ export default {
             },
             {
                 "id": 321,
-                "qty": 5
+                "qty": 15
             }
         ],
         "usedInRecipesFor": []
@@ -13135,6 +12894,10 @@ export default {
             {
                 "id": "488",
                 "qty": 2
+            },
+            {
+                "id": "724",
+                "qty": 15
             }
         ]
     },
@@ -13232,10 +12995,6 @@ export default {
             {
                 "id": 97,
                 "qty": 4
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -13253,10 +13012,6 @@ export default {
             },
             {
                 "id": 97,
-                "qty": 6
-            },
-            {
-                "id": 2,
                 "qty": 6
             }
         ],
@@ -13276,10 +13031,6 @@ export default {
             {
                 "id": 97,
                 "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -13298,10 +13049,6 @@ export default {
             {
                 "id": 97,
                 "qty": 13
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -13638,8 +13385,8 @@ export default {
                 "qty": 5
             },
             {
-                "id": 686,
-                "qty": 30
+                "id": 836,
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -13683,23 +13430,23 @@ export default {
             },
             {
                 "id": "132",
-                "qty": 5
+                "qty": 2
             },
             {
                 "id": "133",
-                "qty": 10
+                "qty": 2
             },
             {
                 "id": "134",
-                "qty": 15
+                "qty": 3
             },
             {
                 "id": "135",
-                "qty": 22
+                "qty": 4
             },
             {
                 "id": "136",
-                "qty": 33
+                "qty": 5
             },
             {
                 "id": "153",
@@ -13711,7 +13458,7 @@ export default {
             },
             {
                 "id": "198",
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": "206",
@@ -13779,7 +13526,7 @@ export default {
             },
             {
                 "id": "491",
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": "498",
@@ -13836,6 +13583,10 @@ export default {
             {
                 "id": "703",
                 "qty": 2
+            },
+            {
+                "id": "836",
+                "qty": 1
             }
         ]
     },
@@ -13848,19 +13599,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 100
+                "qty": 36
             },
             {
-                "id": 516,
-                "qty": 200
+                "id": 814,
+                "qty": 24
             },
             {
-                "id": 321,
-                "qty": 300
+                "id": 468,
+                "qty": 36
             },
             {
                 "id": 473,
-                "qty": 85
+                "qty": 102
             }
         ],
         "usedInRecipesFor": []
@@ -13958,19 +13709,15 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 593,
-                "qty": 10
+                "qty": 6
             },
             {
                 "id": 195,
-                "qty": 30
-            },
-            {
-                "id": 2,
-                "qty": 1
+                "qty": 18
             }
         ],
         "usedInRecipesFor": []
@@ -13984,19 +13731,15 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 90
-            },
-            {
-                "id": 593,
-                "qty": 15
-            },
-            {
-                "id": 195,
                 "qty": 45
             },
             {
-                "id": 2,
-                "qty": 2
+                "id": 593,
+                "qty": 7
+            },
+            {
+                "id": 195,
+                "qty": 22
             }
         ],
         "usedInRecipesFor": []
@@ -14010,19 +13753,15 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 593,
-                "qty": 22
+                "qty": 8
             },
             {
                 "id": 195,
-                "qty": 67
-            },
-            {
-                "id": 2,
-                "qty": 4
+                "qty": 26
             }
         ],
         "usedInRecipesFor": []
@@ -14036,19 +13775,19 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 593,
-                "qty": 33
+                "qty": 10
             },
             {
                 "id": 195,
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -14141,6 +13880,10 @@ export default {
                 "qty": 4
             },
             {
+                "id": "489",
+                "qty": 5
+            },
+            {
                 "id": "516",
                 "qty": 2
             }
@@ -14200,10 +13943,6 @@ export default {
                 "qty": 10
             },
             {
-                "id": "337",
-                "qty": 20
-            },
-            {
                 "id": "363",
                 "qty": 10
             },
@@ -14246,6 +13985,14 @@ export default {
             {
                 "id": "680",
                 "qty": 50
+            },
+            {
+                "id": "742",
+                "qty": 15
+            },
+            {
+                "id": "817",
+                "qty": 1
             }
         ]
     },
@@ -14288,7 +14035,7 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 4
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -14302,19 +14049,19 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 357,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 296,
-                "qty": 8
+                "qty": 2
             },
             {
                 "id": 2,
-                "qty": 8
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -14328,19 +14075,19 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": 357,
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": 296,
-                "qty": 12
+                "qty": 3
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -14354,19 +14101,19 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 357,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 296,
-                "qty": 18
+                "qty": 4
             },
             {
                 "id": 2,
-                "qty": 12
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -14380,19 +14127,19 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 357,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 296,
-                "qty": 27
+                "qty": 5
             },
             {
                 "id": 2,
-                "qty": 18
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -14424,15 +14171,15 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 473,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 2,
-                "qty": 9
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -14446,15 +14193,15 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": 473,
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": 2,
-                "qty": 11
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -14468,15 +14215,15 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 473,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 2,
-                "qty": 13
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -14490,15 +14237,15 @@ export default {
         "recipe": [
             {
                 "id": 468,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 473,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 2,
-                "qty": 19
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -14515,6 +14262,10 @@ export default {
                 "qty": 4
             },
             {
+                "id": 505,
+                "qty": 1
+            },
+            {
                 "id": 473,
                 "qty": 2
             }
@@ -14526,19 +14277,19 @@ export default {
             },
             {
                 "id": "113",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "114",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "115",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "116",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "271",
@@ -14546,19 +14297,19 @@ export default {
             },
             {
                 "id": "272",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "273",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "274",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "275",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "301",
@@ -14566,7 +14317,11 @@ export default {
             },
             {
                 "id": "361",
-                "qty": 5
+                "qty": 3
+            },
+            {
+                "id": "441",
+                "qty": 36
             },
             {
                 "id": "458",
@@ -14574,19 +14329,19 @@ export default {
             },
             {
                 "id": "459",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "460",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "461",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "462",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "463",
@@ -14594,43 +14349,23 @@ export default {
             },
             {
                 "id": "464",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "465",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "466",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "467",
-                "qty": 135
+                "qty": 40
             },
             {
-                "id": "545",
-                "qty": 1
-            },
-            {
-                "id": "546",
-                "qty": 75
-            },
-            {
-                "id": "547",
-                "qty": 150
-            },
-            {
-                "id": "548",
-                "qty": 225
-            },
-            {
-                "id": "549",
-                "qty": 337
-            },
-            {
-                "id": "550",
-                "qty": 505
+                "id": "470",
+                "qty": 36
             },
             {
                 "id": "616",
@@ -14648,14 +14383,6 @@ export default {
             {
                 "id": 473,
                 "qty": 1
-            },
-            {
-                "id": 686,
-                "qty": 3
-            },
-            {
-                "id": 593,
-                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -14669,19 +14396,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 100
+                "qty": 36
             },
             {
-                "id": 516,
-                "qty": 200
+                "id": 814,
+                "qty": 24
             },
             {
-                "id": 321,
-                "qty": 300
+                "id": 468,
+                "qty": 36
             },
             {
                 "id": 473,
-                "qty": 85
+                "qty": 102
             }
         ],
         "usedInRecipesFor": []
@@ -14769,7 +14496,7 @@ export default {
             },
             {
                 "id": "64",
-                "qty": 40
+                "qty": 48
             },
             {
                 "id": "65",
@@ -14868,26 +14595,6 @@ export default {
                 "qty": 30
             },
             {
-                "id": "188",
-                "qty": 5
-            },
-            {
-                "id": "189",
-                "qty": 10
-            },
-            {
-                "id": "190",
-                "qty": 15
-            },
-            {
-                "id": "191",
-                "qty": 22
-            },
-            {
-                "id": "192",
-                "qty": 33
-            },
-            {
                 "id": "194",
                 "qty": 40
             },
@@ -14901,11 +14608,11 @@ export default {
             },
             {
                 "id": "213",
-                "qty": 90
+                "qty": 96
             },
             {
                 "id": "214",
-                "qty": 75
+                "qty": 80
             },
             {
                 "id": "217",
@@ -14985,7 +14692,7 @@ export default {
             },
             {
                 "id": "333",
-                "qty": 140
+                "qty": 210
             },
             {
                 "id": "334",
@@ -14997,11 +14704,11 @@ export default {
             },
             {
                 "id": "336",
-                "qty": 48
+                "qty": 57
             },
             {
                 "id": "337",
-                "qty": 40
+                "qty": 48
             },
             {
                 "id": "344",
@@ -15017,7 +14724,7 @@ export default {
             },
             {
                 "id": "361",
-                "qty": 10
+                "qty": 5
             },
             {
                 "id": "365",
@@ -15069,19 +14776,19 @@ export default {
             },
             {
                 "id": "403",
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": "404",
-                "qty": 30
+                "qty": 15
             },
             {
                 "id": "405",
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": "406",
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": "425",
@@ -15097,7 +14804,7 @@ export default {
             },
             {
                 "id": "441",
-                "qty": 85
+                "qty": 102
             },
             {
                 "id": "442",
@@ -15117,19 +14824,19 @@ export default {
             },
             {
                 "id": "464",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "465",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "466",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "467",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "468",
@@ -15141,7 +14848,7 @@ export default {
             },
             {
                 "id": "470",
-                "qty": 85
+                "qty": 102
             },
             {
                 "id": "471",
@@ -15173,19 +14880,19 @@ export default {
             },
             {
                 "id": "525",
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": "526",
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": "527",
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": "528",
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": "532",
@@ -15306,6 +15013,120 @@ export default {
             {
                 "id": "713",
                 "qty": 40
+            },
+            {
+                "id": "716",
+                "qty": 150
+            },
+            {
+                "id": "729",
+                "qty": 30
+            },
+            {
+                "id": "730",
+                "qty": 30
+            },
+            {
+                "id": "731",
+                "qty": 250
+            },
+            {
+                "id": "732",
+                "qty": 83
+            },
+            {
+                "id": "733",
+                "qty": 40
+            },
+            {
+                "id": "734",
+                "qty": 200
+            },
+            {
+                "id": "735",
+                "qty": 46
+            },
+            {
+                "id": "736",
+                "qty": 45
+            },
+            {
+                "id": "737",
+                "qty": 50
+            },
+            {
+                "id": "738",
+                "qty": 40
+            },
+            {
+                "id": "739",
+                "qty": 30
+            },
+            {
+                "id": "740",
+                "qty": 30
+            },
+            {
+                "id": "741",
+                "qty": 200
+            },
+            {
+                "id": "742",
+                "qty": 75
+            },
+            {
+                "id": "743",
+                "qty": 65
+            },
+            {
+                "id": "744",
+                "qty": 140
+            },
+            {
+                "id": "745",
+                "qty": 24
+            },
+            {
+                "id": "746",
+                "qty": 30
+            },
+            {
+                "id": "747",
+                "qty": 30
+            },
+            {
+                "id": "748",
+                "qty": 40
+            },
+            {
+                "id": "749",
+                "qty": 96
+            },
+            {
+                "id": "752",
+                "qty": 250
+            },
+            {
+                "id": "753",
+                "qty": 200
+            },
+            {
+                "id": "762",
+                "qty": 20
+            },
+            {
+                "id": "768",
+                "qty": 30
+            },
+            {
+                "id": "802",
+                "qty": 500
+            }
+        ],
+        "recipe": [
+            {
+                "id": 730,
+                "qty": 1
             }
         ]
     },
@@ -15337,6 +15158,14 @@ export default {
             {
                 "id": 357,
                 "qty": 10
+            },
+            {
+                "id": 321,
+                "qty": 10
+            },
+            {
+                "id": 195,
+                "qty": 20
             }
         ],
         "usedInRecipesFor": []
@@ -15350,11 +15179,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 20
+                "qty": 12
             },
             {
-                "id": 2,
-                "qty": 3
+                "id": 321,
+                "qty": 12
+            },
+            {
+                "id": 195,
+                "qty": 25
             }
         ],
         "usedInRecipesFor": []
@@ -15368,11 +15201,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 30
+                "qty": 15
             },
             {
-                "id": 2,
-                "qty": 5
+                "id": 321,
+                "qty": 15
+            },
+            {
+                "id": 195,
+                "qty": 30
             }
         ],
         "usedInRecipesFor": []
@@ -15386,11 +15223,15 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 45
+                "qty": 17
             },
             {
-                "id": 2,
-                "qty": 7
+                "id": 321,
+                "qty": 17
+            },
+            {
+                "id": 195,
+                "qty": 35
             }
         ],
         "usedInRecipesFor": []
@@ -15404,11 +15245,19 @@ export default {
         "recipe": [
             {
                 "id": 357,
-                "qty": 67
+                "qty": 20
+            },
+            {
+                "id": 321,
+                "qty": 20
+            },
+            {
+                "id": 195,
+                "qty": 40
             },
             {
                 "id": 2,
-                "qty": 13
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -15429,8 +15278,8 @@ export default {
                 "qty": 20
             },
             {
-                "id": 686,
-                "qty": 30
+                "id": 836,
+                "qty": 3
             },
             {
                 "id": 473,
@@ -15463,10 +15312,6 @@ export default {
             {
                 "id": 486,
                 "qty": 7
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -15481,10 +15326,6 @@ export default {
             {
                 "id": 486,
                 "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -15499,10 +15340,6 @@ export default {
             {
                 "id": 486,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -15517,10 +15354,6 @@ export default {
             {
                 "id": 486,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -15608,7 +15441,22 @@ export default {
         "img": "plastic.png",
         "group": "craft",
         "inventory": 0,
-        "usedInRecipesFor": []
+        "usedInRecipesFor": [
+            {
+                "id": "809",
+                "qty": 3
+            }
+        ],
+        "recipe": [
+            {
+                "id": 832,
+                "qty": 2
+            },
+            {
+                "id": 454,
+                "qty": 5
+            }
+        ]
     },
     "490": {
         "name": "Poison Arrow",
@@ -15619,11 +15467,11 @@ export default {
         "recipe": [
             {
                 "id": 686,
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": 593,
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": 661,
@@ -15653,7 +15501,7 @@ export default {
             },
             {
                 "id": 440,
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": 661,
@@ -15698,6 +15546,10 @@ export default {
             {
                 "id": 298,
                 "qty": 2
+            },
+            {
+                "id": 613,
+                "qty": 1
             }
         ],
         "usedInRecipesFor": [
@@ -15707,23 +15559,23 @@ export default {
             },
             {
                 "id": "43",
-                "qty": 20
+                "qty": 12
             },
             {
                 "id": "44",
-                "qty": 30
+                "qty": 15
             },
             {
                 "id": "45",
-                "qty": 45
+                "qty": 17
             },
             {
                 "id": "46",
-                "qty": 67
+                "qty": 20
             },
             {
                 "id": "94",
-                "qty": 2
+                "qty": 1
             },
             {
                 "id": "142",
@@ -15787,19 +15639,19 @@ export default {
             },
             {
                 "id": "501",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "502",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "503",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "504",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "531",
@@ -15819,19 +15671,19 @@ export default {
             },
             {
                 "id": "547",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "548",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "549",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "550",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "559",
@@ -15988,7 +15840,7 @@ export default {
             },
             {
                 "id": 84,
-                "qty": 40
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -16002,19 +15854,19 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 493,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 84,
-                "qty": 80
+                "qty": 12
             },
             {
                 "id": 2,
-                "qty": 5
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -16028,19 +15880,19 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 493,
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": 84,
-                "qty": 120
+                "qty": 15
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -16054,19 +15906,19 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 493,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 84,
-                "qty": 180
+                "qty": 17
             },
             {
                 "id": 2,
-                "qty": 20
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -16080,19 +15932,19 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 493,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 84,
-                "qty": 270
+                "qty": 20
             },
             {
                 "id": 2,
-                "qty": 30
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -16106,7 +15958,15 @@ export default {
         "usedInRecipesFor": [
             {
                 "id": "94",
-                "qty": 4
+                "qty": 2
+            },
+            {
+                "id": "468",
+                "qty": 1
+            },
+            {
+                "id": "761",
+                "qty": 2
             }
         ]
     },
@@ -16152,11 +16012,15 @@ export default {
                 "qty": 30
             },
             {
-                "id": 321,
-                "qty": 30
+                "id": 516,
+                "qty": 20
             },
             {
                 "id": 97,
+                "qty": 10
+            },
+            {
+                "id": 817,
                 "qty": 10
             },
             {
@@ -16179,7 +16043,7 @@ export default {
             },
             {
                 "id": 97,
-                "qty": 15
+                "qty": 10
             },
             {
                 "id": 321,
@@ -16348,6 +16212,10 @@ export default {
             {
                 "id": "592",
                 "qty": 2
+            },
+            {
+                "id": "827",
+                "qty": 20
             }
         ]
     },
@@ -16410,19 +16278,19 @@ export default {
             },
             {
                 "id": "43",
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": "44",
-                "qty": 120
+                "qty": 60
             },
             {
                 "id": "45",
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": "46",
-                "qty": 270
+                "qty": 80
             },
             {
                 "id": "47",
@@ -16434,7 +16302,7 @@ export default {
             },
             {
                 "id": "64",
-                "qty": 30
+                "qty": 36
             },
             {
                 "id": "122",
@@ -16442,19 +16310,19 @@ export default {
             },
             {
                 "id": "123",
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": "124",
-                "qty": 120
+                "qty": 60
             },
             {
                 "id": "125",
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": "126",
-                "qty": 270
+                "qty": 80
             },
             {
                 "id": "154",
@@ -16481,18 +16349,6 @@ export default {
                 "qty": 40
             },
             {
-                "id": "180",
-                "qty": 30
-            },
-            {
-                "id": "213",
-                "qty": 240
-            },
-            {
-                "id": "214",
-                "qty": 200
-            },
-            {
                 "id": "220",
                 "qty": 20
             },
@@ -16506,35 +16362,39 @@ export default {
             },
             {
                 "id": "282",
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": "283",
-                "qty": 120
+                "qty": 60
             },
             {
                 "id": "284",
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": "285",
-                "qty": 270
-            },
-            {
-                "id": "292",
-                "qty": 30
+                "qty": 80
             },
             {
                 "id": "311",
                 "qty": 30
             },
             {
-                "id": "333",
-                "qty": 200
+                "id": "318",
+                "qty": 24
+            },
+            {
+                "id": "337",
+                "qty": 24
             },
             {
                 "id": "366",
                 "qty": 30
+            },
+            {
+                "id": "381",
+                "qty": 10
             },
             {
                 "id": "417",
@@ -16549,14 +16409,6 @@ export default {
                 "qty": 100
             },
             {
-                "id": "441",
-                "qty": 200
-            },
-            {
-                "id": "470",
-                "qty": 200
-            },
-            {
                 "id": "499",
                 "qty": 100
             },
@@ -16566,19 +16418,23 @@ export default {
             },
             {
                 "id": "501",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "502",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "503",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "504",
-                "qty": 202
+                "qty": 60
+            },
+            {
+                "id": "507",
+                "qty": 20
             },
             {
                 "id": "517",
@@ -16586,19 +16442,19 @@ export default {
             },
             {
                 "id": "518",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "519",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "520",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "521",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "522",
@@ -16614,19 +16470,19 @@ export default {
             },
             {
                 "id": "525",
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": "526",
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": "527",
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": "528",
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": "529",
@@ -16649,8 +16505,12 @@ export default {
                 "qty": 100
             },
             {
+                "id": "539",
+                "qty": 20
+            },
+            {
                 "id": "541",
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": "559",
@@ -16662,7 +16522,7 @@ export default {
             },
             {
                 "id": "564",
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": "574",
@@ -16685,12 +16545,12 @@ export default {
                 "qty": 25
             },
             {
-                "id": "621",
-                "qty": 30
+                "id": "656",
+                "qty": 3
             },
             {
-                "id": "656",
-                "qty": 5
+                "id": "666",
+                "qty": 20
             },
             {
                 "id": "669",
@@ -16707,6 +16567,18 @@ export default {
             {
                 "id": "713",
                 "qty": 10
+            },
+            {
+                "id": "806",
+                "qty": 20
+            },
+            {
+                "id": "807",
+                "qty": 10
+            },
+            {
+                "id": "819",
+                "qty": 1
             }
         ]
     },
@@ -16727,7 +16599,7 @@ export default {
             },
             {
                 "id": 296,
-                "qty": 2
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -16735,6 +16607,84 @@ export default {
     "518": {
         "name": "Refined Metal Armor +1",
         "key": "IronArmor_2",
+        "img": "refined-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 37
+            },
+            {
+                "id": 357,
+                "qty": 18
+            },
+            {
+                "id": 296,
+                "qty": 1
+            },
+            {
+                "id": 2,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "519": {
+        "name": "Refined Metal Armor +2",
+        "key": "IronArmor_3",
+        "img": "refined-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 45
+            },
+            {
+                "id": 357,
+                "qty": 22
+            },
+            {
+                "id": 296,
+                "qty": 2
+            },
+            {
+                "id": 2,
+                "qty": 4
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "520": {
+        "name": "Refined Metal Armor +3",
+        "key": "IronArmor_4",
+        "img": "refined-metal-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 52
+            },
+            {
+                "id": 357,
+                "qty": 26
+            },
+            {
+                "id": 296,
+                "qty": 3
+            },
+            {
+                "id": 2,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "521": {
+        "name": "Refined Metal Armor +4",
+        "key": "IronArmor_5",
         "img": "refined-metal-armor.png",
         "group": "armor",
         "inventory": 0,
@@ -16758,84 +16708,6 @@ export default {
         ],
         "usedInRecipesFor": []
     },
-    "519": {
-        "name": "Refined Metal Armor +2",
-        "key": "IronArmor_3",
-        "img": "refined-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 90
-            },
-            {
-                "id": 357,
-                "qty": 45
-            },
-            {
-                "id": 296,
-                "qty": 6
-            },
-            {
-                "id": 2,
-                "qty": 8
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "520": {
-        "name": "Refined Metal Armor +3",
-        "key": "IronArmor_4",
-        "img": "refined-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 135
-            },
-            {
-                "id": 357,
-                "qty": 67
-            },
-            {
-                "id": 296,
-                "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 10
-            }
-        ],
-        "usedInRecipesFor": []
-    },
-    "521": {
-        "name": "Refined Metal Armor +4",
-        "key": "IronArmor_5",
-        "img": "refined-metal-armor.png",
-        "group": "armor",
-        "inventory": 0,
-        "recipe": [
-            {
-                "id": 516,
-                "qty": 202
-            },
-            {
-                "id": 357,
-                "qty": 100
-            },
-            {
-                "id": 296,
-                "qty": 13
-            },
-            {
-                "id": 2,
-                "qty": 16
-            }
-        ],
-        "usedInRecipesFor": []
-    },
     "522": {
         "name": "Refined Metal Axe",
         "key": "Axe_Tier_02",
@@ -16848,8 +16720,8 @@ export default {
                 "qty": 30
             },
             {
-                "id": 686,
-                "qty": 40
+                "id": 836,
+                "qty": 4
             },
             {
                 "id": 516,
@@ -16907,15 +16779,15 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 40
+                "qty": 25
             },
             {
                 "id": 473,
-                "qty": 30
+                "qty": 18
             },
             {
                 "id": 2,
-                "qty": 7
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -16929,15 +16801,15 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 60
+                "qty": 30
             },
             {
                 "id": 473,
-                "qty": 45
+                "qty": 22
             },
             {
                 "id": 2,
-                "qty": 9
+                "qty": 2
             }
         ],
         "usedInRecipesFor": []
@@ -16951,15 +16823,15 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 90
+                "qty": 35
             },
             {
                 "id": 473,
-                "qty": 67
+                "qty": 26
             },
             {
                 "id": 2,
-                "qty": 11
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -16973,15 +16845,15 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 135
+                "qty": 40
             },
             {
                 "id": 473,
-                "qty": 100
+                "qty": 30
             },
             {
                 "id": 2,
-                "qty": 17
+                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -16998,8 +16870,8 @@ export default {
                 "qty": 30
             },
             {
-                "id": 686,
-                "qty": 40
+                "id": 836,
+                "qty": 4
             },
             {
                 "id": 516,
@@ -17016,11 +16888,11 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 593,
+                "id": 686,
                 "qty": 36
             },
             {
-                "id": 686,
+                "id": 593,
                 "qty": 18
             },
             {
@@ -17221,7 +17093,7 @@ export default {
                 "qty": 20
             },
             {
-                "id": 321,
+                "id": 516,
                 "qty": 20
             },
             {
@@ -17266,7 +17138,7 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": 255,
@@ -17325,12 +17197,12 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 468,
-                "qty": 1
+                "id": 814,
+                "qty": 3
             },
             {
-                "id": 255,
-                "qty": 5
+                "id": 810,
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -17343,7 +17215,7 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 468,
+                "id": 826,
                 "qty": 75
             },
             {
@@ -17352,7 +17224,11 @@ export default {
             },
             {
                 "id": 84,
-                "qty": 50
+                "qty": 25
+            },
+            {
+                "id": 809,
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -17365,20 +17241,24 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 468,
-                "qty": 150
+                "id": 826,
+                "qty": 93
             },
             {
                 "id": 493,
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": 84,
-                "qty": 100
+                "qty": 31
+            },
+            {
+                "id": 809,
+                "qty": 12
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -17391,20 +17271,24 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 468,
-                "qty": 225
+                "id": 826,
+                "qty": 112
             },
             {
                 "id": 493,
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": 84,
-                "qty": 150
+                "qty": 37
+            },
+            {
+                "id": 809,
+                "qty": 15
             },
             {
                 "id": 2,
-                "qty": 20
+                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -17417,20 +17301,24 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 468,
-                "qty": 337
+                "id": 826,
+                "qty": 131
             },
             {
                 "id": 493,
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": 84,
-                "qty": 225
+                "qty": 43
+            },
+            {
+                "id": 809,
+                "qty": 17
             },
             {
                 "id": 2,
-                "qty": 30
+                "qty": 7
             }
         ],
         "usedInRecipesFor": []
@@ -17443,20 +17331,24 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 468,
-                "qty": 505
+                "id": 826,
+                "qty": 150
             },
             {
                 "id": 493,
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": 84,
-                "qty": 337
+                "qty": 50
+            },
+            {
+                "id": 809,
+                "qty": 20
             },
             {
                 "id": 2,
-                "qty": 40
+                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -17637,7 +17529,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 10
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -17658,8 +17550,8 @@ export default {
                 "qty": 40
             },
             {
-                "id": 661,
-                "qty": 25
+                "id": 818,
+                "qty": 15
             },
             {
                 "id": 473,
@@ -17690,8 +17582,8 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 195,
-                "qty": 10
+                "id": 255,
+                "qty": 1
             },
             {
                 "id": 593,
@@ -17735,7 +17627,7 @@ export default {
         "recipe": [
             {
                 "id": 516,
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": 255,
@@ -17790,10 +17682,6 @@ export default {
             {
                 "id": 97,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -17808,10 +17696,6 @@ export default {
             {
                 "id": 97,
                 "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -17826,10 +17710,6 @@ export default {
             {
                 "id": 97,
                 "qty": 49
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -17844,10 +17724,6 @@ export default {
             {
                 "id": 97,
                 "qty": 73
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -17910,6 +17786,10 @@ export default {
             {
                 "id": 493,
                 "qty": 5
+            },
+            {
+                "id": 824,
+                "qty": 20
             }
         ],
         "usedInRecipesFor": []
@@ -17935,7 +17815,7 @@ export default {
             },
             {
                 "id": 2,
-                "qty": 5
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -18080,10 +17960,6 @@ export default {
             {
                 "id": 195,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -18102,10 +17978,6 @@ export default {
             {
                 "id": 195,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -18124,10 +17996,6 @@ export default {
             {
                 "id": 195,
                 "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -18146,10 +18014,6 @@ export default {
             {
                 "id": 195,
                 "qty": 49
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -18335,7 +18199,7 @@ export default {
             },
             {
                 "id": "40",
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": "54",
@@ -18355,7 +18219,7 @@ export default {
             },
             {
                 "id": "88",
-                "qty": 50
+                "qty": 20
             },
             {
                 "id": "127",
@@ -18375,19 +18239,19 @@ export default {
             },
             {
                 "id": "133",
-                "qty": 80
+                "qty": 50
             },
             {
                 "id": "134",
-                "qty": 120
+                "qty": 60
             },
             {
                 "id": "135",
-                "qty": 180
+                "qty": 70
             },
             {
                 "id": "136",
-                "qty": 270
+                "qty": 80
             },
             {
                 "id": "137",
@@ -18407,7 +18271,7 @@ export default {
             },
             {
                 "id": "197",
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": "198",
@@ -18435,7 +18299,7 @@ export default {
             },
             {
                 "id": "223",
-                "qty": 7
+                "qty": 5
             },
             {
                 "id": "236",
@@ -18458,6 +18322,10 @@ export default {
                 "qty": 15
             },
             {
+                "id": "313",
+                "qty": 8
+            },
+            {
                 "id": "314",
                 "qty": 10
             },
@@ -18468,6 +18336,10 @@ export default {
             {
                 "id": "320",
                 "qty": 10
+            },
+            {
+                "id": "361",
+                "qty": 20
             },
             {
                 "id": "363",
@@ -18487,7 +18359,7 @@ export default {
             },
             {
                 "id": "389",
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": "397",
@@ -18555,23 +18427,19 @@ export default {
             },
             {
                 "id": "446",
-                "qty": 10
+                "qty": 6
             },
             {
                 "id": "447",
-                "qty": 15
+                "qty": 7
             },
             {
                 "id": "448",
-                "qty": 22
+                "qty": 8
             },
             {
                 "id": "449",
-                "qty": 33
-            },
-            {
-                "id": "469",
-                "qty": 3
+                "qty": 10
             },
             {
                 "id": "471",
@@ -18587,7 +18455,7 @@ export default {
             },
             {
                 "id": "490",
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": "491",
@@ -18619,7 +18487,7 @@ export default {
             },
             {
                 "id": "530",
-                "qty": 36
+                "qty": 18
             },
             {
                 "id": "537",
@@ -18734,6 +18602,10 @@ export default {
                 "qty": 10
             },
             {
+                "id": "656",
+                "qty": 10
+            },
+            {
                 "id": "662",
                 "qty": 20
             },
@@ -18792,6 +18664,18 @@ export default {
             {
                 "id": "710",
                 "qty": 5
+            },
+            {
+                "id": "803",
+                "qty": 30
+            },
+            {
+                "id": "804",
+                "qty": 100
+            },
+            {
+                "id": "808",
+                "qty": 70
             }
         ]
     },
@@ -19131,6 +19015,18 @@ export default {
             {
                 "id": "255",
                 "qty": 1
+            },
+            {
+                "id": "493",
+                "qty": 1
+            },
+            {
+                "id": "818",
+                "qty": 1
+            },
+            {
+                "id": "827",
+                "qty": 5
             }
         ]
     },
@@ -19288,12 +19184,12 @@ export default {
         "inventory": 0,
         "recipe": [
             {
-                "id": 516,
+                "id": 321,
                 "qty": 30
             },
             {
-                "id": 686,
-                "qty": 20
+                "id": 836,
+                "qty": 2
             },
             {
                 "id": 593,
@@ -19410,10 +19306,6 @@ export default {
             {
                 "id": 631,
                 "qty": 7
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -19428,10 +19320,6 @@ export default {
             {
                 "id": 631,
                 "qty": 10
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -19446,10 +19334,6 @@ export default {
             {
                 "id": 631,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -19464,10 +19348,6 @@ export default {
             {
                 "id": 631,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -19729,10 +19609,6 @@ export default {
             {
                 "id": 357,
                 "qty": 15
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -19747,10 +19623,6 @@ export default {
             {
                 "id": 357,
                 "qty": 22
-            },
-            {
-                "id": 2,
-                "qty": 6
             }
         ],
         "usedInRecipesFor": []
@@ -19765,10 +19637,6 @@ export default {
             {
                 "id": 357,
                 "qty": 33
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -19783,10 +19651,6 @@ export default {
             {
                 "id": 357,
                 "qty": 49
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -19818,15 +19682,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 6
-            },
-            {
-                "id": 202,
                 "qty": 4
             },
             {
-                "id": 2,
-                "qty": 2
+                "id": 202,
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -19840,14 +19700,10 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": 202,
-                "qty": 6
-            },
-            {
-                "id": 2,
                 "qty": 4
             }
         ],
@@ -19862,15 +19718,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": 202,
-                "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 6
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -19884,15 +19736,15 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 19
+                "qty": 7
             },
             {
                 "id": 202,
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": 2,
-                "qty": 12
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -19924,15 +19776,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 6
-            },
-            {
-                "id": 317,
                 "qty": 4
             },
             {
-                "id": 2,
-                "qty": 2
+                "id": 317,
+                "qty": 3
             }
         ],
         "usedInRecipesFor": []
@@ -19946,14 +19794,10 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 9
+                "qty": 5
             },
             {
                 "id": 317,
-                "qty": 6
-            },
-            {
-                "id": 2,
                 "qty": 4
             }
         ],
@@ -19968,15 +19812,11 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": 317,
-                "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 6
+                "qty": 5
             }
         ],
         "usedInRecipesFor": []
@@ -19990,15 +19830,15 @@ export default {
         "recipe": [
             {
                 "id": 97,
-                "qty": 19
+                "qty": 7
             },
             {
                 "id": 317,
-                "qty": 13
+                "qty": 6
             },
             {
                 "id": 2,
-                "qty": 12
+                "qty": 1
             }
         ],
         "usedInRecipesFor": []
@@ -20030,15 +19870,15 @@ export default {
             },
             {
                 "id": 516,
-                "qty": 5
-            },
-            {
-                "id": 84,
-                "qty": 2
-            },
-            {
-                "id": 88,
                 "qty": 3
+            },
+            {
+                "id": 686,
+                "qty": 10
+            },
+            {
+                "id": 593,
+                "qty": 10
             }
         ],
         "usedInRecipesFor": []
@@ -20168,7 +20008,7 @@ export default {
             },
             {
                 "id": "213",
-                "qty": 60
+                "qty": 72
             },
             {
                 "id": "237",
@@ -20191,8 +20031,8 @@ export default {
                 "qty": 2
             },
             {
-                "id": "560",
-                "qty": 25
+                "id": "818",
+                "qty": 1
             }
         ]
     },
@@ -20292,8 +20132,8 @@ export default {
                 "qty": 36
             },
             {
-                "id": 321,
-                "qty": 18
+                "id": 516,
+                "qty": 20
             },
             {
                 "id": 473,
@@ -20626,10 +20466,6 @@ export default {
             {
                 "id": 321,
                 "qty": 4
-            },
-            {
-                "id": 2,
-                "qty": 4
             }
         ],
         "usedInRecipesFor": []
@@ -20647,10 +20483,6 @@ export default {
             },
             {
                 "id": 321,
-                "qty": 6
-            },
-            {
-                "id": 2,
                 "qty": 6
             }
         ],
@@ -20670,10 +20502,6 @@ export default {
             {
                 "id": 321,
                 "qty": 9
-            },
-            {
-                "id": 2,
-                "qty": 8
             }
         ],
         "usedInRecipesFor": []
@@ -20692,10 +20520,6 @@ export default {
             {
                 "id": 321,
                 "qty": 13
-            },
-            {
-                "id": 2,
-                "qty": 14
             }
         ],
         "usedInRecipesFor": []
@@ -20817,7 +20641,7 @@ export default {
             },
             {
                 "id": "40",
-                "qty": 1
+                "qty": 2
             },
             {
                 "id": "49",
@@ -20869,19 +20693,19 @@ export default {
             },
             {
                 "id": "133",
-                "qty": 100
+                "qty": 62
             },
             {
                 "id": "134",
-                "qty": 150
+                "qty": 75
             },
             {
                 "id": "135",
-                "qty": 225
+                "qty": 87
             },
             {
                 "id": "136",
-                "qty": 337
+                "qty": 100
             },
             {
                 "id": "137",
@@ -20892,8 +20716,32 @@ export default {
                 "qty": 20
             },
             {
+                "id": "182",
+                "qty": 10
+            },
+            {
+                "id": "183",
+                "qty": 15
+            },
+            {
+                "id": "184",
+                "qty": 22
+            },
+            {
+                "id": "185",
+                "qty": 33
+            },
+            {
+                "id": "186",
+                "qty": 49
+            },
+            {
                 "id": "193",
                 "qty": 20
+            },
+            {
+                "id": "195",
+                "qty": 1
             },
             {
                 "id": "196",
@@ -20901,7 +20749,7 @@ export default {
             },
             {
                 "id": "197",
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": "198",
@@ -20936,16 +20784,8 @@ export default {
                 "qty": 5
             },
             {
-                "id": "219",
-                "qty": 50
-            },
-            {
-                "id": "220",
-                "qty": 100
-            },
-            {
                 "id": "223",
-                "qty": 7
+                "qty": 5
             },
             {
                 "id": "234",
@@ -20984,16 +20824,12 @@ export default {
                 "qty": 10
             },
             {
-                "id": "309",
-                "qty": 30
-            },
-            {
                 "id": "310",
                 "qty": 10
             },
             {
                 "id": "313",
-                "qty": 10
+                "qty": 8
             },
             {
                 "id": "323",
@@ -21052,10 +20888,6 @@ export default {
                 "qty": 20
             },
             {
-                "id": "366",
-                "qty": 50
-            },
-            {
                 "id": "368",
                 "qty": 50
             },
@@ -21076,12 +20908,8 @@ export default {
                 "qty": 30
             },
             {
-                "id": "386",
-                "qty": 50
-            },
-            {
                 "id": "389",
-                "qty": 5
+                "qty": 3
             },
             {
                 "id": "397",
@@ -21116,10 +20944,6 @@ export default {
                 "qty": 5
             },
             {
-                "id": "439",
-                "qty": 30
-            },
-            {
                 "id": "444",
                 "qty": 10
             },
@@ -21129,19 +20953,19 @@ export default {
             },
             {
                 "id": "446",
-                "qty": 60
+                "qty": 37
             },
             {
                 "id": "447",
-                "qty": 90
+                "qty": 45
             },
             {
                 "id": "448",
-                "qty": 135
+                "qty": 52
             },
             {
                 "id": "449",
-                "qty": 202
+                "qty": 60
             },
             {
                 "id": "450",
@@ -21152,16 +20976,8 @@ export default {
                 "qty": 30
             },
             {
-                "id": "469",
-                "qty": 3
-            },
-            {
                 "id": "471",
                 "qty": 8
-            },
-            {
-                "id": "480",
-                "qty": 30
             },
             {
                 "id": "487",
@@ -21169,7 +20985,7 @@ export default {
             },
             {
                 "id": "490",
-                "qty": 3
+                "qty": 2
             },
             {
                 "id": "491",
@@ -21196,20 +21012,12 @@ export default {
                 "qty": 50
             },
             {
-                "id": "522",
-                "qty": 40
-            },
-            {
                 "id": "523",
                 "qty": 50
             },
             {
-                "id": "529",
-                "qty": 40
-            },
-            {
                 "id": "530",
-                "qty": 18
+                "qty": 36
             },
             {
                 "id": "537",
@@ -21288,10 +21096,6 @@ export default {
                 "qty": 150
             },
             {
-                "id": "621",
-                "qty": 20
-            },
-            {
                 "id": "623",
                 "qty": 15
             },
@@ -21314,6 +21118,10 @@ export default {
             {
                 "id": "655",
                 "qty": 1
+            },
+            {
+                "id": "656",
+                "qty": 10
             },
             {
                 "id": "658",
@@ -21446,6 +21254,14 @@ export default {
             {
                 "id": "710",
                 "qty": 20
+            },
+            {
+                "id": "829",
+                "qty": 10
+            },
+            {
+                "id": "836",
+                "qty": 10
             }
         ]
     },
@@ -21837,26 +21653,6 @@ export default {
                 "qty": 2
             },
             {
-                "id": "182",
-                "qty": 10
-            },
-            {
-                "id": "183",
-                "qty": 15
-            },
-            {
-                "id": "184",
-                "qty": 22
-            },
-            {
-                "id": "185",
-                "qty": 33
-            },
-            {
-                "id": "186",
-                "qty": 49
-            },
-            {
                 "id": "287",
                 "qty": 5
             },
@@ -21961,5 +21757,3491 @@ export default {
             }
         ],
         "usedInRecipesFor": []
+    },
+    "714": {
+        "name": "AI Core",
+        "key": "AIcore",
+        "img": "ai-core.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 809,
+                "qty": 5
+            },
+            {
+                "id": 761,
+                "qty": 10
+            },
+            {
+                "id": 810,
+                "qty": 2
+            },
+            {
+                "id": 811,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "333",
+                "qty": 24
+            },
+            {
+                "id": "717",
+                "qty": 3
+            },
+            {
+                "id": "718",
+                "qty": 5
+            },
+            {
+                "id": "719",
+                "qty": 5
+            },
+            {
+                "id": "720",
+                "qty": 7
+            },
+            {
+                "id": "721",
+                "qty": 2
+            },
+            {
+                "id": "722",
+                "qty": 10
+            },
+            {
+                "id": "725",
+                "qty": 8
+            },
+            {
+                "id": "726",
+                "qty": 8
+            },
+            {
+                "id": "731",
+                "qty": 5
+            },
+            {
+                "id": "750",
+                "qty": 5
+            },
+            {
+                "id": "752",
+                "qty": 3
+            },
+            {
+                "id": "753",
+                "qty": 3
+            },
+            {
+                "id": "755",
+                "qty": 5
+            },
+            {
+                "id": "757",
+                "qty": 5
+            },
+            {
+                "id": "759",
+                "qty": 4
+            },
+            {
+                "id": "763",
+                "qty": 3
+            },
+            {
+                "id": "766",
+                "qty": 5
+            },
+            {
+                "id": "768",
+                "qty": 20
+            },
+            {
+                "id": "777",
+                "qty": 5
+            },
+            {
+                "id": "801",
+                "qty": 10
+            },
+            {
+                "id": "805",
+                "qty": 50
+            }
+        ]
+    },
+    "715": {
+        "name": "Explosion-Resistant Undershirt",
+        "key": "Accessory_ExplosionResist",
+        "img": "explosion-resistant-undershirt.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 812,
+                "qty": 10
+            },
+            {
+                "id": 813,
+                "qty": 50
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "716": {
+        "name": "Triple Jump Boots",
+        "key": "Accessory_JumpCount_Increase2",
+        "img": "triple-jump-boots.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 814,
+                "qty": 30
+            },
+            {
+                "id": 473,
+                "qty": 150
+            },
+            {
+                "id": 815,
+                "qty": 50
+            },
+            {
+                "id": 816,
+                "qty": 50
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "717": {
+        "name": "Ancient Armor",
+        "key": "AncientArmor",
+        "img": "ancient-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "718": {
+        "name": "Cold-Resistant Ancient Armor",
+        "key": "AncientArmorCold",
+        "img": "cold-resistant-ancient-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 5
+            },
+            {
+                "id": 817,
+                "qty": 50
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "719": {
+        "name": "Heat-Resistant Ancient Armor",
+        "key": "AncientArmorHeat",
+        "img": "heat-resistant-ancient-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 5
+            },
+            {
+                "id": 810,
+                "qty": 6
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "720": {
+        "name": "Lightweight Ancient Armor",
+        "key": "AncientArmorWeight",
+        "img": "lightweight-ancient-armor.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 7
+            },
+            {
+                "id": 818,
+                "qty": 50
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "721": {
+        "name": "Ancient Helm",
+        "key": "AncientHelmet",
+        "img": "ancient-helm.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 20
+            },
+            {
+                "id": 714,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "722": {
+        "name": "Beam Launcher",
+        "key": "BeamLauncher",
+        "img": "beam-launcher.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 100
+            },
+            {
+                "id": 819,
+                "qty": 50
+            },
+            {
+                "id": 714,
+                "qty": 10
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "723": {
+        "name": "Beam Launcher Ammo",
+        "key": "BeamLauncherBullet",
+        "img": "beam-launcher-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 819,
+                "qty": 1
+            },
+            {
+                "id": 770,
+                "qty": 6
+            },
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "724": {
+        "name": "Special Cake",
+        "key": "Cake05",
+        "img": "special-cake.png",
+        "group": "food",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 204,
+                "qty": 20
+            },
+            {
+                "id": 820,
+                "qty": 8
+            },
+            {
+                "id": 415,
+                "qty": 15
+            },
+            {
+                "id": 157,
+                "qty": 15
+            },
+            {
+                "id": 378,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "725": {
+        "name": "Drone Launcher",
+        "key": "DroneLauncher",
+        "img": "drone-launcher.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 70
+            },
+            {
+                "id": 821,
+                "qty": 40
+            },
+            {
+                "id": 714,
+                "qty": 8
+            },
+            {
+                "id": 811,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "726": {
+        "name": "Plasma Rifle",
+        "key": "ElectricArcAssaultRifle",
+        "img": "plasma-rifle.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 80
+            },
+            {
+                "id": 819,
+                "qty": 50
+            },
+            {
+                "id": 714,
+                "qty": 8
+            },
+            {
+                "id": 811,
+                "qty": 7
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "727": {
+        "name": "Plasma Rifle Ammo",
+        "key": "ElectricArcAssaultRifleBullet",
+        "img": "plasma-rifle-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 819,
+                "qty": 1
+            },
+            {
+                "id": 770,
+                "qty": 3
+            },
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "728": {
+        "name": "Corrosive Mist Mask",
+        "key": "GasMask",
+        "img": "corrosive-mist-mask.png",
+        "group": "armor",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 822,
+                "qty": 10
+            },
+            {
+                "id": 823,
+                "qty": 30
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "729": {
+        "name": "Sol Sphere",
+        "key": "PalSphere_Ancient_1",
+        "img": "sol-sphere.png",
+        "group": "spheres",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 473,
+                "qty": 30
+            },
+            {
+                "id": 761,
+                "qty": 2
+            },
+            {
+                "id": 824,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "730": {
+        "name": "Ancient Sphere",
+        "key": "PalSphere_Ancient_2",
+        "img": "ancient-sphere.png",
+        "group": "spheres",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 473,
+                "qty": 30
+            },
+            {
+                "id": 770,
+                "qty": 6
+            },
+            {
+                "id": 813,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "473",
+                "qty": 1
+            }
+        ]
+    },
+    "731": {
+        "name": "Ancient Shield",
+        "key": "Shield_07",
+        "img": "ancient-shield.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 2,
+                "qty": 50
+            },
+            {
+                "id": 473,
+                "qty": 250
+            },
+            {
+                "id": 761,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 5
+            },
+            {
+                "id": 811,
+                "qty": 30
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "732": {
+        "name": "Shaolong Saddle",
+        "key": "SkillUnlock_BlueSkyDragon",
+        "img": "shaolong-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 40
+            },
+            {
+                "id": 296,
+                "qty": 32
+            },
+            {
+                "id": 761,
+                "qty": 32
+            },
+            {
+                "id": 473,
+                "qty": 83
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "733": {
+        "name": "Tetroise Primo Saddle",
+        "key": "SkillUnlock_CubeTurtle_Neutral",
+        "img": "tetroise-primo-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 38
+            },
+            {
+                "id": 296,
+                "qty": 24
+            },
+            {
+                "id": 770,
+                "qty": 16
+            },
+            {
+                "id": 473,
+                "qty": 40
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "734": {
+        "name": "Xenolord Saddle",
+        "key": "SkillUnlock_DarkMechaDragon",
+        "img": "xenolord-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 30
+            },
+            {
+                "id": 816,
+                "qty": 50
+            },
+            {
+                "id": 825,
+                "qty": 30
+            },
+            {
+                "id": 473,
+                "qty": 200
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "735": {
+        "name": "Aegidron Saddle",
+        "key": "SkillUnlock_DomeArmorDragon",
+        "img": "aegidron-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 30
+            },
+            {
+                "id": 296,
+                "qty": 24
+            },
+            {
+                "id": 770,
+                "qty": 18
+            },
+            {
+                "id": 202,
+                "qty": 10
+            },
+            {
+                "id": 473,
+                "qty": 46
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "736": {
+        "name": "Eidrolon Saddle",
+        "key": "SkillUnlock_GhostDragon",
+        "img": "eidrolon-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 40
+            },
+            {
+                "id": 296,
+                "qty": 30
+            },
+            {
+                "id": 761,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 45
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "737": {
+        "name": "Eidrolon Ignis Saddle",
+        "key": "SkillUnlock_GhostDragon_Fire",
+        "img": "eidrolon-ignis-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 48
+            },
+            {
+                "id": 296,
+                "qty": 36
+            },
+            {
+                "id": 770,
+                "qty": 24
+            },
+            {
+                "id": 202,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 50
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "738": {
+        "name": "Dualith Noct Saddle",
+        "key": "SkillUnlock_GrassGolem_Dark",
+        "img": "dualith-noct-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 36
+            },
+            {
+                "id": 296,
+                "qty": 24
+            },
+            {
+                "id": 761,
+                "qty": 12
+            },
+            {
+                "id": 816,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 40
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "739": {
+        "name": "Whalaska Ignis Saddle",
+        "key": "SkillUnlock_IceNarwhal_Fire",
+        "img": "whalaska-ignis-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 24
+            },
+            {
+                "id": 97,
+                "qty": 12
+            },
+            {
+                "id": 761,
+                "qty": 20
+            },
+            {
+                "id": 202,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 30
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "740": {
+        "name": "Solmora Lux Saddle",
+        "key": "SkillUnlock_KingSunfish_Thunder",
+        "img": "solmora-lux-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 24
+            },
+            {
+                "id": 97,
+                "qty": 12
+            },
+            {
+                "id": 826,
+                "qty": 12
+            },
+            {
+                "id": 170,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 30
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "741": {
+        "name": "Hartalis Saddle",
+        "key": "SkillUnlock_LegendDeer",
+        "img": "hartalis-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 60
+            },
+            {
+                "id": 296,
+                "qty": 48
+            },
+            {
+                "id": 826,
+                "qty": 48
+            },
+            {
+                "id": 473,
+                "qty": 200
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "742": {
+        "name": "Ophydia Saddle",
+        "key": "SkillUnlock_LotusDragon",
+        "img": "ophydia-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 30
+            },
+            {
+                "id": 296,
+                "qty": 20
+            },
+            {
+                "id": 761,
+                "qty": 24
+            },
+            {
+                "id": 456,
+                "qty": 15
+            },
+            {
+                "id": 473,
+                "qty": 75
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "743": {
+        "name": "Starryon Primo Saddle",
+        "key": "SkillUnlock_NightBlueHorse_Neutral",
+        "img": "starryon-primo-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 36
+            },
+            {
+                "id": 296,
+                "qty": 18
+            },
+            {
+                "id": 816,
+                "qty": 24
+            },
+            {
+                "id": 298,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 65
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "744": {
+        "name": "Bastigor's Hammer",
+        "key": "SkillUnlock_SnowTigerBeastman",
+        "img": "bastigors-hammer.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 30
+            },
+            {
+                "id": 317,
+                "qty": 50
+            },
+            {
+                "id": 473,
+                "qty": 140
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "745": {
+        "name": "Roujay Saddle",
+        "key": "SkillUnlock_ThiefBird",
+        "img": "roujay-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 24
+            },
+            {
+                "id": 761,
+                "qty": 10
+            },
+            {
+                "id": 296,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 24
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "746": {
+        "name": "Beakon Cryst Saddle",
+        "key": "SkillUnlock_ThunderBird_Ice",
+        "img": "beakon-cryst-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 24
+            },
+            {
+                "id": 97,
+                "qty": 12
+            },
+            {
+                "id": 761,
+                "qty": 24
+            },
+            {
+                "id": 317,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 30
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "747": {
+        "name": "Dynamoff Saddle",
+        "key": "SkillUnlock_ThunderFluffyBird",
+        "img": "dynamoff-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 20
+            },
+            {
+                "id": 97,
+                "qty": 10
+            },
+            {
+                "id": 761,
+                "qty": 10
+            },
+            {
+                "id": 170,
+                "qty": 10
+            },
+            {
+                "id": 473,
+                "qty": 30
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "748": {
+        "name": "Moldron Cryst Saddle",
+        "key": "SkillUnlock_VolcanoDragon_Ice",
+        "img": "moldron-cryst-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 24
+            },
+            {
+                "id": 296,
+                "qty": 24
+            },
+            {
+                "id": 826,
+                "qty": 18
+            },
+            {
+                "id": 317,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 40
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "749": {
+        "name": "Celesdir Noct Saddle",
+        "key": "SkillUnlock_WhiteDeer_Dark",
+        "img": "celesdir-noct-saddle.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 357,
+                "qty": 43
+            },
+            {
+                "id": 296,
+                "qty": 28
+            },
+            {
+                "id": 827,
+                "qty": 6
+            },
+            {
+                "id": 816,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 96
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "750": {
+        "name": "Heavy Assault Rifle",
+        "key": "SkyAssaultRifle",
+        "img": "heavy-assault-rifle.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 100
+            },
+            {
+                "id": 84,
+                "qty": 50
+            },
+            {
+                "id": 819,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "751": {
+        "name": "Heavy Assault Rifle Ammo",
+        "key": "SkyAssaultRifleBullet",
+        "img": "heavy-assault-rifle-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            },
+            {
+                "id": 255,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "752": {
+        "name": "Laser Sword",
+        "key": "SkyBeamSword",
+        "img": "laser-sword.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 50
+            },
+            {
+                "id": 473,
+                "qty": 250
+            },
+            {
+                "id": 819,
+                "qty": 30
+            },
+            {
+                "id": 714,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "753": {
+        "name": "Mechanical Bow",
+        "key": "SkyBow",
+        "img": "mechanical-bow.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 40
+            },
+            {
+                "id": 84,
+                "qty": 20
+            },
+            {
+                "id": 473,
+                "qty": 200
+            },
+            {
+                "id": 714,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "754": {
+        "name": "Mechanical Bow Ammo",
+        "key": "SkyBowArrow",
+        "img": "mechanical-bow-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "755": {
+        "name": "Tactical Grenade Launcher",
+        "key": "SkyGrenadeLauncher",
+        "img": "tactical-grenade-launcher.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 80
+            },
+            {
+                "id": 818,
+                "qty": 15
+            },
+            {
+                "id": 810,
+                "qty": 5
+            },
+            {
+                "id": 714,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "756": {
+        "name": "Tactical Grenade Launcher Ammo",
+        "key": "SkyGrenadeLauncherBullet",
+        "img": "tactical-grenade-launcher-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 4
+            },
+            {
+                "id": 255,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "757": {
+        "name": "Prototype Shotgun",
+        "key": "SkyShotgun",
+        "img": "prototype-shotgun.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 60
+            },
+            {
+                "id": 84,
+                "qty": 40
+            },
+            {
+                "id": 810,
+                "qty": 5
+            },
+            {
+                "id": 714,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "758": {
+        "name": "Prototype Shotgun Ammo",
+        "key": "SkyShotgunBullet",
+        "img": "prototype-shotgun-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 4
+            },
+            {
+                "id": 255,
+                "qty": 8
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "759": {
+        "name": "Combat SMG",
+        "key": "SkySubmachineGun",
+        "img": "combat-smg.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 50
+            },
+            {
+                "id": 84,
+                "qty": 30
+            },
+            {
+                "id": 817,
+                "qty": 20
+            },
+            {
+                "id": 714,
+                "qty": 4
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "760": {
+        "name": "Combat SMG Ammo",
+        "key": "SkySubmachineGunBullet",
+        "img": "combat-smg-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            },
+            {
+                "id": 255,
+                "qty": 6
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "761": {
+        "name": "Soralite Ingot",
+        "key": "SkyislandIngot",
+        "img": "soralite-ingot.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 828,
+                "qty": 2
+            },
+            {
+                "id": 505,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "714",
+                "qty": 10
+            },
+            {
+                "id": "717",
+                "qty": 30
+            },
+            {
+                "id": "721",
+                "qty": 20
+            },
+            {
+                "id": "723",
+                "qty": 2
+            },
+            {
+                "id": "727",
+                "qty": 2
+            },
+            {
+                "id": "729",
+                "qty": 2
+            },
+            {
+                "id": "731",
+                "qty": 30
+            },
+            {
+                "id": "732",
+                "qty": 32
+            },
+            {
+                "id": "736",
+                "qty": 20
+            },
+            {
+                "id": "738",
+                "qty": 12
+            },
+            {
+                "id": "739",
+                "qty": 20
+            },
+            {
+                "id": "742",
+                "qty": 24
+            },
+            {
+                "id": "744",
+                "qty": 30
+            },
+            {
+                "id": "745",
+                "qty": 10
+            },
+            {
+                "id": "746",
+                "qty": 24
+            },
+            {
+                "id": "747",
+                "qty": 10
+            },
+            {
+                "id": "750",
+                "qty": 100
+            },
+            {
+                "id": "751",
+                "qty": 2
+            },
+            {
+                "id": "752",
+                "qty": 50
+            },
+            {
+                "id": "753",
+                "qty": 40
+            },
+            {
+                "id": "754",
+                "qty": 2
+            },
+            {
+                "id": "755",
+                "qty": 80
+            },
+            {
+                "id": "756",
+                "qty": 4
+            },
+            {
+                "id": "757",
+                "qty": 60
+            },
+            {
+                "id": "758",
+                "qty": 4
+            },
+            {
+                "id": "759",
+                "qty": 50
+            },
+            {
+                "id": "760",
+                "qty": 2
+            },
+            {
+                "id": "762",
+                "qty": 30
+            },
+            {
+                "id": "763",
+                "qty": 50
+            },
+            {
+                "id": "766",
+                "qty": 50
+            },
+            {
+                "id": "767",
+                "qty": 2
+            },
+            {
+                "id": "772",
+                "qty": 80
+            },
+            {
+                "id": "777",
+                "qty": 50
+            },
+            {
+                "id": "778",
+                "qty": 50
+            },
+            {
+                "id": "779",
+                "qty": 2
+            },
+            {
+                "id": "780",
+                "qty": 2
+            },
+            {
+                "id": "781",
+                "qty": 2
+            },
+            {
+                "id": "782",
+                "qty": 2
+            },
+            {
+                "id": "783",
+                "qty": 2
+            },
+            {
+                "id": "784",
+                "qty": 2
+            },
+            {
+                "id": "785",
+                "qty": 2
+            },
+            {
+                "id": "786",
+                "qty": 2
+            },
+            {
+                "id": "787",
+                "qty": 2
+            },
+            {
+                "id": "788",
+                "qty": 2
+            },
+            {
+                "id": "789",
+                "qty": 2
+            },
+            {
+                "id": "790",
+                "qty": 2
+            },
+            {
+                "id": "791",
+                "qty": 2
+            },
+            {
+                "id": "792",
+                "qty": 2
+            },
+            {
+                "id": "793",
+                "qty": 2
+            },
+            {
+                "id": "794",
+                "qty": 2
+            },
+            {
+                "id": "795",
+                "qty": 2
+            },
+            {
+                "id": "796",
+                "qty": 2
+            },
+            {
+                "id": "797",
+                "qty": 2
+            },
+            {
+                "id": "798",
+                "qty": 10
+            },
+            {
+                "id": "800",
+                "qty": 100
+            },
+            {
+                "id": "801",
+                "qty": 100
+            }
+        ]
+    },
+    "762": {
+        "name": "Enhanced Lily's Spear",
+        "key": "Spear_ForestBoss2",
+        "img": "enhanced-lilys-spear.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 473,
+                "qty": 20
+            },
+            {
+                "id": 761,
+                "qty": 30
+            },
+            {
+                "id": 296,
+                "qty": 20
+            },
+            {
+                "id": 829,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "763": {
+        "name": "Homing Module",
+        "key": "SphereModule_Homing",
+        "img": "homing-module.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 50
+            },
+            {
+                "id": 714,
+                "qty": 3
+            },
+            {
+                "id": 2,
+                "qty": 40
+            },
+            {
+                "id": 816,
+                "qty": 50
+            },
+            {
+                "id": 811,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "764": {
+        "name": "Nutrient Tonic",
+        "key": "Supplement",
+        "img": "nutrient-tonic.png",
+        "group": "meds",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 821,
+                "qty": 25
+            },
+            {
+                "id": 820,
+                "qty": 18
+            },
+            {
+                "id": 830,
+                "qty": 20
+            },
+            {
+                "id": 831,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "765": {
+        "name": "Aquatic Construction Kit",
+        "key": "WaterBuildKit",
+        "img": "aquatic-construction-kit.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 88,
+                "qty": 200
+            },
+            {
+                "id": 826,
+                "qty": 50
+            },
+            {
+                "id": 829,
+                "qty": 100
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "766": {
+        "name": "Beam Scatter",
+        "key": "WidePenetrateShotgun",
+        "img": "beam-scatter.png",
+        "group": "weapons",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 50
+            },
+            {
+                "id": 761,
+                "qty": 50
+            },
+            {
+                "id": 714,
+                "qty": 5
+            },
+            {
+                "id": 811,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "767": {
+        "name": "Beam Scatter Ammo",
+        "key": "WidePenetrateShotgunBullet",
+        "img": "beam-scatter-ammo.png",
+        "group": "ammo",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 819,
+                "qty": 1
+            },
+            {
+                "id": 770,
+                "qty": 3
+            },
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "768": {
+        "name": "Wing Pack",
+        "key": "WingGlider",
+        "img": "wing-pack.png",
+        "group": "tech",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 473,
+                "qty": 30
+            },
+            {
+                "id": 770,
+                "qty": 6
+            },
+            {
+                "id": 714,
+                "qty": 20
+            },
+            {
+                "id": 810,
+                "qty": 20
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "769": {
+        "name": "Wing Cell",
+        "key": "WingGlider_Fuel",
+        "img": "wing-cell.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 813,
+                "qty": 10
+            },
+            {
+                "id": 832,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "770": {
+        "name": "Paloxite Ingot",
+        "key": "WorldTreeIngot",
+        "img": "paloxite-ingot.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 828,
+                "qty": 1
+            },
+            {
+                "id": 823,
+                "qty": 2
+            },
+            {
+                "id": 821,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "333",
+                "qty": 60
+            },
+            {
+                "id": "718",
+                "qty": 30
+            },
+            {
+                "id": "719",
+                "qty": 30
+            },
+            {
+                "id": "720",
+                "qty": 30
+            },
+            {
+                "id": "722",
+                "qty": 100
+            },
+            {
+                "id": "723",
+                "qty": 6
+            },
+            {
+                "id": "725",
+                "qty": 70
+            },
+            {
+                "id": "726",
+                "qty": 80
+            },
+            {
+                "id": "727",
+                "qty": 3
+            },
+            {
+                "id": "730",
+                "qty": 6
+            },
+            {
+                "id": "733",
+                "qty": 16
+            },
+            {
+                "id": "735",
+                "qty": 18
+            },
+            {
+                "id": "737",
+                "qty": 24
+            },
+            {
+                "id": "766",
+                "qty": 50
+            },
+            {
+                "id": "767",
+                "qty": 3
+            },
+            {
+                "id": "768",
+                "qty": 6
+            },
+            {
+                "id": "773",
+                "qty": 100
+            },
+            {
+                "id": "774",
+                "qty": 50
+            },
+            {
+                "id": "775",
+                "qty": 50
+            },
+            {
+                "id": "776",
+                "qty": 50
+            },
+            {
+                "id": "799",
+                "qty": 100
+            },
+            {
+                "id": "805",
+                "qty": 100
+            }
+        ]
+    },
+    "771": {
+        "name": "Ancient Furnace",
+        "key": "AncientBlastFurnace",
+        "img": "ancient-furnace.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 826,
+                "qty": 100
+            },
+            {
+                "id": 810,
+                "qty": 20
+            },
+            {
+                "id": 809,
+                "qty": 30
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "772": {
+        "name": "Ancient Kitchen",
+        "key": "AncientCookingStove",
+        "img": "ancient-kitchen.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 80
+            },
+            {
+                "id": 810,
+                "qty": 30
+            },
+            {
+                "id": 817,
+                "qty": 50
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "773": {
+        "name": "Ancient Power Generator",
+        "key": "AncientElectricGenerator",
+        "img": "ancient-power-generator.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 100
+            },
+            {
+                "id": 170,
+                "qty": 200
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "774": {
+        "name": "Ancient Farm",
+        "key": "AncientFarmBlock",
+        "img": "ancient-farm.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 50
+            },
+            {
+                "id": 821,
+                "qty": 50
+            },
+            {
+                "id": 813,
+                "qty": 100
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "775": {
+        "name": "Ancient Material Synthesizer",
+        "key": "AncientMultiProduct",
+        "img": "ancient-material-synthesizer.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 50
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "776": {
+        "name": "Ancient Relic Recycler",
+        "key": "AncientRelicRecycler",
+        "img": "ancient-relic-recycler.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 50
+            },
+            {
+                "id": 813,
+                "qty": 50
+            },
+            {
+                "id": 2,
+                "qty": 30
+            },
+            {
+                "id": 811,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "777": {
+        "name": "Ancient Workbench",
+        "key": "AncientWorkBench",
+        "img": "ancient-workbench.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 50
+            },
+            {
+                "id": 714,
+                "qty": 5
+            },
+            {
+                "id": 819,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "778": {
+        "name": "Ancient Clinic",
+        "key": "Ancient_Clinic",
+        "img": "ancient-clinic.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 50
+            },
+            {
+                "id": 809,
+                "qty": 15
+            },
+            {
+                "id": 821,
+                "qty": 45
+            },
+            {
+                "id": 811,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "779": {
+        "name": "Ancient Foundation",
+        "key": "Ancient_foundation",
+        "img": "ancient-foundation.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "780": {
+        "name": "Ancient Wall",
+        "key": "Ancient_wall",
+        "img": "ancient-wall.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "781": {
+        "name": "Ancient Roof",
+        "key": "Ancient_roof",
+        "img": "ancient-roof.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "782": {
+        "name": "Ancient Stairs",
+        "key": "Ancient_stair",
+        "img": "ancient-stairs.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "783": {
+        "name": "Ancient Wall and Door",
+        "key": "Ancient_DoorWall",
+        "img": "ancient-wall-and-door.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "784": {
+        "name": "Ancient Triangular Wall",
+        "key": "Ancient_TriangleWall",
+        "img": "ancient-triangular-wall.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "785": {
+        "name": "Ancient Slanted Roof",
+        "key": "Ancient_SlantedRoof",
+        "img": "ancient-slanted-roof.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "786": {
+        "name": "Ancient Wall and Window",
+        "key": "Ancient_WindowWall",
+        "img": "ancient-wall-and-window.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "787": {
+        "name": "Ancient Pillar",
+        "key": "Ancient_Pillars",
+        "img": "ancient-pillar.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "788": {
+        "name": "Ancient Fence",
+        "key": "Ancient_Fence",
+        "img": "ancient-fence.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "789": {
+        "name": "Ancient Triangular Foundation",
+        "key": "Ancient_TriangleFoundation",
+        "img": "ancient-triangular-foundation.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "790": {
+        "name": "Ancient Diagonal Wall",
+        "key": "Ancient_DiagonalWall",
+        "img": "ancient-diagonal-wall.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "791": {
+        "name": "Ancient Triangular Roof",
+        "key": "Ancient_TriangleRoof",
+        "img": "ancient-triangular-roof.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "792": {
+        "name": "Ancient Corner Roof",
+        "key": "Ancient_TriangleStairsCorner",
+        "img": "ancient-corner-roof.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "793": {
+        "name": "Ancient Triangular Wall (Inverted)",
+        "key": "Ancient_TriangleWallReverse",
+        "img": "ancient-triangular-wall-inverted.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "794": {
+        "name": "Ancient Pal Passage Entrance",
+        "key": "Ancient_WallGate",
+        "img": "ancient-pal-passage-entrance.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "795": {
+        "name": "Ancient Slanted Triangular Roof",
+        "key": "Ancient_SlopedRoofCorner",
+        "img": "ancient-slanted-triangular-roof.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "796": {
+        "name": "Ancient Pyramid Roof",
+        "key": "Ancient_PyramidRoof",
+        "img": "ancient-pyramid-roof.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "797": {
+        "name": "Ancient Slanted Triangular Roof (Inverted)",
+        "key": "Ancient_SlopedRoofCornerReverse",
+        "img": "ancient-slanted-triangular-roof-inverted.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "798": {
+        "name": "Ancient Pal Bed",
+        "key": "Ancient_MedicalPalBed",
+        "img": "ancient-pal-bed.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 10
+            },
+            {
+                "id": 821,
+                "qty": 2
+            },
+            {
+                "id": 813,
+                "qty": 3
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "799": {
+        "name": "Ancient Hot Spring",
+        "key": "Ancient_Spa",
+        "img": "ancient-hot-spring.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 100
+            },
+            {
+                "id": 821,
+                "qty": 10
+            },
+            {
+                "id": 810,
+                "qty": 20
+            },
+            {
+                "id": 817,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "800": {
+        "name": "Ancient Monitoring Stand",
+        "key": "BaseCampWorkHard03",
+        "img": "ancient-monitoring-stand.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 100
+            },
+            {
+                "id": 811,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "801": {
+        "name": "Gold Coin Assembly Line",
+        "key": "Factory_Money",
+        "img": "gold-coin-assembly-line.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 761,
+                "qty": 100
+            },
+            {
+                "id": 2,
+                "qty": 20
+            },
+            {
+                "id": 714,
+                "qty": 10
+            },
+            {
+                "id": 811,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "802": {
+        "name": "Skillfruit Orchard",
+        "key": "Farm_SkillFruits",
+        "img": "skillfruit-orchard.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 813,
+                "qty": 200
+            },
+            {
+                "id": 473,
+                "qty": 500
+            },
+            {
+                "id": 828,
+                "qty": 150
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "803": {
+        "name": "Large Fishing Pond",
+        "key": "FishingPond2",
+        "img": "large-fishing-pond.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 829,
+                "qty": 20
+            },
+            {
+                "id": 593,
+                "qty": 30
+            },
+            {
+                "id": 826,
+                "qty": 10
+            },
+            {
+                "id": 298,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "804": {
+        "name": "Jetragon Statue",
+        "key": "JetDragonStatue",
+        "img": "jetragon-statue.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 593,
+                "qty": 100
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "805": {
+        "name": "Ancient Hatchery",
+        "key": "MultiElectricHatchingPalEggWithBreed",
+        "img": "ancient-hatchery.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 770,
+                "qty": 100
+            },
+            {
+                "id": 714,
+                "qty": 50
+            },
+            {
+                "id": 2,
+                "qty": 30
+            },
+            {
+                "id": 811,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "806": {
+        "name": "Azure Covenant Flag",
+        "key": "SkyIsland_Flag",
+        "img": "azure-covenant-flag.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 20
+            },
+            {
+                "id": 195,
+                "qty": 10
+            },
+            {
+                "id": 296,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "807": {
+        "name": "Azure Covenant Banner",
+        "key": "SkyIsland_Banner",
+        "img": "azure-covenant-banner.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 516,
+                "qty": 10
+            },
+            {
+                "id": 195,
+                "qty": 10
+            },
+            {
+                "id": 296,
+                "qty": 20
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "808": {
+        "name": "Soralite Quarry",
+        "key": "SkyIslandOrePit",
+        "img": "soralite-quarry.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 593,
+                "qty": 70
+            },
+            {
+                "id": 828,
+                "qty": 100
+            },
+            {
+                "id": 2,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "809": {
+        "name": "Computer",
+        "key": "Computer",
+        "img": "computer.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 94,
+                "qty": 2
+            },
+            {
+                "id": 489,
+                "qty": 3
+            },
+            {
+                "id": 819,
+                "qty": 2
+            },
+            {
+                "id": 84,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "546",
+                "qty": 10
+            },
+            {
+                "id": "547",
+                "qty": 12
+            },
+            {
+                "id": "548",
+                "qty": 15
+            },
+            {
+                "id": "549",
+                "qty": 17
+            },
+            {
+                "id": "550",
+                "qty": 20
+            },
+            {
+                "id": "714",
+                "qty": 5
+            },
+            {
+                "id": "771",
+                "qty": 30
+            },
+            {
+                "id": "778",
+                "qty": 15
+            }
+        ]
+    },
+    "810": {
+        "name": "Thermal Core",
+        "key": "Thermal_Core",
+        "img": "thermal-core.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 202,
+                "qty": 4
+            },
+            {
+                "id": 104,
+                "qty": 8
+            },
+            {
+                "id": 818,
+                "qty": 2
+            },
+            {
+                "id": 814,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "545",
+                "qty": 1
+            },
+            {
+                "id": "714",
+                "qty": 2
+            },
+            {
+                "id": "719",
+                "qty": 6
+            },
+            {
+                "id": "755",
+                "qty": 5
+            },
+            {
+                "id": "757",
+                "qty": 5
+            },
+            {
+                "id": "768",
+                "qty": 20
+            },
+            {
+                "id": "771",
+                "qty": 20
+            },
+            {
+                "id": "772",
+                "qty": 30
+            },
+            {
+                "id": "799",
+                "qty": 20
+            }
+        ]
+    },
+    "811": {
+        "name": "Ancient Civilization Core",
+        "key": "AncientParts2",
+        "img": "ancient-civilization-core.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "714",
+                "qty": 1
+            },
+            {
+                "id": "722",
+                "qty": 10
+            },
+            {
+                "id": "725",
+                "qty": 5
+            },
+            {
+                "id": "726",
+                "qty": 7
+            },
+            {
+                "id": "731",
+                "qty": 30
+            },
+            {
+                "id": "763",
+                "qty": 5
+            },
+            {
+                "id": "766",
+                "qty": 5
+            },
+            {
+                "id": "768",
+                "qty": 10
+            },
+            {
+                "id": "771",
+                "qty": 10
+            },
+            {
+                "id": "772",
+                "qty": 10
+            },
+            {
+                "id": "773",
+                "qty": 10
+            },
+            {
+                "id": "774",
+                "qty": 10
+            },
+            {
+                "id": "775",
+                "qty": 10
+            },
+            {
+                "id": "776",
+                "qty": 20
+            },
+            {
+                "id": "778",
+                "qty": 10
+            },
+            {
+                "id": "800",
+                "qty": 5
+            },
+            {
+                "id": "801",
+                "qty": 5
+            },
+            {
+                "id": "805",
+                "qty": 20
+            }
+        ]
+    },
+    "812": {
+        "name": "Explosion-Resistant Fiber",
+        "key": "UniqueMaterial_Mothman",
+        "img": "explosion-resistant-fiber.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "715",
+                "qty": 10
+            }
+        ]
+    },
+    "813": {
+        "name": "Mythical Wood",
+        "key": "Wood_WorldTree",
+        "img": "mythical-wood.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "715",
+                "qty": 50
+            },
+            {
+                "id": "730",
+                "qty": 3
+            },
+            {
+                "id": "769",
+                "qty": 10
+            },
+            {
+                "id": "774",
+                "qty": 100
+            },
+            {
+                "id": "776",
+                "qty": 50
+            },
+            {
+                "id": "798",
+                "qty": 3
+            },
+            {
+                "id": "802",
+                "qty": 200
+            }
+        ]
+    },
+    "814": {
+        "name": "Hexolite",
+        "key": "StainlessSteel",
+        "img": "hexolite.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 833,
+                "qty": 1
+            },
+            {
+                "id": 834,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "180",
+                "qty": 5
+            },
+            {
+                "id": "336",
+                "qty": 28
+            },
+            {
+                "id": "441",
+                "qty": 24
+            },
+            {
+                "id": "470",
+                "qty": 24
+            },
+            {
+                "id": "545",
+                "qty": 3
+            },
+            {
+                "id": "716",
+                "qty": 30
+            },
+            {
+                "id": "810",
+                "qty": 2
+            }
+        ]
+    },
+    "815": {
+        "name": "Nightstar Sand",
+        "key": "NightStone",
+        "img": "nightstar-sand.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "716",
+                "qty": 50
+            }
+        ]
+    },
+    "816": {
+        "name": "Dark Fragment",
+        "key": "PalDarkParts",
+        "img": "dark-fragment.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "716",
+                "qty": 50
+            },
+            {
+                "id": "734",
+                "qty": 50
+            },
+            {
+                "id": "738",
+                "qty": 20
+            },
+            {
+                "id": "743",
+                "qty": 24
+            },
+            {
+                "id": "749",
+                "qty": 20
+            },
+            {
+                "id": "763",
+                "qty": 50
+            }
+        ]
+    },
+    "817": {
+        "name": "Cryogenic Coolant",
+        "key": "Bio_Coolant",
+        "img": "cryogenic-coolant.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 456,
+                "qty": 1
+            },
+            {
+                "id": 317,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "112",
+                "qty": 5
+            },
+            {
+                "id": "113",
+                "qty": 6
+            },
+            {
+                "id": "114",
+                "qty": 7
+            },
+            {
+                "id": "115",
+                "qty": 8
+            },
+            {
+                "id": "116",
+                "qty": 10
+            },
+            {
+                "id": "122",
+                "qty": 4
+            },
+            {
+                "id": "123",
+                "qty": 5
+            },
+            {
+                "id": "124",
+                "qty": 6
+            },
+            {
+                "id": "125",
+                "qty": 7
+            },
+            {
+                "id": "126",
+                "qty": 8
+            },
+            {
+                "id": "337",
+                "qty": 24
+            },
+            {
+                "id": "507",
+                "qty": 10
+            },
+            {
+                "id": "718",
+                "qty": 50
+            },
+            {
+                "id": "759",
+                "qty": 20
+            },
+            {
+                "id": "772",
+                "qty": 50
+            },
+            {
+                "id": "799",
+                "qty": 20
+            }
+        ]
+    },
+    "818": {
+        "name": "Corrosive Solvent",
+        "key": "Corrosive_Solvent",
+        "img": "corrosive-solvent.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 661,
+                "qty": 1
+            },
+            {
+                "id": 613,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "48",
+                "qty": 10
+            },
+            {
+                "id": "560",
+                "qty": 15
+            },
+            {
+                "id": "720",
+                "qty": 50
+            },
+            {
+                "id": "755",
+                "qty": 15
+            },
+            {
+                "id": "810",
+                "qty": 2
+            }
+        ]
+    },
+    "819": {
+        "name": "Bio Battery",
+        "key": "Bio_Battery",
+        "img": "bio-battery.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 170,
+                "qty": 1
+            },
+            {
+                "id": 516,
+                "qty": 1
+            },
+            {
+                "id": 84,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "722",
+                "qty": 50
+            },
+            {
+                "id": "723",
+                "qty": 1
+            },
+            {
+                "id": "726",
+                "qty": 50
+            },
+            {
+                "id": "727",
+                "qty": 1
+            },
+            {
+                "id": "750",
+                "qty": 30
+            },
+            {
+                "id": "752",
+                "qty": 30
+            },
+            {
+                "id": "767",
+                "qty": 1
+            },
+            {
+                "id": "777",
+                "qty": 20
+            },
+            {
+                "id": "809",
+                "qty": 2
+            }
+        ]
+    },
+    "820": {
+        "name": "Caramel Cotton Candy",
+        "key": "Sweet_Caramel",
+        "img": "caramel-cotton-candy.png",
+        "group": "food",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "724",
+                "qty": 8
+            },
+            {
+                "id": "764",
+                "qty": 18
+            }
+        ]
+    },
+    "821": {
+        "name": "World Tree Holy Water",
+        "key": "WorldTreeHolyWater",
+        "img": "world-tree-holy-water.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "725",
+                "qty": 40
+            },
+            {
+                "id": "764",
+                "qty": 25
+            },
+            {
+                "id": "770",
+                "qty": 1
+            },
+            {
+                "id": "774",
+                "qty": 50
+            },
+            {
+                "id": "778",
+                "qty": 45
+            },
+            {
+                "id": "798",
+                "qty": 2
+            },
+            {
+                "id": "799",
+                "qty": 10
+            }
+        ]
+    },
+    "822": {
+        "name": "Toxin Filtering Membrane",
+        "key": "UniqueMaterial_FlowerPrince",
+        "img": "toxin-filtering-membrane.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "728",
+                "qty": 10
+            }
+        ]
+    },
+    "823": {
+        "name": "Paloxite",
+        "key": "WorldTreeOre",
+        "img": "paloxite.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "728",
+                "qty": 30
+            },
+            {
+                "id": "770",
+                "qty": 2
+            }
+        ]
+    },
+    "824": {
+        "name": "Hardwood",
+        "key": "Wood_Fine",
+        "img": "hardwood.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "154",
+                "qty": 25
+            },
+            {
+                "id": "219",
+                "qty": 50
+            },
+            {
+                "id": "220",
+                "qty": 100
+            },
+            {
+                "id": "309",
+                "qty": 30
+            },
+            {
+                "id": "361",
+                "qty": 3
+            },
+            {
+                "id": "574",
+                "qty": 20
+            },
+            {
+                "id": "729",
+                "qty": 10
+            },
+            {
+                "id": "829",
+                "qty": 10
+            }
+        ]
+    },
+    "825": {
+        "name": "Meteorite Fragment",
+        "key": "MeteorDrop",
+        "img": "meteorite-fragment.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "734",
+                "qty": 30
+            }
+        ]
+    },
+    "826": {
+        "name": "Coralum Ingot",
+        "key": "ManganeseIngot",
+        "img": "coralum-ingot.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 835,
+                "qty": 2
+            },
+            {
+                "id": 104,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "213",
+                "qty": 43
+            },
+            {
+                "id": "214",
+                "qty": 36
+            },
+            {
+                "id": "546",
+                "qty": 75
+            },
+            {
+                "id": "547",
+                "qty": 93
+            },
+            {
+                "id": "548",
+                "qty": 112
+            },
+            {
+                "id": "549",
+                "qty": 131
+            },
+            {
+                "id": "550",
+                "qty": 150
+            },
+            {
+                "id": "740",
+                "qty": 12
+            },
+            {
+                "id": "741",
+                "qty": 48
+            },
+            {
+                "id": "748",
+                "qty": 18
+            },
+            {
+                "id": "765",
+                "qty": 50
+            },
+            {
+                "id": "771",
+                "qty": 100
+            },
+            {
+                "id": "803",
+                "qty": 10
+            }
+        ]
+    },
+    "827": {
+        "name": "High Quality Recovery Meds",
+        "key": "Potion_High",
+        "img": "high-quality-recovery-meds.png",
+        "group": "meds",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 831,
+                "qty": 10
+            },
+            {
+                "id": 513,
+                "qty": 20
+            },
+            {
+                "id": 298,
+                "qty": 5
+            },
+            {
+                "id": 131,
+                "qty": 5
+            },
+            {
+                "id": 613,
+                "qty": 5
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "749",
+                "qty": 6
+            }
+        ]
+    },
+    "828": {
+        "name": "Soralite",
+        "key": "SkyIslandOre",
+        "img": "soralite.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "761",
+                "qty": 2
+            },
+            {
+                "id": "770",
+                "qty": 1
+            },
+            {
+                "id": "802",
+                "qty": 150
+            },
+            {
+                "id": "808",
+                "qty": 100
+            }
+        ]
+    },
+    "829": {
+        "name": "High Quality Wooden Board",
+        "key": "HighGrade_Processed_Wood",
+        "img": "high-quality-wooden-board.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 824,
+                "qty": 10
+            },
+            {
+                "id": 686,
+                "qty": 10
+            },
+            {
+                "id": 296,
+                "qty": 2
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "366",
+                "qty": 3
+            },
+            {
+                "id": "762",
+                "qty": 20
+            },
+            {
+                "id": "765",
+                "qty": 100
+            },
+            {
+                "id": "803",
+                "qty": 20
+            }
+        ]
+    },
+    "830": {
+        "name": "Onion",
+        "key": "Onion",
+        "img": "onion.png",
+        "group": "food",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "764",
+                "qty": 20
+            }
+        ]
+    },
+    "831": {
+        "name": "Cavern Mushroom",
+        "key": "CaveMushroom",
+        "img": "cavern-mushroom.png",
+        "group": "food",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "764",
+                "qty": 10
+            },
+            {
+                "id": "827",
+                "qty": 10
+            }
+        ]
+    },
+    "832": {
+        "name": "Crude Oil",
+        "key": "CrudeOil",
+        "img": "crude-oil.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "489",
+                "qty": 2
+            },
+            {
+                "id": "769",
+                "qty": 20
+            }
+        ]
+    },
+    "833": {
+        "name": "Chromite",
+        "key": "Chromium",
+        "img": "chromite.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "814",
+                "qty": 1
+            }
+        ]
+    },
+    "834": {
+        "name": "Hexolite Quartz",
+        "key": "RainbowCrystal",
+        "img": "hexolite-quartz.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "814",
+                "qty": 1
+            }
+        ]
+    },
+    "835": {
+        "name": "Coralum Ore",
+        "key": "ManganeseOre",
+        "img": "coralum-ore.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "826",
+                "qty": 2
+            }
+        ]
+    },
+    "836": {
+        "name": "Wooden Board",
+        "key": "Processed_Wood",
+        "img": "wooden-board.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 686,
+                "qty": 10
+            },
+            {
+                "id": 195,
+                "qty": 5
+            },
+            {
+                "id": 440,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": [
+            {
+                "id": "386",
+                "qty": 5
+            },
+            {
+                "id": "439",
+                "qty": 3
+            },
+            {
+                "id": "480",
+                "qty": 3
+            },
+            {
+                "id": "522",
+                "qty": 4
+            },
+            {
+                "id": "529",
+                "qty": 4
+            },
+            {
+                "id": "621",
+                "qty": 2
+            }
+        ]
     }
 }

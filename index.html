@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth bg-gray-950 py-2 px-4 size-full max-w-full max-h-svh">
+<html lang="en" data-theme="palworld" class="scroll-smooth bg-zinc-950 py-2 px-4 size-full max-w-full max-h-svh">
 <head>
 
     <!---------->
@@ -50,7 +50,7 @@
 
 <!--------------------------->
 <!-- wrapper: page content -->
-<div class="flex flex-col h-full bg-gray-950">
+<div class="flex flex-col h-full bg-zinc-950">
 
 
     <!----------------->
@@ -155,7 +155,7 @@
                         activeGroup: 'all',
                         activateGroup(groupName) { this.activeGroup = groupName },
                         search: '',
-                        get recipeSearchResults() { return window.RIH.getSearchResults(this.recipes, this.search.toLowerCase()) },
+                        get recipeSearchResults() { return window.RIH.getFilteredSortedResults(this.recipes, this.search.toLowerCase(), this.activeGroup, true) },
                         clearRecipeSearchInput() { this.search = ''; $refs.searchRecipes.focus() }
                      }"
                 >
@@ -176,14 +176,16 @@
                         <div class="flex justify-between items-center py-2 px-4 border-y-2 border-success bg-green-950">
 
                             <!-- column title -->
-                            <h2 class="text-xl"><i class="fa-solid fa-bars mr-4"></i>Recipes</h2>
+                            <h2 class="text-xl"><i class="fa-solid fa-bars mr-4"></i>Recipes
+                                <span class="text-sm font-normal text-zinc-400 ml-2" x-text="`(${recipeSearchResults.length})`"></span>
+                            </h2>
 
                             <!------------------------------>
                             <!-- dropdown: recipes groups -->
                             <div class="dropdown dropdown-hover dropdown-end">
                                 <div tabindex="0" role="button" class="btn btn-sm btn-success uppercase">
                                     <i class="fa-solid fa-filter"></i>
-                                    Filter
+                                    <span x-text="activeGroup === 'all' ? 'Filter' : activeGroup"></span>
                                 </div>
                                 <ul tabindex="0"
                                     class="dropdown-content z-[1] menu w-40 -mr-4 p-2
@@ -316,67 +318,59 @@
                             <div class="flex-1 overflow-y-auto">
                                 <div class="flex flex-col border-t-2 border-neutral">
 
-                                    <template x-for="(recipe, ID) in recipeSearchResults" :key="ID">
+                                    <template x-for="recipe in recipeSearchResults" :key="recipe.ID">
 
-                                        <!-- show recipes that have ingredients -->
-                                        <!-- e.g. do not show resources like 'Stone' or 'Ancient Civ Parts' -->
-                                        <div x-show="recipe.recipe != null">
+                                        <!-- list item -->
+                                        <div tabindex="0"
+                                             class="group py-1.5 px-2 border-b-2 border-neutral
+                                             hover:border-success hover:bg-neutral"
+                                        >
 
-                                            <!-- list item -->
-                                            <div tabindex="0"
-                                                 x-show="activeGroup === recipe.group || activeGroup === 'all'"
-                                                 class="group p-2 border-b-2 border-neutral
-                                                 hover:border-green-700 hover:bg-neutral"
-                                            >
+                                            <div class="flex justify-between">
 
-                                                <div class="flex justify-between">
+                                                <!-- list item: name -->
+                                                <p class="text-base font-bold" x-text="recipe.name"></p>
 
-                                                    <!-- list item: name -->
-                                                    <p class="text-xl font-bold" x-text="recipe.name"></p>
+                                                <!-- list item: actions -->
+                                                <div class="join invisible group-hover:visible">
 
-                                                    <!-- list item: actions -->
-                                                    <div class="join invisible group-hover:visible">
+                                                    <!-- add to favorites -->
+                                                    <!--<button tabindex="0" @click="window.RIH.addRecipeToFavorites(recipe.ID)"
+                                                            :id="'btn_addRecipeToFavorites-'+recipe.ID"
+                                                            class="join-item btn-recipeCol btn-addToFavorites w-8 btn btn-sm uppercase">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </button>-->
 
-                                                        <!-- add to favorites -->
-                                                        <!--<button tabindex="0" @click="window.RIH.addRecipeToFavorites(ID)"
-                                                                :id="'btn_addRecipeToFavorites-'+ID"
-                                                                class="join-item btn-recipeCol btn-addToFavorites w-8 btn btn-sm uppercase">
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </button>-->
+                                                    <!-- remove from favorites -->
+                                                    <!--<button tabindex="0" @click="window.RIH.removeRecipeFromFavorites(recipe.ID)"
+                                                            :id="'btn_removeRecipeFromFavorites-'+recipe.ID"
+                                                            class="join-item btn-recipeCol btn-removeFromFavorites w-8 btn btn-sm btn-warning uppercase hidden">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </button>-->
 
-                                                        <!-- remove from favorites -->
-                                                        <!--<button tabindex="0" @click="window.RIH.removeRecipeFromFavorites(ID)"
-                                                                :id="'btn_removeRecipeFromFavorites-'+ID"
-                                                                class="join-item btn-recipeCol btn-removeFromFavorites w-8 btn btn-sm btn-warning uppercase hidden">
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </button>-->
+                                                    <!-- info -->
+                                                    <button tabindex="0" @click="window.RIMIH.showResourceInfoModal(recipe.ID)"
+                                                            :id="'btn_showResourceInfoModal-'+recipe.ID"
+                                                            class="join-item btn-recipeCol btn-showResourceModal btn- w-8 btn btn-sm btn-info uppercase">
+                                                        <i class="fa-solid fa-info"></i>
+                                                    </button>
 
-                                                        <!-- info -->
-                                                        <button tabindex="0" @click="window.RIMIH.showResourceInfoModal(ID)"
-                                                                :id="'btn_showResourceInfoModal-'+ID"
-                                                                class="join-item btn-recipeCol btn-showResourceModal btn- w-8 btn btn-sm btn-info uppercase">
-                                                            <i class="fa-solid fa-info"></i>
-                                                        </button>
-
-                                                        <!-- add to queue -->
-                                                        <button tabindex="0"
-                                                                :id="'btn_addRecipeToQueue-'+ID"
-                                                                class="join-item btn-recipeCol btn-addToQueue w-8 btn btn-sm btn-success uppercase"
-                                                                :class="'btn-addToQueue-'+ID"
-                                                                @click="window.RIH.addRecipeToQueue(ID); $dispatch('update-Alpine-Data-QIH-items')"
-                                                        >
-                                                            <i class="fa-solid fa-plus"></i>
-                                                        </button>
-                                                    </div>
-                                                    <!-- end list item: actions -->
-
+                                                    <!-- add to queue -->
+                                                    <button tabindex="0"
+                                                            :id="'btn_addRecipeToQueue-'+recipe.ID"
+                                                            class="join-item btn-recipeCol btn-addToQueue w-8 btn btn-sm btn-success uppercase"
+                                                            :class="'btn-addToQueue-'+recipe.ID"
+                                                            @click="window.RIH.addRecipeToQueue(recipe.ID); $dispatch('update-Alpine-Data-QIH-items')"
+                                                    >
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
                                                 </div>
+                                                <!-- end list item: actions -->
 
                                             </div>
-                                            <!-- end list item -->
 
                                         </div>
-                                        <!-- end show recipes that have ingredient -->
+                                        <!-- end list item -->
 
                                     </template>
 
@@ -517,12 +511,12 @@
                     <!-- queue message bar -->
                     <div id="queue_message_bar"
                          class="absolute top-[52px] w-full h-0 max-h-[70px]
-                         bg-slate-950 z-[2]
+                         bg-zinc-950 z-[2]
                          overflow-hidden transition-all duration-1000"
                     >
 
                         <!-- queue message bar content -->
-                        <div class="p-4 bg-gray-950 border-b-2 border-info">
+                        <div class="p-4 bg-zinc-950 border-b-2 border-info">
                             <div class="flex justify-between items-center">
 
                                 <!-- message -->
@@ -618,10 +612,10 @@
 
     <!-- modal: notes -->
     <dialog id="modal_notes" class="modal" x-data>
-        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-zinc-950">
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-gray-400 print:hidden">
+            <div class="flex bg-zinc-950 border-y-2 border-zinc-700 print:hidden">
 
                 <h3 class="grow font-bold text-2xl p-4">
                     <i class="fa-regular fa-pen-to-square mr-2"></i>
@@ -634,7 +628,7 @@
                         <i class="fa-solid fa-bolt mr-2"></i>
                         Actions
                     </div>
-                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-zinc-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-zinc-700">
 
                         <!-- btn: Clear -->
                         <li role="button" class="w-32" @click="$refs.wrapper_userNotes.innerHTML = ''">
@@ -683,7 +677,7 @@
             <!-- note content box -->
             <div id="wrapper_modalContentBox_userNotes" x-ref="wrapper_userNotes"
                  contenteditable="true"
-                 class="bg-slate-900 p-4 text-2xl focus-visible:bg-gray-950 focus-visible:outline-none rounded-b-box"
+                 class="bg-zinc-900 p-4 text-2xl focus-visible:bg-zinc-950 focus-visible:outline-none rounded-b-box"
             ></div>
             <!-- end note content box -->
 
@@ -693,7 +687,7 @@
 
     <!-- modal: inventory -->
     <dialog id="modal_inventory" class="modal">
-        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950"
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-zinc-950"
              x-data=
                  "{
                     resources: window.IH.getJSON('resources'),
@@ -702,13 +696,13 @@
                     activeGroup: 'all',
                     activateGroup(groupName) { this.activeGroup = groupName },
                     search: '',
-                    get resourceSearchResults() { return window.RIH.getSearchResults(this.resources, this.search.toLowerCase()) },
+                    get resourceSearchResults() { return window.RIH.getFilteredSortedResults(this.resources, this.search.toLowerCase(), this.activeGroup, false) },
                     clearInventorySearchInput() { this.search = ''; $refs.searchInventory.focus() }
                 }"
         >
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 justify-between items-center bg-gray-950 border-y-2 border-gray-400">
+            <div class="flex bg-zinc-950 justify-between items-center bg-zinc-950 border-y-2 border-zinc-700">
 
                 <!----------->
                 <!-- title -->
@@ -780,8 +774,8 @@
                                 <!-- btn: clear input search inventory -->
                                 <button @click="clearInventorySearchInput"
                                         class="btn p-4 w-16 h-full text-center text-2xl rounded-none
-                                                border-r-2 border-y-0 border-l-0 border-gray-950
-                                                bg-slate-900 hover:text-info"
+                                                border-r-2 border-y-0 border-l-0 border-zinc-950
+                                                bg-zinc-900 hover:text-info"
                                 >
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
@@ -790,7 +784,7 @@
                                 <input type="text" id="input_search_inventoryModal"
                                        x-ref="searchInventory" x-model="search"
                                        placeholder="Search"
-                                       class="w-64 py-2 pr-4 bg-slate-900 rounded rounded-r-none text-2xl text-info text-right focus:outline-none"
+                                       class="w-64 py-2 pr-4 bg-zinc-900 rounded rounded-r-none text-2xl text-info text-right focus:outline-none"
                                 >
 
                             </div>
@@ -823,17 +817,16 @@
 
                     <!------------------------->
                     <!-- inventory grid cell -->
-                    <template x-for="(resource, ID) in resourceSearchResults">
+                    <template x-for="resource in resourceSearchResults" :key="resource.ID">
 
                         <!-- inventory item flex box -->
-                        <div x-show="activeGroup === resource.group || activeGroup === 'all'"
-                             class="flex items-center gap-6 rounded-box p-4"
-                        >
+                        <div class="flex items-center gap-6 rounded-box p-4">
 
                             <!-- img -->
                             <div class="row-span-2 w-fit min-width-[100px]">
-                                <label :for="'inventoryModal_input_resource_'+ID" class="cursor-pointer">
+                                <label :for="'inventoryModal_input_resource_'+resource.ID" class="cursor-pointer">
                                     <img :src="'./assets/images/items/'+resource.img" :alt="'Thumbnail for '+resource.name"
+                                         @error="$el.onerror = null; $el.src = window.IH.getFallbackImageDataUri()"
                                          class="w-[100px] h-[100px] rounded">
                                 </label>
                             </div>
@@ -844,7 +837,7 @@
                                 <!-- name -->
                                 <div class="mb-4">
                                     <p class="text-3xl font-bold">
-                                        <label :for="'inventoryModal_input_resource_'+ID" class="cursor-pointer">
+                                        <label :for="'inventoryModal_input_resource_'+resource.ID" class="cursor-pointer">
                                             <span x-text="resource.name"></span>
                                         </label>
                                     </p>
@@ -855,11 +848,11 @@
 
                                     <!-- btn: decrement stock count -->
                                     <div role="button"
-                                         @click="window.IIH.decrementInventoryFor(ID)"
+                                         @click="window.IIH.decrementInventoryFor(resource.ID)"
                                          class="btn rounded-r-none text-2xl
                                                 p-4 w-16 h-full text-center
-                                                bg-slate-800 hover:text-info"
-                                         :class="'btn_inventoryChange-'+ID"
+                                                bg-zinc-800 hover:text-info"
+                                         :class="'btn_inventoryChange-'+resource.ID"
                                     >
                                         <i class="fa-solid fa-minus"></i>
                                     </div>
@@ -868,34 +861,34 @@
                                     <div class="relative">
 
                                         <!-- input -->
-                                        <input type="text" :id="'inventoryModal_input_resource_'+ID"
+                                        <input type="text" :id="'inventoryModal_input_resource_'+resource.ID"
                                                :value="resource.inventory"
                                                class="inventory-input inventory-modal-input h-full max-w-36 mx-1 py-2 px-4
-                                               bg-slate-800 text-2xl text-info
+                                               bg-zinc-800 text-2xl text-info
                                                focus:outline-none focus:ring-1 focus:ring-info"
-                                               :class="'inventory-input-resource-'+ID"
-                                               @input="window.IIH.setInventoryFor(ID, $el.value, $el, `inventoryModal_input_errorMessage_${ID}`)"
+                                               :class="'inventory-input-resource-'+resource.ID"
+                                               @input="window.IIH.setInventoryFor(resource.ID, $el.value, $el, `inventoryModal_input_errorMessage_${resource.ID}`)"
                                                @focus="$el.select()"
                                                @focusout="if ($el.value === '' || Number($el.value) < 0 || !window.IIH.validateInventoryValue($el.value))
                                                {
-                                                   window.IIH.setInventoryFor(ID, 0, $el, `inventoryModal_input_errorMessage_${ID}`);
+                                                   window.IIH.setInventoryFor(resource.ID, 0, $el, `inventoryModal_input_errorMessage_${resource.ID}`);
                                                    $el.value = 0;
                                                }"
                                         >
 
                                         <!-- error message -->
-                                        <p :id="'inventoryModal_input_errorMessage_'+ID" class="hidden absolute text-xl text-error">Numbers only</p>
+                                        <p :id="'inventoryModal_input_errorMessage_'+resource.ID" class="hidden absolute text-xl text-error">Numbers only</p>
 
                                     </div>
                                     <!-- end input inventory -->
 
                                     <!-- btn: increment stock count -->
                                     <div role="button"
-                                         @click="window.IIH.incrementInventoryFor(ID)"
+                                         @click="window.IIH.incrementInventoryFor(resource.ID)"
                                          class="btn rounded-l-none text-2xl
                                                 p-4 w-16 h-full text-center
-                                                bg-slate-800 hover:text-info"
-                                         :class="'btn_inventoryChange-'+ID"
+                                                bg-zinc-800 hover:text-info"
+                                         :class="'btn_inventoryChange-'+resource.ID"
                                     >
                                         <i class="fa-solid fa-plus"></i>
                                     </div>
@@ -907,7 +900,7 @@
                         </div>
                         <!-- inventory item flex box -->
 
-                        <!--<div class="bg-slate-800">
+                        <!--<div class="bg-zinc-800">
                             <span x-text="ID"></span>
                         </div>-->
 
@@ -926,10 +919,10 @@
 
     <!-- modal: data import -->
     <dialog id="modal_dataImport" class="modal">
-        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-zinc-950">
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+            <div class="flex bg-zinc-950 border-y-2 border-zinc-700">
 
                 <h3 class="grow font-bold text-2xl p-4">
                     <i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>
@@ -942,7 +935,7 @@
                         <i class="fa-solid fa-database mr-2"></i>
                         Actions
                     </div>
-                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-zinc-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-zinc-700">
                         <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
@@ -961,7 +954,7 @@
             <!-- data import content box -->
             <div id="wrapper_modalContentBox_dataImport" class="">
 
-                <p class="text-2xl text-center bg-slate-900 py-8 rounded-b-box">This module is under construction</p>
+                <p class="text-2xl text-center bg-zinc-900 py-8 rounded-b-box">This module is under construction</p>
 
                 <!-- TEST: paste buttons -->
                 <!--<p>
@@ -988,10 +981,10 @@
 
     <!-- modal: data export -->
     <dialog id="modal_dataExport" class="modal">
-        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-zinc-950">
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+            <div class="flex bg-zinc-950 border-y-2 border-zinc-700">
 
                 <h3 class="grow font-bold text-2xl p-4">
                     <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
@@ -1004,7 +997,7 @@
                         <i class="fa-solid fa-database mr-2"></i>
                         Actions
                     </div>
-                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-zinc-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-zinc-700">
                         <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
@@ -1025,7 +1018,7 @@
 
                 <!-------------------------------->
                 <!-- instructions for exporting -->
-                <div class="bg-slate-900 mb-12 p-8 rounded-box" tabindex="0">
+                <div class="bg-zinc-900 mb-12 p-8 rounded-box" tabindex="0">
 
                     <p class="mb-4 text-2xl"><span class="mr-4 text-primary underline">OPTION 1:</span> Press the "Save" button to open your system's file picker. Then save your data to the corresponding javascript file.</p>
 
@@ -1039,14 +1032,14 @@
 
                 <!---------------------->
                 <!-- export inventory -->
-                <div class="flex flex-col bg-slate-900 mt-12 px-8 py-12 rounded-box">
+                <div class="flex flex-col bg-zinc-900 mt-12 px-8 py-12 rounded-box">
 
                     <!-- inventory json string -->
                     <div>
                         <textarea id="textarea_stringifiedInventorySnapshot"
                                   x-ref="textarea_stringifiedInventorySnapshot"
                                   class="px-8 pt-8 w-full text-2xl font-bold text-nowrap
-                                         bg-slate-800 border-2 border-info focus:outline-none
+                                         bg-zinc-800 border-2 border-info focus:outline-none
                                          rounded-md rounded-br-none resize-none"></textarea>
                     </div>
 
@@ -1104,14 +1097,14 @@
 
                 <!---------------------->
                 <!-- export queue -->
-                <div class="flex flex-col bg-slate-900 mt-12 px-8 py-12 rounded-box">
+                <div class="flex flex-col bg-zinc-900 mt-12 px-8 py-12 rounded-box">
 
                     <!-- queue json string -->
                     <div>
                             <textarea id="textarea_stringifiedQueueSnapshot"
                                       x-ref="textarea_stringifiedQueueSnapshot"
                                       class="px-8 pt-8 w-full text-2xl font-bold text-nowrap
-                                     bg-slate-800 border-2 border-info focus:outline-none
+                                     bg-zinc-800 border-2 border-info focus:outline-none
                                      rounded-md rounded-br-none resize-none"></textarea>
                     </div>
 
@@ -1179,10 +1172,10 @@
                 activatePanel(panel) { this.activePanel = panel }
             }"
     >
-        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-zinc-950">
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+            <div class="flex bg-zinc-950 border-y-2 border-zinc-700">
 
                 <h3 class="grow font-bold text-2xl p-4">
                     <i class="fa-solid fa-question mr-2"></i>
@@ -1195,7 +1188,7 @@
                         <i class="fa-solid fa-database mr-2"></i>
                         Actions
                     </div>
-                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-zinc-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-zinc-700">
                         <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
@@ -1227,16 +1220,16 @@
                 <!-- column: left - TOC -->
                 <div>
 
-                    <p class="py-2 bg-slate-900 border-y-2 border-slate-700 text-center text-xl">Table of Contents</p>
+                    <p class="py-2 bg-zinc-900 border-y-2 border-zinc-700 text-center text-xl">Table of Contents</p>
 
-                    <ul class="p-4 bg-slate-900 border-b-2 border-slate-700">
+                    <ul class="p-4 bg-zinc-900 border-b-2 border-zinc-700">
 
                         <!-- btn: activate panel recipes -->
                         <li @click="activatePanel('recipes')"
                             class="py-2 px-4 text-lg cursor-pointer rounded-lg"
                             :class="[
                                 (activePanel === 'recipes') ? 'bg-blue-900 text-white font-bold' : '',
-                                (activePanel !== 'recipes') ? 'hover:bg-slate-800 hover:text-white' : '',
+                                (activePanel !== 'recipes') ? 'hover:bg-zinc-800 hover:text-white' : '',
                             ]"
                         >
                             <i class="fa-solid fa-bars mr-2"></i>
@@ -1249,7 +1242,7 @@
                             class="py-2 px-4 text-lg cursor-pointer rounded-lg"
                             :class="[
                                 (activePanel === 'queue') ? 'bg-blue-900 text-white font-bold' : '',
-                                (activePanel !== 'queue') ? 'hover:bg-slate-800 hover:text-white' : '',
+                                (activePanel !== 'queue') ? 'hover:bg-zinc-800 hover:text-white' : '',
                             ]"
                         >
                             <i class="fa-solid fa-hourglass-half mr-2"></i>
@@ -1262,7 +1255,7 @@
                             class="py-2 px-4 text-lg cursor-pointer rounded-lg"
                             :class="[
                                 (activePanel === 'inventory') ? 'bg-blue-900 text-white font-bold' : '',
-                                (activePanel !== 'inventory') ? 'hover:bg-slate-800 hover:text-white' : '',
+                                (activePanel !== 'inventory') ? 'hover:bg-zinc-800 hover:text-white' : '',
                             ]"
                         >
                             <i class="fa-solid fa-database mr-2"></i>
@@ -1275,7 +1268,7 @@
                             class="py-2 px-4 text-lg cursor-pointer rounded-lg"
                             :class="[
                                 (activePanel === 'notes') ? 'bg-blue-900 text-white font-bold' : '',
-                                (activePanel !== 'notes') ? 'hover:bg-slate-800 hover:text-white' : '',
+                                (activePanel !== 'notes') ? 'hover:bg-zinc-800 hover:text-white' : '',
                             ]"
                         >
                             <i class="fa-solid fa-pen-to-square mr-2"></i>
@@ -1288,7 +1281,7 @@
                             class="py-2 px-4 text-lg cursor-pointer rounded-lg"
                             :class="[
                                 (activePanel === 'dataExport') ? 'bg-blue-900 text-white font-bold' : '',
-                                (activePanel !== 'dataExport') ? 'hover:bg-slate-800 hover:text-white' : '',
+                                (activePanel !== 'dataExport') ? 'hover:bg-zinc-800 hover:text-white' : '',
                             ]"
                         >
                             <i class="fa-solid fa-right-from-bracket mr-2"></i>
@@ -1308,7 +1301,7 @@
                     <!-- panel: recipes -->
                     <div x-show="activePanel == 'recipes'">
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Search &amp; Filter
@@ -1320,7 +1313,7 @@
                                     <li class="mb-2">The recipes column shows you resources that can be crafted.</li>
                                     <li class="mb-2">"Atomic" resources, like Stone and Wood, do not appear in this list because they do not have a recipe.</li>
                                     <li class="mb-2">Type any part of the name of the resource you are looking for.</li>
-                                    <li class="mb-2">You can clear the search results by clicking on the button with the <i class="fa-solid fa-xmark min-w-[30px] text-center bg-gray-950 p-2 rounded mx-2 kbd-sm"></i> icon.</li>
+                                    <li class="mb-2">You can clear the search results by clicking on the button with the <i class="fa-solid fa-xmark min-w-[30px] text-center bg-zinc-950 p-2 rounded mx-2 kbd-sm"></i> icon.</li>
                                     <li class="mb-2">Hover over "Filter" to show the resource groups dropdown.</li>
                                     <li class="mb-2">Select a resource group to limit which resources appear in the recipes list.</li>
 
@@ -1329,7 +1322,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 List Items
@@ -1340,7 +1333,7 @@
 
                                     <li class="mb-2">Hover over a resource to show its "Info" and "Add to Queue" buttons.</li>
 
-                                    <li class="mb-2">"Info" Button: <i class="fa-solid fa-info min-w-[30px] text-center bg-gray-950 p-2 rounded mx-2 kbd-sm"></i>
+                                    <li class="mb-2">"Info" Button: <i class="fa-solid fa-info min-w-[30px] text-center bg-zinc-950 p-2 rounded mx-2 kbd-sm"></i>
                                         <ul class="list-disc list-inside ml-8 mt-2">
                                             <li class="mb-2">The "Resource Info Modal" will show you details about that resource and two tabbed panels with additional information.</li>
                                             <li class="mb-2">If that resource has a recipe, the "Recipe" tab will show you which ingredients and how many are required to make 1 unit.</li>
@@ -1350,7 +1343,7 @@
                                         </ul>
                                     </li>
 
-                                    <li class="mb-2">"Add to Queue" Button: <i class="fa-solid fa-plus min-w-[30px] text-center bg-gray-950 p-2 rounded mx-2 kbd-sm"></i>
+                                    <li class="mb-2">"Add to Queue" Button: <i class="fa-solid fa-plus min-w-[30px] text-center bg-zinc-950 p-2 rounded mx-2 kbd-sm"></i>
                                         <ul class="list-disc list-inside ml-8 mt-2">
                                             <li class="mb-2">Pressing this button will send that resource to your Queue.</li>
                                             <li class="mb-2">You are ready to start using the Queue.</li>
@@ -1362,7 +1355,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Stats
@@ -1485,7 +1478,7 @@
                     <!-- panel: queue -->
                     <div x-show="activePanel == 'queue'" x-cloak>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Filter
@@ -1501,7 +1494,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Actions
@@ -1520,7 +1513,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 List Item Components
@@ -1592,7 +1585,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Using List Items
@@ -1632,7 +1625,7 @@
                     <!-- panel: inventory -->
                     <div x-show="activePanel == 'inventory'" x-cloak>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Search &amp; Filter
@@ -1653,7 +1646,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Grid Items
@@ -1677,7 +1670,7 @@
                     <!-- panel: notes -->
                     <div x-show="activePanel == 'notes'" x-cloak>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Actions
@@ -1693,7 +1686,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Content Area
@@ -1715,7 +1708,7 @@
                     <!-- panel: dataExport -->
                     <div x-show="activePanel == 'dataExport'" x-cloak>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Option 1: The "Save" Button
@@ -1740,7 +1733,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 Option 2: The "Get" and "Cut" Buttons
@@ -1761,7 +1754,7 @@
                             </div>
                         </div>
 
-                        <div class="collapse rounded-none bg-slate-900 mb-8">
+                        <div class="collapse rounded-none bg-zinc-900 mb-8">
                             <input type="checkbox" />
                             <div class="collapse-title text-3xl font-medium">
                                 More Details
@@ -1845,10 +1838,10 @@
 
     <!-- modal: settings -->
     <dialog id="modal_settings" class="modal">
-        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-gray-950">
+        <div class="modal-box max-w-full max-h-screen size-full rounded-none bg-zinc-950">
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-gray-400">
+            <div class="flex bg-zinc-950 border-y-2 border-zinc-700">
 
                 <h3 class="grow font-bold text-2xl p-4">
                     <i class="fa-solid fa-gear mr-2"></i>
@@ -1861,7 +1854,7 @@
                         <i class="fa-solid fa-database mr-2"></i>
                         Actions
                     </div>
-                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-gray-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-gray-400">
+                    <ul class="dropdown-content z-[1] menu mt-5 p-4 pt-0 shadow bg-zinc-950 rounded-box w-fit text-xl rounded-t-none border-2 border-t-0 border-zinc-700">
                         <li><a tabindex="0"><i class="fa-solid fa-ban mr-2"></i>Clear</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-copy mr-2"></i>Copy</a></li>
                         <li><a tabindex="0"><i class="fa-solid fa-print mr-2"></i>Print</a></li>
@@ -1880,7 +1873,7 @@
             <!-- settings content box -->
             <div id="wrapper_modalContentBox_settings" class="">
 
-                <p class="text-2xl text-center bg-slate-900 py-8 rounded-b-box">This module is under construction</p>
+                <p class="text-2xl text-center bg-zinc-900 py-8 rounded-b-box">This module is under construction</p>
 
             </div>
             <!-- end settings content box -->
@@ -1892,10 +1885,10 @@
     <!-- modal: confirm remove all recipes from queue -->
     <dialog id="modal_confirm_removeAllRecipesFromQueue" class="modal backdrop-blur" x-data>
 
-        <div class="modal-box bg-gray-950">
+        <div class="modal-box bg-zinc-950">
 
             <!-- modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-warning">
+            <div class="flex bg-zinc-950 border-y-2 border-warning">
 
                 <h3 class="grow font-bold text-2xl p-4">
                     <i class="fa-solid fa-masks-theater mr-2"></i>
@@ -1944,11 +1937,11 @@
     <!-------------------->
     <!-- resource modal -->
     <dialog id="modal_resourceInfo" class="modal backdrop-blur" x-data>
-        <div class="modal-box bg-gray-950">
+        <div class="modal-box bg-zinc-950">
 
             <!----------------------------->
             <!-- resource modal titlebar -->
-            <div class="flex bg-gray-950 border-y-2 border-info">
+            <div class="flex bg-zinc-950 border-y-2 border-info">
 
                 <!-- icon and resource.name -->
                 <h3 class="grow font-bold text-2xl p-4">
@@ -2116,11 +2109,11 @@
 <!-- modal: loading splash screen -->
 <aside>
     <dialog id="modal_loadingSplashScreen" class="modal modal-open backdrop-blur">
-    <div class="modal-box  bg-gray-950">
+    <div class="modal-box  bg-zinc-950">
 
         <!------------------------------------>
         <!-- loading splash screen titlebar -->
-        <div class="flex bg-gray-950 border-y-2 border-gray-400 text-center">
+        <div class="flex bg-zinc-950 border-y-2 border-zinc-700 text-center">
 
             <!-- icon and resource.name -->
             <h3 class="grow font-bold text-2xl p-4">

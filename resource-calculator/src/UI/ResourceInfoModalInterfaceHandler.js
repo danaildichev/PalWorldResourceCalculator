@@ -116,6 +116,7 @@ export default class ResourceInfoModalInterfaceHandler extends InterfaceHandler
             // ---------------
             // create an image
             const ingredientImg = document.createElement('img');
+            ingredientImg.onerror = () => { ingredientImg.onerror = null; ingredientImg.src = this.getFallbackImageDataUri(); };
             ingredientImg.src = ingredient.img;
             ingredientImg.alt = `Thumbnail for ${ingredient.name}`;
             ingredientImg.classList.add('w-[100px]');
@@ -206,6 +207,7 @@ export default class ResourceInfoModalInterfaceHandler extends InterfaceHandler
             // ---------------
             // create an image
             const resourceOfImg = document.createElement('img');
+            resourceOfImg.onerror = () => { resourceOfImg.onerror = null; resourceOfImg.src = this.getFallbackImageDataUri(); };
             resourceOfImg.src = `assets/images/items/${resourceOf.img}`;
             resourceOfImg.alt = `Thumbnail for ${resourceOf.name}`;
             resourceOfImg.classList.add('w-[100px]');
@@ -255,6 +257,7 @@ export default class ResourceInfoModalInterfaceHandler extends InterfaceHandler
         modalEls.title.innerText = Resource.name;
         
         // thumbnail
+        modalEls.thumbnail.onerror = () => { modalEls.thumbnail.onerror = null; modalEls.thumbnail.src = this.getFallbackImageDataUri(); };
         modalEls.thumbnail.src = `assets/images/items/${Resource.img}`;
         modalEls.thumbnail.alt = `Thumbnail for ${Resource.img}`;
         

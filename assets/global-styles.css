@@ -1,3 +1,65 @@
+/*******************/
+/* Nunito webfont */
+@font-face
+{
+    font-family: 'Nunito';
+    src: url('fonts/nunito/Nunito.ttf') format('truetype');
+    font-weight: 200 1000;
+    font-style: normal;
+    font-display: swap;
+}
+
+body { font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif; }
+
+
+
+/*********************************/
+/* "palworld" DaisyUI theme     */
+/* grass green + warm amber,    */
+/* cool zinc-toned dark surfaces */
+[data-theme="palworld"]
+{
+    color-scheme: dark;
+
+    /* brand */
+    --p: 62% 0.15 145;      /* primary: grass green */
+    --pc: 15% 0.02 145;
+    --s: 78% 0.16 75;       /* secondary: warm amber */
+    --sc: 20% 0.02 75;
+    --a: 70% 0.12 220;      /* accent: soft blue */
+    --ac: 15% 0.02 220;
+
+    /* neutrals / surfaces (cool zinc, not flat black) */
+    --n: 30% 0.006 285;
+    --nc: 90% 0.004 285;
+    --b1: 14% 0.005 285;
+    --b2: 18% 0.005 285;
+    --b3: 22% 0.006 285;
+    --bc: 92% 0.004 285;
+
+    /* status */
+    --in: 70% 0.15 230;
+    --inc: 15% 0.02 230;
+    --su: 62% 0.15 145;     /* success reuses brand green */
+    --suc: 15% 0.02 145;
+    --wa: 78% 0.16 75;      /* warning reuses brand amber */
+    --wac: 20% 0.02 75;
+    --er: 65% 0.2 25;
+    --erc: 97% 0.01 25;
+
+    --rounded-box: 1rem;
+    --rounded-btn: 0.5rem;
+    --rounded-badge: 1.9rem;
+    --animation-btn: 0.25s;
+    --animation-input: .2s;
+    --btn-focus-scale: 0.95;
+    --border-btn: 1px;
+    --tab-border: 1px;
+    --tab-radius: 0.5rem;
+}
+
+
+
 /***************************/
 /* loading spin animation */
 

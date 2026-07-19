@@ -198,28 +198,60 @@ export default class InterfaceHandler
     // end getDataTableEntryAt()
     
     
-    getSearchResults(Data, search)
+    /**
+     * Get search results as an alphabetically-sorted array, optionally
+     * restricted to a resource group and to entries that have a recipe
+     * (i.e. are actually craftable, not just raw materials).
+     *
+     * Plain objects keyed by numeric-looking IDs always enumerate in
+     * ascending ID order in JS, regardless of insertion order, so an
+     * array is returned here instead — it's the only way to control
+     * display order (e.g. alphabetically) when IDs are numeric strings.
+     *
+     * @param {Object} Data
+     * @param {String} search Lowercased search string.
+     * @param {String} [group] A resource group, or 'all'.
+     * @param {Boolean} [craftableOnly] Only include entries with a recipe.
+     * @return {Array} Array of entries, each with an added `ID` property.
+     */
+    getFilteredSortedResults(Data, search, group = 'all', craftableOnly = false)
     {
-        // create an empty object to hold search results
-        let searchResults = {}
-        
-        // using keys in Data
-        for (const key of Object.keys(Data))
+        const results = [];
+
+        for (const [ID, entry] of Object.entries(Data))
         {
-            // get entry and name as lowercase
-            const entry = Data[key];
-            const name = entry.name.toLowerCase();
-            
-            // if name contains search string insert entry to search results
-            if (name.includes(search)) { searchResults[key] = entry }
+            if (craftableOnly && entry.recipe == null) continue;
+            if (group !== 'all' && entry.group !== group) continue;
+            if (!entry.name.toLowerCase().includes(search)) continue;
+
+            results.push({ ...entry, ID });
         }
-        // end using keys in Data
-        
-        // return search results
-        return searchResults;
-        
+
+        results.sort((a, b) => a.name.localeCompare(b.name));
+
+        return results;
     }
-    // end getSearchResults()
+    // end getFilteredSortedResults()
+
+
+    /**
+     * A neutral placeholder icon, used as the fallback `<img src>` when
+     * a resource's real icon file doesn't exist yet (e.g. newly-added
+     * items awaiting sourced game icons).
+     *
+     * @return {String} A `data:image/svg+xml` URI.
+     */
+    getFallbackImageDataUri()
+    {
+        return 'data:image/svg+xml;utf8,' + encodeURIComponent(
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">' +
+                '<rect width="100" height="100" rx="12" fill="#27272a"/>' +
+                '<path d="M28 66 L42 48 L54 60 L70 38 L80 66 Z" fill="#52525b"/>' +
+                '<circle cx="37" cy="36" r="7" fill="#52525b"/>' +
+            '</svg>'
+        );
+    }
+    // end getFallbackImageDataUri()
     
     
     /**
