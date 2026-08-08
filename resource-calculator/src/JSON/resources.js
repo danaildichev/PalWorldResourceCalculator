@@ -22008,7 +22008,12 @@ export default {
                 "qty": 1
             }
         ],
-        "usedInRecipesFor": []
+        "usedInRecipesFor": [
+            {
+                "id": "720",
+                "qty": 50
+            }
+        ]
     },
     "717": {
         "name": "World Tree Holy Water",
@@ -22020,7 +22025,63 @@ export default {
             {
                 "id": "716",
                 "qty": 1
+            },
+            {
+                "id": "720",
+                "qty": 50
             }
         ]
+    },
+    "718": {
+        "name": "Mythical Wood",
+        "key": "MythicalWood",
+        "img": "mythical-wood.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "720",
+                "qty": 100
+            }
+        ]
+    },
+    "719": {
+        "name": "Ancient Civilization Core",
+        "key": "AncientCivilizationCore",
+        "img": "ancient-civilization-core.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "720",
+                "qty": 10
+            }
+        ]
+    },
+    "720": {
+        "name": "Ancient Farm",
+        "key": "AncientFarm",
+        "img": "ancient-farm.png",
+        "group": "build",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 716,
+                "qty": 50
+            },
+            {
+                "id": 717,
+                "qty": 50
+            },
+            {
+                "id": 718,
+                "qty": 100
+            },
+            {
+                "id": 719,
+                "qty": 10
+            }
+        ],
+        "usedInRecipesFor": []
     }
 }
