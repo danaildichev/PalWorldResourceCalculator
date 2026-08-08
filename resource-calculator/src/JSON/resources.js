@@ -21961,5 +21961,66 @@ export default {
             }
         ],
         "usedInRecipesFor": []
+    },
+    "714": {
+        "name": "Soralite",
+        "key": "Soralite",
+        "img": "soralite.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "716",
+                "qty": 1
+            }
+        ]
+    },
+    "715": {
+        "name": "Paloxite",
+        "key": "Paloxite",
+        "img": "paloxite.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "716",
+                "qty": 2
+            }
+        ]
+    },
+    "716": {
+        "name": "Paloxite Ingot",
+        "key": "PaloxiteIngot",
+        "img": "paloxite-ingot.png",
+        "group": "craft",
+        "inventory": 0,
+        "recipe": [
+            {
+                "id": 714,
+                "qty": 1
+            },
+            {
+                "id": 715,
+                "qty": 2
+            },
+            {
+                "id": 717,
+                "qty": 1
+            }
+        ],
+        "usedInRecipesFor": []
+    },
+    "717": {
+        "name": "World Tree Holy Water",
+        "key": "WorldTreeHolyWater",
+        "img": "world-tree-holy-water.png",
+        "group": "craft",
+        "inventory": 0,
+        "usedInRecipesFor": [
+            {
+                "id": "716",
+                "qty": 1
+            }
+        ]
     }
 }
